@@ -8,7 +8,7 @@
 * **Новизна:**
 * **Авторы:**
 
-## Задача 149
+## Задача 151
 * **Название:**
 * **Описание проблемы:**
 * **Данные:**
@@ -17,6 +17,38 @@
 * **Новизна:**
 * **Авторы:**
 
+## Задача 150
+* **Название:** Tree-width Driven SDP for The Max-Cut Problem
+* **Описание проблемы:** The Max Cut problem is computationally intractable (NP hard) over general graphs; however, for trees and graphs with small tree-width it is easy to solve exactly in polynomial time. Furthermore, the SDP or Lovász-Schrijver relaxations allows to approximate the Max-Cut value over general graphs. The contribution is to combine both the tree-width and relaxation approaches to improve (empirically) the Max-Cut approximation quality. 
+* **Данные:**
+	- [1] Texas Data Repository https://dataverse.tdl.org/dataset.xhtml?persistentId=doi:10.18738/T8/VLTIVC
+	- [2] Biq Mac Library https://biqmac.aau.at/biqmaclib.html
+* **Литература**
+	- [1] Intro and Problem setup: https://medium.com/toshiba-sbm/benchmarking-the-max-cut-problem-on-the-simulated-bifurcation-machine-e26e1127c0b0
+	- [2] The Lovasz-Schrijver https://home.ttic.edu/~madhurt/Papers/ls.pdf
+	- [3] The SDP https://ocw.mit.edu/courses/15-084j-nonlinear-programming-spring-2004/a632b565602fd2eb3be574c537eea095_lec23_semidef_opt.pdf
+	- [4] Treewidth https://www.cs.cmu.edu/~odonnell/toolkit13/lecture17.pdf
+* **Базовый алгоритм:**
+	(a) The SDP/Semi-Definite Programming relaxation (b) The Lovasz Schrijver relaxation
+* **Новизна:**
+	(c) find a matrix k-diagonal C dominating (in a spectral sence) the laplacian of the initial graph. Use the treewidth max-cut over a "dominating" graph
+	(d*) Use graph sparsification [5] to create a nice approximation to the initial graph, but having lower number of edges and treewidth
+	- [5] A nice course of 3 lectures on Graph sparsification: https://simons.berkeley.edu/graph-sparsification
+* **Авторы:** Alex Bulkin
+ 
+## Задача 149
+* **Название:** The Optimal Binning Problem: A Statistical ViewPoint
+* **Описание проблемы:** The Optimal Binning problem is the optimal discretization of a variable into bins given a discrete or continuous numeric target. Given a dataset of N samples in [0,1] we are looking for a binning on M bins maximizing the weight-of-evidence metric [1]. The latter metric allows to understand the predictive power of an independent variable. Weight-of-evidence helps to understand if a particular class of an independent variable has a higher distribution of good or bad. Our problem is for a sufficiently large N and constant M to find such an optimal binning.  [1] https://medium.com/mlearning-ai/weight-of-evidence-woe-and-information-value-iv-how-to-use-it-in-eda-and-model-building-3b3b98efe0e8
+* **Данные:** the baseline experiment over simulated datasets or any of the Kaggle datasets would be ok
+* **Литература**
+  	- [0] http://www.c4st.org/images/hesa-2015/submissions/Weight-of-Evidence-A-Review-of-Concept-and-Methods-E.pdf
+  	- [1] https://medium.com/mlearning-ai/weight-of-evidence-woe-and-information-value-iv-how-to-use-it-in-eda-and-model-building-3b3b98efe0e8
+  	- [2] https://arxiv.org/pdf/2001.08025.pdf
+  	- [3] https://iopscience.iop.org/article/10.1088/0266-5611/18/4/201/meta
+* **Базовый алгоритм:** The baseline algorithms are (a) CART and similar techniques (b) convex relaxation
+* **Новизна:** quantile splitting of the inverse transform to the empirical distribution; probably with some a-posteriori empirical tuning
+* **Авторы:** Alex Bulkin
+* 
 ## Задача 148
 * **Название:** Средневзвешенная когерентность как мера интерпретируемости тематических моделей
 * **Описание проблемы:** Тематическое моделирование широко используется в социо-гуманитарных исследованиях для понимания тематической структуры больших текстовых коллекций. Типичный сценарий предполагает, что пользователь сам разделяет найденные моделью темы на "хорошие" (интерпретируемые) и "плохие". Для упрощения этой работы можно использовать ряд автоматически вычисляемых критериев качества, один из которых — когерентность (мера "согласованности" слов темы). Однако проблема когерентности в том, что при её вычислении игнорируется бòльшая часть текста, что делает оценку качества темы по когерентности ненадёжной. Задача в том, чтобы проверить новый способ вычисления когерентности, обобщающий классический подход, но при этом учитывающий распределение темы во всём тексте.
