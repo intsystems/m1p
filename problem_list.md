@@ -1,13 +1,24 @@
 # Список задач по курсу Моя первая научная статья, весна 2024
 ## Задача 112  (template)
 
-* **Название:**
-* **Описание проблемы:**
-* **Данные:**
-* **Литература**
+
+
+
+## Задача 155  (template)
+* **Название:** Identification of the relationship between labels using an algorithm based on one's own attention for the classification problem with multiple labels, justifying the connection with Hawkes processes.
+* **Описание проблемы:** Most of the available user information can be represented as a sequence of events with timestamps. Each event is assigned a set of categorical labels, the future structure of which is of great interest. This is a temporal sets prediction problem for sequential data. Modern approaches focus on the transformation architecture for sequential data, introducing independent attention to the elements in the sequence. In this case, we take into account the temporal interactions of events, but lose information about the interdependencies of labels. Motivated by this disadvantage, we propose to use the mechanism of independent attention to the marks preceding the predicted step. Since our approach is a network of attention to labels, we call it a LANET.  We also justify this aggregation method, it affects the intensity of the event positively, assuming that the intensity is represented by the basic Hawkes process.
+* **Данные:** A brief description of data in the computational experiment and. Links to the datasets. The datasets shall be open-source. The data shall be ready-to-model
+	- https://www.kaggle.com/c/competitive-data-science-predict-future-sales/data
+	- https://www.kaggle.com/c/python-and-analyze-data-final-project/data
+Based on the dataset data, we will compare the state of the art solutions in this area with our solution in this problem statement.
+* **Литература** 1-2 Predicting Temporal Sets with Deep Neural Networks, Predicting Temporal Sets with Simplified Fully Connected Networks  3 Transformer Hawkes Process, The Neural Hawkes Process: A Neurally Self-Modulating Multivariate Point Process - introduction to idea with process Hawkes
 * **Базовый алгоритм:**
-* **Новизна:**
-* **Авторы:**
+	- https://github.com/yule-BUAA/SFCNTSP
+	- https://github.com/yule-BUAA/DNNTSP The state of the art methods for temporal sets prediction
+* **Новизна:** The idea of the proposed solution and methods for conducting the research. Ways of visualizing data and error analysis
+Most of the transformer-related models used for temporal sets prediction use self-attention computation between consecutive input timestamps representations. The LANET instead uses the self-attention between label representations. So, it has the input that consists of K vectors. Below, we describe how to aggregate a sequence of size τ to K vectors via an Embedding layer. Then we define the Self-attention layer. To get the predictions, we apply a Prediction layer.  Also, to justify such aggregation by labels, instead of time dependence, we introduce the concept of Cox processes, which describe the probability of an event at a given time through the integral of the intensity function. And we can show that such aggregation can either not worsen it, or make a positive contribution to probability. LANET will train with the cross-entropy loss adapted for the multi-label task through
+independent consideration of each label score. Comparison tables with basic approaches will be carried out, as well as visualization of quality changes from selected parameters, visualization of attention for analyzing the relationship of label representations, as well as tables comparing the effect of vector representations on the result of the model.
+* **Авторы:**  Consultant - Andrey Grabovoy, Expert - Alexey Zaytsev, Author of research - Galina Boeva
 
 ## Задача 154
 * **Название:** Декодирования сигналов головного мозга в аудиоданные
