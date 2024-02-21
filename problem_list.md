@@ -31,7 +31,7 @@
 * **Базовый алгоритм:**  https://github.com/Jhomanik/InterRel
 * **Авторы:** Корнилов Никита
   
-## Задача 155  (template)
+## Задача 155 
 * **Название:** Identification of the relationship between labels using an algorithm based on one's own attention for the classification problem with multiple labels, justifying the connection with Hawkes processes.
 * **Описание проблемы:** Most of the available user information can be represented as a sequence of events with timestamps. Each event is assigned a set of categorical labels, the future structure of which is of great interest. This is a temporal sets prediction problem for sequential data. Modern approaches focus on the transformation architecture for sequential data, introducing independent attention to the elements in the sequence. In this case, we take into account the temporal interactions of events, but lose information about the interdependencies of labels. Motivated by this disadvantage, we propose to use the mechanism of independent attention to the marks preceding the predicted step. Since our approach is a network of attention to labels, we call it a LANET.  We also justify this aggregation method, it affects the intensity of the event positively, assuming that the intensity is represented by the basic Hawkes process.
 * **Данные:** A brief description of data in the computational experiment and. Links to the datasets. The datasets shall be open-source. The data shall be ready-to-model
