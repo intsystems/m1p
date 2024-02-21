@@ -9,7 +9,7 @@
 * **Новизна:**
 * **Авторы:**
 
-## Задача 151
+## Задача 153
 * **Название:**
 * **Описание проблемы:**
 * **Данные:**
@@ -18,6 +18,21 @@
 * **Новизна:**
 * **Авторы:**
 
+## Задача 152
+* **Название:**  Метрическое прогнозирование временных рядов с высокой ковариацией
+* **Описание проблемы:**  Решается задача прогнозирования наборов временных рядов. Каждый ряд имеет высокую дисперсию, ряды имеют высокую ковариацию. Такие свойства рядов наблюдаются в сигналах головного мозга и в ценах биржевых активов. Предлагается построить пространство парных растояний (метрическую конфигурацию временных рядов), выполнить прогноз в пространстве парных расстояний, и вернуть прогноз в исходное пространство, используя метод многомерного шкалирования. 
+* **Данные:**
+	- EEG, Данные удобные для загрузки https://pyriemann.readthedocs.io/en/latest/auto_examples/ERP/plot_classify_EEG_tangentspace.html#sphx-glr-auto-examples-erp-plot-classify-eeg-tangentspace-py
+	- Финансовые ряды https://www.cambridge.org/core/books/trades-quotes-and-prices/029A71078EE4C41C0D5D4574211AB1B5
+	- Trades Quotes and Prices https://lobsterdata.com/tradesquotesandprices
+* **Литература** 
+	- Singular Spectrum Analysis
+	- https://pyriemann.readthedocs.io/en/latest/index.html
+	- Multidimensional scaling
+* **Базовый алгоритм:** Базовый прогноз выполнятется методами Singular Spectrum Analysis, LSTM+attention, Transformer
+* **Новизна:** Предлагаемое решение использует 1) Римановы модели но не для классификации, а для арегрессии, 2) Римановы генеративные диффузные модели. 
+* **Авторы:**  Яковлев, Стрижов
+  
 ## Задача 150
 * **Название:** Tree-width Driven SDP for The Max-Cut Problem
 * **Описание проблемы:** The Max Cut problem is computationally intractable (NP hard) over general graphs; however, for trees and graphs with small tree-width it is easy to solve exactly in polynomial time. Furthermore, the SDP or Lovász-Schrijver relaxations allows to approximate the Max-Cut value over general graphs. The contribution is to combine both the tree-width and relaxation approaches to improve (empirically) the Max-Cut approximation quality. 
