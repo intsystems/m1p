@@ -1,9 +1,36 @@
 # Список задач по курсу Моя первая научная статья, весна 2024
 ## Задача 112  (template)
+* **Название:**
+* **Описание проблемы:**
+* **Данные:**
+* **Литература**
+* **Базовый алгоритм:** 
+* **Новизна:**  
+* **Авторы:**
 
 
+## Задача 157
+* **Название:**
+* **Описание проблемы:**
+* **Данные:**
+* **Литература**
+* **Базовый алгоритм:** 
+* **Новизна:**  
+* **Авторы:**
 
-
+## Задача 156
+* **Название:** Optimal Gradient Methods with Relative Inexactness
+* **Описание проблемы:** A description of your problem, its motivation  and goals. An optimization-style problem statement is welcome
+Задача: построить оптимальный метод оптимизации первого порядка с помощью градиентов, зашумлённых относительным шумом. Для этого мы будем использовать технику Programming Performance Estimate, которая позволяет строить такого рода алгоритмы через анализ численного решения задачи Полуопределённого программирования. Необходимые знания: 1) Понимать, что такое выпуклые функции,  и как работаю градиентные методы для поиска их минимумов 2) Опыт Python с numpy
+Ожидаемые результаты: Доказанные теоремы сходимости для предложенного методы и экспериментальное подтверждение результатов, публикация в журнал уровня Q1,Q2. Комментарий от автора: 
+Конечно, тема не самая простая и результаты не факты, что будут, но я готов уверить, что будет релевантный опыт написание введения, анализа работ и  теории для статьи, постановки и презентации экспериментов и представления научной ценности. Вся необходимая помощь по материалу будет предоставлена.
+* **Данные:** Synthetic data 
+* **Литература** Рарерs with
+	1-2) Основная статья, продолжения первой части которой мы будем писать https://arxiv.org/abs/2310.00506
+	3) Введение в PEP https://francisbach.com/computer-aided-analyses/
+* **Базовый алгоритм:**  https://github.com/Jhomanik/InterRel
+* **Авторы:** Корнилов Никита
+  
 ## Задача 155  (template)
 * **Название:** Identification of the relationship between labels using an algorithm based on one's own attention for the classification problem with multiple labels, justifying the connection with Hawkes processes.
 * **Описание проблемы:** Most of the available user information can be represented as a sequence of events with timestamps. Each event is assigned a set of categorical labels, the future structure of which is of great interest. This is a temporal sets prediction problem for sequential data. Modern approaches focus on the transformation architecture for sequential data, introducing independent attention to the elements in the sequence. In this case, we take into account the temporal interactions of events, but lose information about the interdependencies of labels. Motivated by this disadvantage, we propose to use the mechanism of independent attention to the marks preceding the predicted step. Since our approach is a network of attention to labels, we call it a LANET.  We also justify this aggregation method, it affects the intensity of the event positively, assuming that the intensity is represented by the basic Hawkes process.
