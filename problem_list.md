@@ -39,6 +39,7 @@
 - LOBSTER Trades Quotes and Prices https://lobsterdata.com/tradesquotesandprices
 * **Литература**
   - про Neural SDE: [SDE as a GAN](https://arxiv.org/pdf/2102.03657.pdf), [signature kernel scores](https://arxiv.org/pdf/2305.16274.pdf), [gradients](https://arxiv.org/pdf/2105.13493.pdf)
+  - обсудить da Prato–Debussche trick (возмущения решений посредством порождающих моделей)
 * **Базовый алгоритм:** 
 * **Новизна:**  
 * **Авторы:** Эдуард Владимиров, Стрижов, Иван Папай 
