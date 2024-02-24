@@ -40,7 +40,7 @@
 * **Новизна:** Построить карту функциональных групп с изменением во времени в зависимости от внешнего воздействия (видео Пеппи)
 * **Авторы:** Святослав Панченко, Стрижов 
 
-## Задача 158 (Мухаммадшариф Набиев, назначена)
+## Задача 158 (Мухаммадшариф Набиев)
 * **Название:** Прогнозирование деформаций и напряжений в биологических тканях и органах
 * **Описание проблемы:** Требуется выбрать модель аппроксимации поля поле деформаций и напряжений в материале под разными условиями. Целью исследования является разработка модели и метода, которые по имеющимся ограниченным экспериментальным данным достоверно восстанавливает поля в материале.
 * **Данные:** Измерения деформаций и напряжений, полученные с помощью сенсоров. Данные будут представлены в виде тензора, где каждый элемент соответствует определенному измерению деформации или напряжения в конкретном месте и времени.
@@ -49,7 +49,7 @@
 	- Что было опубликовано после этой работы вместе со словами Physics-informed learning + tensor analysis
 * **Авторы:** Павел Северилов, Стрижов, Мухаммадшариф Набиев
 
-## Задача 157 (Иван Папай, назначена)
+## Задача 157 (Иван Папай)
 * **Название:** Приближение временных рядов стохастическими дифференциальными уравнениями (вставить мотивацию)
 * **Описание проблемы:** Требуется построить прогноз набора временных рядов (с высокой ковариацией), вплоть до редсказания аномалий (аномалия означает отказ от прогнозирования, она не относится ни к детерминированой, ни к стохастической составляющей). Требуется декомпозировать реализзцию случайного процесса (временного ряда) и восстановить модель случайного процесса (со сносом, скачками). Требуется выбать адекватную порождабщую нейросеть, указать способ прореживания числа слоёв и снижения их размерности.
 * **Данные:**
@@ -271,6 +271,60 @@ P.S. Были надежды на редукцию дисперсии с importa
 * **Базовый алгоритм:** Построение текстовых эмбеддингов каким-либо открытым переобученным пакетом. Например, spaCy (у него есть русский язык). Далее решается задача классификации.
 * **Новизна:** Индустриальная задача
 * **Авторы:** Старожилец Всеволод Михайлович
+
+=Проекты пятикурсников и назначенные проекты=
+
+## Задача 160 (Алексей Ребриков)
+* __Название__: Ускоренные методы нулевого порядка с одноточечным фидбэком
+* __Задача__: Обычно для целевых функций в задачах оптимизации мы можем считать градиенты и даже информацию более высоких порядков. Но также существуют приложения, в которых подсчет градиента или затруднен или вообще невозможен. В таких приложениях на помощь приходят безградиентные методы. Довольно натуральной идеей в данном случае является аппроксимация градиента через конечные разности (https://arxiv.org/pdf/2211.13566.pdf): $\nabla f_\gamma(x, e) = \frac{f(x + \gamma e) - f(x - \gamma e)}{2 \gamma} e.$ Более того, в более близких для практики приложениях мы имеем доступ к зашумленной версии функции. Это порождает дополнительные проблемы. В более простом с точки зрения теоретического анализа, но менее приближенным к реальности случае можно рассматривать так называемый two-point feedback: $\nabla f_\gamma(x, \xi, e) = \frac{f(x + \gamma e, \xi) - f(x - \gamma e, \xi)}{2 \gamma} e.$ Ключевая особенность – одна и та же случайность в обеих точках. Более сложный и неприятный случай – one-point feedback: $\nabla f_\gamma(x, \xi^+, \xi^-, e) = \frac{f(x + \gamma e, \xi^+) - f(x - \gamma e, \xi^-)}{2 \gamma} e,$ который и будет рассматриваться в работе.
+* __Данные__:  1) Датасет mushroom 2) Квадратичная задача
+* __Литература__: Randomized gradient-free methods in convex optimization (https://arxiv.org/pdf/2211.13566.pdf) AN ACCELERATED METHOD FOR DERIVATIVE-FREE SMOOTH STOCHASTIC CONVEX OPTIMIZATION (https://arxiv.org/pdf/1802.09022.pdf)
+* __Базовой алгоритм__:   Результаты для two-point feedback (https://arxiv.org/pdf/1802.09022.pdf)
+* __Решение__: В данной работе предлагается разработать и проанализировать сходимость ускоренный безградиентные методы для выпуклой гладкой стохастической задачи минимизации. В частности предлагается адаптировать (или оттолкнуться в качестве стартовой точки) для этого уже существующие результаты в случае two-point feedback (https://arxiv.org/pdf/1802.09022.pdf).
+* __Авторы__: Консультант - Александр Богданов, эксперт - Александр Безносиков
+
+## Задача 161 (Фанис)
+* __Название__: Методы малоранговых разложений в распределенном и федеративном обучении
+* __Задача__: Подходы распределенного и федеративного обучения становятся все более популярными в обучении современных SOTA моделей машинного обучения. При этом на первый план выходит вопрос организации эффективных коммуникаций, так как процесс передачи информации занимает слишком много времени даже в случае кластерных вычислений. Из-за этого может теряться смысл в распределении/распараллеливании процесса обучения. Одной из ключевой техник  борьбы с коммуникационными затратами является использование сжатий передаваемой информации. На данный момент в литературе предлагаются различные техники сжатия (https://arxiv.org/abs/2002.12410, https://arxiv.org/abs/1610.02132, https://arxiv.org/abs/1905.10988), но потенциал в этом вопросе явно не исчерпан. В частности, довольно большой потенциал кроется в малоранговых разложениях (https://gregorygundersen.com/blog/2019/01/17/randomized-svd/). В рамках проекта предлагается сконструировать операторы сжатия на основе данных разложений и встроить в методы распределенной оптимизации (https://arxiv.org/abs/2106.05203).
+* __Данные__: LibSVM https://www.csie.ntu.edu.tw/~cjlin/libsvm/ CIFAR 10
+https://www.cs.toronto.edu/~kriz/cifar.html В экспериментах предлагается суммулировать на одном устройстве распределенное обучение 1) логистической регресии на датасетах из LibSVM, 2) ResNet18 на CIFAR 10
+* __Литература__: https://arxiv.org/abs/2002.12410, https://arxiv.org/abs/1610.02132, https://arxiv.org/abs/1905.10988 https://gregorygundersen.com/blog/2019/01/17/randomized-svd/ https://arxiv.org/abs/2106.05203
+* __Базовой алгоритм__: https://arxiv.org/abs/2106.05203 + https://arxiv.org/abs/2002.12410 или https://arxiv.org/abs/1905.13727
+* __Решение__: В рамках проекта предлагается сконструировать операторы сжатия на основе малоранговых разложений (https://gregorygundersen.com/blog/2019/01/17/randomized-svd/) и встроить в методы современные методы распределенной оптимизации (https://arxiv.org/abs/2106.05203).
+* __Авторы__: Безносиков А.Н., Зыль А.В.
+
+## Задача 162 (Проект 5-ого курса, Марат Хусаинов)
+* __Название__: Адаптивные методы генерации с использованием диффузионных моделей
+* __Задача__: Дана многомерная функция распределения p(x) = f(x) / Z.  Задача состоит как в вычислении нормализационной константы — Z, так и в получении объектов из распределения p(x).
+* __Данные__: В качестве целевого распределения могут быть взяты многомерная гауссова смесь, Funnel, Manywell и др. 
+* __Литература__:  https://arxiv.org/pdf/2302.13834.pdf https://arxiv.org/pdf/2310.02679.pdf https://arxiv.org/pdf/2208.01893.pdf
+* __Базовой алгоритм__: https://github.com/lollcat/fab-torch
+* __Решение__: The idea of the proposed solution and methods for conducting the research. Ways of visualizing data and error analysis
+* __Новизна__: Обоснование новизны и значимости идей (для редколлегии и рецензентов журнала). 
+* __Авторы__:  Сергей Самсонов 
+
+## Задача 163 (Проект пятого курса, Баир Михайлов)
+* __Название__:  Undersampled MRI reconstruction 
+* __Задача__: Magnetic Resonance Imaging (MRI) examination times can vary from fifteen minutes to one hour, which is inconvenient for both the doctor and the patient. Additionally, human motion during the scan can significantly decrease the quality of the images. Undersampled MRI allows for fewer measurements in Fourier-space, thereby reducing the scan time by 4-8 times. However, in this approach, some information is lost according to the Nyquist-Shannon sampling theorem. The main hypothesis of this study is the possibility of using general information from the scan space through machine learning to mitigate this problem. An optimization-style problem statement can be seen in Supplementary.
+* __Данные__: fastMRI, a large-scale dataset of both raw MRI measurements and clinical MRI images. https://fastmri.med.nyu.edu/
+* __Литература__:
+	1. fastMRI: An Open Dataset and Benchmarks for Accelerated MRI - formulation of the problem, dataset (https://arxiv.org/abs/1811.08839)
+	2. Fill the K-Space and Refine the Image: Prompting for Dynamic and Multi-Contrast MRI Reconstruction - SOTA (https://arxiv.org/abs/2309.13839)
+	3. An Adaptive Intelligence Algorithm for Undersampled Knee MRI Reconstruction - top submission of the original competition (https://arxiv.org/abs/2004.07339)
+	4. Deep Cardiac MRI Reconstruction with ADMM - top submission from other competition (https://arxiv.org/abs/2310.06628)
+	5. A review and experimental evaluation of deep learning methods for MRI reconstruction - introduction to the problem (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9202830/)
+* __Базовой алгоритм__:  A link to the code of the baseline algorithm. It shows the state of the art and will be compared with the proposed solution https://github.com/hellopipu/PromptMR
+* __Решение__: My idea is to potentially develop a solution without several cascade steps like PromptMR to spend less time on each prediction, also it is possible to experiment with filter patterns. Additionally in the original SOTA paper there is no experiments with real radiologists, authors only measure PSNR, SSIM and NMSE and don't consider the opinion of the specialists and it is entirely possible to make a direct comparison between visualizations with and without undersampling to measure the drop in quality if any.
+* __Авторы__:   Expert: Dmitry Dylov Consultant: Artem Razumov  Me: Bair Mikhailov
+
+## Задача 1XX (Who are the problem owners?)
+* __Название__:  Support strategies for advanced Post-Training Quantization
+* __Задача__: Advanced PTQ methods do not require a lot of computing resources, demonstrate high quality and work quickly. Modern approaches tend to be consistent and optimize the model block-by-block or layer-by-layer. However, these approaches have several fundamental problems. The first of these is the poor correlation of reconstruction losses, which are used for optimization, with target losses. This leads to a decrease in quality, especially for models with a sharp loss landscape. In sequential approaches, the optimization of the following blocks or layers is based on the optimization of all previous blocks or layers. Because of this design, the second problem is an incorrectly set optimization task for the last blocks or layers in the network.
+* __Данные__: Cifar-10, ImageNet
+* __Литература__:  https://arxiv.org/abs/2203.05740, https://arxiv.org/abs/2312.07950
+* __Базовой алгоритм__:  https://github.com/wimh966/QDrop
+* __Решение__:   Theoretical justification of mentioned problems, generalization and ablation study of basic solutions and their modification.
+* __Авторы__: 
 
 
 <!-- # Старые задачи -->
