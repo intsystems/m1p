@@ -331,6 +331,20 @@ https://www.cs.toronto.edu/~kriz/cifar.html В экспериментах пре
 * __Решение__: My idea is to potentially develop a solution without several cascade steps like PromptMR to spend less time on each prediction, also it is possible to experiment with filter patterns. Additionally in the original SOTA paper there is no experiments with real radiologists, authors only measure PSNR, SSIM and NMSE and don't consider the opinion of the specialists and it is entirely possible to make a direct comparison between visualizations with and without undersampling to measure the drop in quality if any.
 * __Авторы__:   Expert: Dmitry Dylov Consultant: Artem Razumov  Me: Bair Mikhailov
 
+
+## Задача 155
+* __Название__:  Identification of the relationship between labels using an algorithm based on one's own attention for the classification problem with multiple labels, justifying the connection with Hawkes processes.
+* __Задача__: A description of your problem, its motivation  and goals. An optimization-style problem statement is welcome
+Most of the available user information can be represented as a sequence of events with timestamps. Each event is assigned a set of categorical labels, the future structure of which is of great interest. This is a temporal sets prediction problem for sequential data. Modern approaches focus on the transformation architecture for sequential data, introducing independent attention to the elements in the sequence. In this case, we take into account the temporal interactions of events, but lose information about the interdependencies of labels. Motivated by this disadvantage, we propose to use the mechanism of independent attention to the marks preceding the predicted step. Since our approach is a network of attention to labels, we call it a LANET.  We also justify this aggregation method, it affects the intensity of the event positively, assuming that the intensity is represented by the basic Hawkes process.
+* __Данные__: Based on the dataset data, we will compare the state of the art solutions in this area with our solution in this problem statement. https://www.kaggle.com/c/competitive-data-science-predict-future-sales/data https://www.kaggle.com/c/python-and-analyze-data-final-project/data
+* __Литература__:
+	- 1-2 Predicting Temporal Sets with Deep Neural Networks, Predicting Temporal Sets with Simplified Fully Connected Networks 
+	- 3 Transformer Hawkes Process, The Neural Hawkes Process: A Neurally Self-Modulating Multivariate Point Process - introduction to idea with process Hawkes
+* __Базовой алгоритм__:  https://github.com/yule-BUAA/SFCNTSP https://github.com/yule-BUAA/DNNTSP The state of the art methods for temporal sets prediction
+* __Решение__:  Most of the transformer-related models used for temporal sets prediction use self-attention computation between consecutive input timestamps representations. The LANET instead uses the self-attention between label representations. So, it has the input that consists of K vectors. Below, we describe how to aggregate a sequence of size τ to K vectors via an Embedding layer. Then we define the Self-attention layer. To get the predictions, we apply a Prediction layer.  Also, to justify such aggregation by labels, instead of time dependence, we introduce the concept of Cox processes, which describe the probability of an event at a given time through the integral of the intensity function. And we can show that such aggregation can either not worsen it, or make a positive contribution to probability. LANET will train with the cross-entropy loss adapted for the multi-label task through
+independent consideration of each label score. Comparison tables with basic approaches will be carried out, as well as visualization of quality changes from selected parameters, visualization of attention for analyzing the relationship of label representations, as well as tables comparing the effect of vector representations on the result of the model. 
+* __Авторы__:  Consultant - Andrey Grabovoy Expert - Alexey Zaytsev Author of research - Galina Boeva
+  
 ## Задача 1XX (Who are the problem owners?)
 * __Название__:  Support strategies for advanced Post-Training Quantization
 * __Задача__: Advanced PTQ methods do not require a lot of computing resources, demonstrate high quality and work quickly. Modern approaches tend to be consistent and optimize the model block-by-block or layer-by-layer. However, these approaches have several fundamental problems. The first of these is the poor correlation of reconstruction losses, which are used for optimization, with target losses. This leads to a decrease in quality, especially for models with a sharp loss landscape. In sequential approaches, the optimization of the following blocks or layers is based on the optimization of all previous blocks or layers. Because of this design, the second problem is an incorrectly set optimization task for the last blocks or layers in the network.
@@ -339,7 +353,6 @@ https://www.cs.toronto.edu/~kriz/cifar.html В экспериментах пре
 * __Базовой алгоритм__:  https://github.com/wimh966/QDrop
 * __Решение__:   Theoretical justification of mentioned problems, generalization and ablation study of basic solutions and their modification.
 * __Авторы__: 
-
 
 <!-- # Старые задачи -->
 
