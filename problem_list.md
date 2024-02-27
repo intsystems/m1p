@@ -362,6 +362,20 @@ independent consideration of each label score. Comparison tables with basic appr
 * __Решение__:  Смешивание эмбеддингов уровня инстансов с эмбеддингами уровня коллекций при обучении: https://arxiv.org/pdf/2207.06167v1.pdf Определение принадлежности к коллекции с учётом неравномерности распределения датасета по ним: https://arxiv.org/pdf/2005.10497v2.pdf Получить некоторые теоретические результаты относительно качества эмбеддингов коллекций (напр. Теорема 1 из https://github.com/intsystems/Karimov_2023_NIR/blob/master/paper/paper.pdf).
 * __Авторы__:  Roman Isachenko
 
+## Задача 165 (проект пятого курса, Дмитрий Протасов)
+* __Название__: Automatic Music Transcription
+* __Задача__:  Automatic music transcription (AMT) remains an important but challenging task in music information retrieval, hampered by limited MIDI datasets and the poor quality of existing models. This research aims to improve transcription accuracy by using specialized models to extract distinct musical features such as chord progressions, tonality, rhythm, and instrument types. To address the scarcity of MIDI datasets, we propose the use of synthetic
+data to augment training resources. This approach offers a new way to potentially enrich AMT models and advance the field.
+* __Данные__: https://github.com/KinWaiCheuk/AudioLoader/tree/master (MAPS, Maestro, MusicNet)
+* __Литература__:
+	1) MT3 (sota 2022): https://arxiv.org/pdf/2111.03017.pdf
+	2) Splitter: https://arxiv.org/pdf/2305.07489.pdf
+	3) Basic Pitch (lightweight model, good detection for one instrument, fast intro): https://arxiv.org/pdf/2203.09893.pdf
+	4) Synthetic data: https://arxiv.org/pdf/2312.10402.pdf
+* __Базовой алгоритм__: Solution1: https://github.com/magenta/mt3/tree/main (sota 2022), Solutions2: https://github.com/vpavlenko/study-music/blob/main/parts/transcription.d
+* __Решение__:  The idea of the proposed solution and methods for conducting the research. Ways of visualizing data and error analysisю Extracting individual musical characteristics (chord-progression, tonality, bpm, instrument), and using synthetic datasets for data augmentation.
+Authors: Матвеев, Протасов
+
 <!-- # Старые задачи -->
 
 <!-- ## Задача 112  (OLD)
