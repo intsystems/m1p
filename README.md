@@ -31,4 +31,4 @@
 | [Аникин Сергей](https://github.com/sergan3000) | Tree-width Driven SDP for The Max-Cut Problem | [GitHub](https://github.com/intsystems/2024-Project-150/tree/master), [LinkReview](https://docs.google.com/document/d/1iSFdTHFK5v-bCW8LgDIxr2AeyIUdE7zE4pq0SfyN-Ss/edit?usp=sharing), [Paper](https://docs.google.com/document/d/1iSFdTHFK5v-bCW8LgDIxr2AeyIUdE7zE4pq0SfyN-Ss/edit?usp=sharing) | [Александр Булкин](https://arxiv.org/search/cs?searchtype=author&query=Bulkin,+A) |  | |
 | [Степанов Илья](https://github.com/ILIAHHne63) | Создание персонализированных генераций изображений | [GitHub](https://github.com/intsystems/2024-Project-145), | [Филатов Андрей](https://openreview.net/profile?id=~Andrei_Filatov1) |  | |
 | [Соболевский Федор](https://github.com/TeoSable) | Непрерывное время при построении нейроинтерфейса BCI |  | |
-
+| [Казистова Кристина](https://github.com/pasapas321) | Создание персонализированных генераций изображений | [GitHub](), | [Филатов Андрей](https://openreview.net/profile?id=~Andrei_Filatov1) |  | |
