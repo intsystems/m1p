@@ -33,3 +33,4 @@
 | [Соболевский Федор](https://github.com/TeoSable) | Непрерывное время при построении нейроинтерфейса BCI |  | |
 | [Казистова Кристина](https://github.com/pasapas321) | Создание персонализированных генераций изображений | [GitHub](), | [Филатов Андрей](https://openreview.net/profile?id=~Andrei_Filatov1) |  | |
 | [Ребриков Алексей](https://github.com/NoblFriend) | Методы малоранговых разложений в распределенном и федеративном обучении | [GitHub](https://github.com/intsystems/2024-Project-161), [LinkReview](), [Paper]() | [Безносиков Александр](https://anbeznosikov.github.io/) |  |  |
+| [Хусаинов Марат](https://github.com/maratkhusainov) | Адаптивные методы генерации с использованием диффузионных моделей | [GitHub](https://github.com/intsystems/2024-Project-162), [LinkReview](https://docs.google.com/document/d/1j1IU5YKteVJLZACR_vHrdASi0ZGPaKj8lh5vyiy0YYQ/edit), [Paper](https://github.com/intsystems/2024-Project-162/tree/master/paper)  | [Самсонов Сергей]() |  |  |
