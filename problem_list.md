@@ -380,11 +380,14 @@ Authors: Матвеев, Протасов
 ## Задача 166 
 * __Название__: Machine learning methods for functional brain mapping
 * __Задача__: Segmentation of functional areas of fMRI brain scans ([article with problem statement](https://www.sciencedirect.com/science/article/pii/S1053811922005353)) 
-* __Данные__: [Dataset](https://www.humanconnectome.org/): Human Connectome Project: ≈ 1200 healthy subjects with both resting-state and task fMRI data; 4D (3D time-dependent data) 1.5 × 10^6 -dimensional MRI-measurements received per a few seconds
+* __Данные__: [Dataset](https://www.humanconnectome.org/): Human Connectome Project: ≈ 1200 healthy subjects with both resting-state and task fMRI data; 4D (3D time-dependent data) $1.5 \times 10^6$ -dimensional MRI-measurements received per a few seconds
 * __Литература__:
 	1. [Accurate predictions of individual differences in task-evoked brain activity from resting-state fMRI using a sparse ensemble learner](https://www.sciencedirect.com/science/article/pii/S1053811922005353)
+
         2. [Predicting individual task contrasts from resting ‐state functional connectivity](https://www.sciencedirect.com/science/article/pii/S1053811921011204)
+           
         3. [Task-free MRI Predicts Individual Differences in Brain Activity During Task Performance](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6309730/)
+
         4. [Semiblind Spatial ICA of fMRI Using Spatial Constraints](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2891131/)
 * __Базовой алгоритм__: [Method 1](https://github.com/yingqiuz/predict-task-individual-variability), [Method 2](https://github.com/sabunculab/brainsurfcnn) 
 * __Решение__: The proposed solution is a machine learning algorithm developed based on existing techniques.
