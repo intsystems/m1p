@@ -5,8 +5,7 @@
 
 [Zoom](https://m1p.org/go_zoom)
 
-[Telegram chat](https://t.me/+H-KHNHGzZJRhMDdi)
-
+[Telegram chat](https://t.me/+Z7desKWCT0UwOTcy)
 
 
 [Problem list](problem_list.md)
