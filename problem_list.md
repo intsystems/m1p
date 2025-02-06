@@ -425,7 +425,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 * __Решение__: Базовый алгоритм решения задачи состоит в применении методов из пакетов sklearn, umap языка Python. Например, классическим интерпретируемым алгоритмом классификации является дерево решений (sklearn.tree.DecisionTree).
 * __Авторы__: Василий Алексеев, Константин Воронцов
 
-## Задача 1XX (новая) (проект пятого курса Дорин Даниил)
+## Задача 1XX (новая) (проект пятого курса, Дорин Даниил)
 * __Title__: Detecting Manual Alterations in Biological Image Data Using Contrastive Learning and Pairwise Image Comparison
 * __Problem__: Ensuring the integrity and reliability of biological and medical image data is critical for scientific research and reproducibility. Manual modifications, such as cropping, rotation, duplication, or more subtle alterations, can compromise the validity of datasets and lead to incorrect conclusions. Medical images and scans, being highly similar thematically and structurally, pose a unique challenge for detecting such changes. This project focuses on studying existing methods and developing approaches for detecting such changes in image data. The ultimate goal is to ensure the reliability of datasets while providing interpretable results to support researchers and institutions in maintaining high standards of data quality.
 * __Data__:
