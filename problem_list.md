@@ -470,14 +470,17 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 * __Название__: Восстановление показаний датчиков фМРТ по прослушиваемому звуковому ряду
 * __Задача__: Рассматривается задача восстановления зависимости между показаниями датчиков функциональной магнитно-резонансной томографии (фМРТ) и восприятием внешнего мира человеком. Основная цель заключается в анализе зависимости между последовательностью снимков фМРТ и звуковым рядом, а также в разработке метода прогнозирования показаний фМРТ на основе прослушиваемого звукового ряда. Кроме того, хочется проверить гипотезу о влиянии параметра задержки BOLD (Blood-oxygen-level-dependent) на качество аппроксимации.
 * __Литература__:
-	- Вся литература из работы [Forecasting fMRI images from video sequences: linear model analysis](https://link.springer.com/epdf/10.1007/s13755-024-00315-5?sharing_token=lmbWsrIhGUoHaL75ub7etfe4RwlQNchNByi7wbcMAY438_8ojgqthAfg8Q2YiNthCEtJoSCkYUusKUpq6L-34kwAeXd5dq2ckTk8iYugJ0VtvTwPUiCF7XX9yGXw-8rdq5DB9u-Y4sNf-in0p3Zc5IbybvEDqh7v-BeAmfkPkuI%3D)
+	- Вся литература из работы [Forecasting fMRI images from video sequences: linear model analysis](https://link.springer.com/epdf/10.1007/s13755-024-00315-5?sharing_token=lmbWsrIhGUoHaL75ub7etfe4RwlQNchNByi7wbcMAY438_8ojgqthAfg8Q2YiNthCEtJoSCkYUusKUpq6L-34kwAeXd5dq2ckTk8iYugJ0VtvTwPUiCF7XX9yGXw-8rdq5DB9u-Y4sNf-in0p3Zc5IbybvEDqh7v-BeAmfkPkuI%3D). [Код данного исследования](https://github.com/DorinDaniil/Forecasting-fMRI-Images).
 	- [Open multimodal iEEG-fMRI dataset from naturalistic stimulation with a short audiovisual film](https://www.nature.com/articles/s41597-022-01173-0)
 * __Данные__: 
    	- Berezutskaya J., et al Open multimodal iEEG-fMRI dataset from naturalistic stimulation with a short audiovisual film // Sci Data 9, 91, 2022. Открытый мультимодальный набор данных, включающий записи внутричерепной электроэнцефалографии (iEEG) и функциональной магнитно-резонансной томографии (фМРТ), полученные во время просмотра короткометражного аудиовизуального фильма. Исследование проводилось на группе участников в возрасте от 7 до 47 лет. Данные собраны с использованием богатого аудиовизуального стимула, что позволяет анализировать реакции мозга на естественные условия. 
 * __Решение__
   	* Предлагается использовать простейшую линейную модель для прогнозирования независимо значений в каждом вокселе по данным звукового ряда.
-	* [Код предшественников](https://github.com/intsystems/2024-Project-117)
-* __Авторы__: Даниил Дорин, Вадим Стрижов, Андрей Грабовой
+	* [Код предшественников](https://github.com/intsystems/2024-Project-117).
+* __Новизна__: Анализ зависимости между показаниями датчиков и восприятиям внешнего мира человеком. Требуется проверить гипотезу зависимости между данными.
+* __Авторы__:
+	* Консультант: Даниил Дорин
+	* Эксперт: Вадим Стрижов, Андрей Грабовой
 
 ## Задача 1XX (новая) (проект пятого курса, Андрей Веприков)
 * __Название__: Дообучение LLM с помощью оптимизации нулевого порядка 
