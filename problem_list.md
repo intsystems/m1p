@@ -446,6 +446,26 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
   	- Expert: Andrey Grabovoy
 	- Consultant: Daniil Dorin
 
+## Задача 1XX (новая) (проект пятого курса, Дорин Даниил)
+* __Title__: Robust Detection of AI-Generated Images
+* __Problem__: The rapid evolution of generative models, such as Gangs, VAEs, and diffusion-based models, has enabled the creation of highly realistic synthetic images, driving innovation in entertainment, art, and content creation. However, this has also introduced significant challenges in digital trust and authenticity, making the detection of machine-generated images crucial for combating misinformation and ensuring visual data integrity. This paper addresses the problem of identifying whether an image is machine-generated or real, aiming to develop a lightweight, efficient, and interpretable detection framework. The goal is to optimize detection accuracy while minimizing computational complexity, formulated as a binary classification problem. Key challenges include the diversity of generative models and the evolving quality of synthetic images, which increasingly mimic real-world characteristics. 
+* __Data__:
+	- Real Images:  
+   		- [COCO](https://cocodataset.org/#home): A large-scale dataset with natural images of various objects and scenes.  
+   		- [Flickr-Faces-HQ (FFHQ)](https://github.com/NVlabs/ffhq-dataset): A high-quality dataset of human faces for training and evaluation.
+		- [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/): Standardised image datasets for object class recognition.
+	- Hybrid Datasets:
+		- [CIFAKE](https://www.kaggle.com/datasets/birdy654/cifake-real-and-ai-generated-synthetic-images): CIFAKE is a dataset that contains 60,000 synthetically-generated images and 60,000 real images.
+		- [ArtiFact](https://paperswithcode.com/dataset/artifact): large-scale image dataset that aims to include a diverse collection of real and synthetic images from multiple categories.
+* __Reference__:
+	- [1] [Zero-Shot Detection of AI-Generated Images](https://arxiv.org/abs/2409.15875)
+	- [2] [AI vs. AI: Can AI Detect AI-Generated Images?](https://www.mdpi.com/2313-433X/9/10/199)
+	- [3] [GenImage: A Million-Scale Benchmark for Detecting AI-Generated Image](https://proceedings.neurips.cc/paper_files/paper/2023/file/f4d4a021f9051a6c18183b059117e8b5-Paper-Datasets_and_Benchmarks.pdf)
+* __Baseline__: Use a robust encoder, such as [CLIP ViT](https://arxiv.org/abs/2103.00020) or [Barlow Twins](https://github.com/facebookresearch/barlowtwins), as a frozen model and train only the last classification layer.
+* __Authors__:
+  	- Expert: Andrey Grabovoy
+	- Consultant: Daniil Dorin
+
 ## Задача 1XX (новая) (проект пятого курса, Андрей Веприков)
 * __Название__: Дообучение LLM с помощью оптимизации нулевого порядка 
 * __Задача__: Описание проблемы: В области обработки естественного языка стандартным подходом является дообучение больших языковых моделей (LLM) с использованием методов оптимизации первого порядка, таких как SGD и Adam. Однако с увеличением размеров LLM существенные затраты памяти, связанные с обратным проходом (back-propagation) для вычисления градиентов, становятся серьезной проблемой из-за нехватки памяти для обучения. Именно поэтому развивается все больше методов оптимизации нулевого порядка (ZO) [1, 2], которые для вычисления градиентов требуют только прямого (forward) прохода модели. В данной работе предлагается придумать новые или модифицировать уже известные ZO подходы [3] для дообучения LLM, таких как LoRA [4]. 
