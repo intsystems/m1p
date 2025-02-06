@@ -402,6 +402,49 @@ Authors: Матвеев, Протасов
 * __Новизна__: Новизна работы заключается в уникальном сочетании методов прогнозирования временных рядов и кластеризации трендов. Это позволяет применить научный подход к задаче, которая в силу высокой размерности ранее в зависела от человеческой интуиции и традиционного выявления тенденций. Этот подход может дать как прикладное ( внести вклад в область прогнозирования интересов аудитории ), так и научное значение ( перенеся алгоритм на домен трендов научных статей )
 * __Авторы__: Задворнов Егор
 
+## Задача 1XX (новая, выгрузил из формы)
+* __Название__: Средневзвешенная когерентность как мера интерпретируемости тематических моделей
+* __Задача__: Тематическое моделирование широко используется в социо-гуманитарных исследованиях для понимания тематической структуры больших текстовых коллекций. Типичный сценарий предполагает, что пользователь сам разделяет найденные моделью темы на "хорошие" (интерпретируемые) и "плохие". Для упрощения этой работы можно использовать ряд автоматически вычисляемых критериев качества, один из которых — когерентность (мера "согласованности" слов темы). Однако проблема когерентности в том, что при её вычислении игнорируется бОльшая часть текста, что делает оценку качества темы по когерентности ненадёжной. Задача в том, чтобы проверить новый способ вычисления когерентности, обобщающий классический подход, но при этом учитывающий распределение темы во всём тексте.
+* __Данные__: В качестве данных подойдёт любая коллекция текстов на естественном языке, про которую известна тематическая структура (сколько примерно тем, сколько документов по разным темам). Например, можно взять коллекцию статей с ПостНауки, новостей Lenta, дамп Википедии, посты с Хабрахабра, 20 Newsgroups, Reuters. Тематика коллекции должна быть интересна самому исследователю, чтобы была мотивация оценивать темы вручную.
+* __Литература__: * Воронцов К. В. "Вероятностное тематическое моделирование: теория, модели, алгоритмы и проект BigARTM" (https://web.archive.org/web/20230520153443/http://machinelearning.ru/wiki/images/d/d5/Voron17survey-artm.pdf)
+* Воронцов К. В. "Оценивание качества тематических моделей" (из курса лекций "Вероятностные тематические модели"; https://web.archive.org/web/20230811052505/http://www.machinelearning.ru/wiki/images/a/a7/Voron23ptm-quality.pdf)
+* Alekseev V. A., Bulatov V. G., Vorontsov K. V. Intra-text coherence as a measure of topic models' interpretability //Komp'juternaja Lingvistika i Intellektual'nye Tehnologii. – 2018. – С. 1-13 (https://www.dialog-21.ru/media/4281/alekseevva.pdf)
+* Newman D. et al. Automatic evaluation of topic coherence //Human language technologies: The 2010 annual conference of the North American chapter of the association for computational linguistics. – 2010. – С. 100-108. (https://aclanthology.org/N10-1012.pdf)
+* __Базовой алгоритм__: Когерентность Ньюмана по топ словам, внутритекстовая когерентность
+* __Решение__: Использование библиотек тематического моделирование BigARTM и TopicNet. Разработка нового способа вычисления когерентности тем. Предложение и реализация методики измерения интерпретируемости тем (чтобы проверить "адекватность" новой когерентности: в самом ли деле для заведомо хороших тем она показывает качество выше, чем для плохих тем).
+* __Авторы__: Старожилец Всеволод Михайлович
+
+## Задача 1XX (новая, выгрузил из формы)
+* __Название__: Интерпретируемая иерархическая кластеризация объектов.
+* __Задача__: Требуется на обучающей выборке физических лиц (ФЛ) с меткой принадлежности классу построить такую иерархическую кластеризацию данных, что для каждого кластера можно наиболее полно интерпретировать причину его попадания в конкретный кластер.
+* __Данные__: Для исследования предлагается использовать данные из соревнования [Kaggle](https://www.kaggle.com/datasets/khusheekapoor/vehicle-insurance-fraud-detection?resource=download) по классификации мошенников в автостраховании на основе их признакового описания.
+* __Литература__: [Список научных работ, дополненный 1) формулировкой решаемой задачи, 2) ссылками на новые результаты, 3) основной информацией об исследуемой проблеме. ](https://habr.com/ru/companies/otus/articles/782862/
+https://paperswithcode.com/paper/interpretable-clustering-on-dynamic-graphs
+https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
+* __Базовой алгоритм__: Описание baseline решения предоставлено на сайте соревнования: https://exporl.github.io/auditory-eeg-challenge-2024/task2/description/
+* __Решение__: Базовый алгоритм решения задачи состоит в применении методов из пакетов sklearn, umap языка Python. Например, классическим интерпретируемым алгоритмом классификации является дерево решений (sklearn.tree.DecisionTree).
+* __Авторы__: Василий Алексеев, Константин Воронцов
+
+## Задача 1XX (новая) (проект пятого курса Дорин Даниил)
+* __Title__: Detecting Manual Alterations in Biological Image Data Using Contrastive Learning and Pairwise Image Comparison
+* __Problem__: Ensuring the integrity and reliability of biological and medical image data is critical for scientific research and reproducibility. Manual modifications, such as cropping, rotation, duplication, or more subtle alterations, can compromise the validity of datasets and lead to incorrect conclusions. Medical images and scans, being highly similar thematically and structurally, pose a unique challenge for detecting such changes. This project focuses on studying existing methods and developing approaches for detecting such changes in image data. The ultimate goal is to ensure the reliability of datasets while providing interpretable results to support researchers and institutions in maintaining high standards of data quality.
+* __Data__:
+	- [BioImage Archive](https://www.ebi.ac.uk/bioimage-archive/): A repository of biological images, including microscopy and experimental images.
+	- [Cell Image Library](https://www.cellimagelibrary.org/home): High-resolution cell microscopy images from various biological experiments.
+	- [Haxby Dataset](http://data.pymvpa.org/datasets/haxby2001/): The fMRI images dataset, the data are third-order tensors, so it is suggested to take slices.
+	- [Visible Human Project](https://www.nlm.nih.gov/research/visible/visible_human.html): Detailed anatomical datasets of the human body, including CT and MRI scans.
+* __Reference__:
+	- [1] Melekhov I., Kannala J., Rahtu E. Siamese network features for image matching. ICPR, 2016.
+	- [2] Chen T. et al. A simple framework for contrastive learning of visual representations. PMLR, 2020.
+	- [3] Radford, A. et al. Learning Transferable Visual Models from Natural Language Supervision (CLIP). ICML, 2021.
+	- [4] Zbontar, J. et al. Barlow Twins: Self-Supervised Learning via Redundancy Reduction. ICML, 2021.
+* __Baseline__: Use the [Barlow Twins](https://github.com/facebookresearch/barlowtwins) for self-supervised learning of image features. Next, train the head for matching, or train the entire pipeline. It is intended to use parallel augmentations, which you can read more about in the work [SimCLR](https://arxiv.org/abs/2002.05709). To simulate manual modifications, [augment](https://explore.albumentations.ai/) datasets with: Cropping, resizing, flipping. Brightness/contrast adjustments. Cloning or duplicating parts of an image. Adding artificial noise or subtle distortions. 
+* __Proposed solution__: To refine the basic solution, it is possible to retrain the full pipeline for biological data.
+* __Novelty__: At present, the problem of matching biological and medical images has not yet been solved.
+* __Authors__:
+  	- Expert: Andrey Grabovoy
+	- Consultant: Daniil Dorin
+
 <!-- # Старые задачи -->
 
 <!-- ## Задача 112  (OLD)
@@ -642,7 +685,7 @@ Authors: Матвеев, Протасов
 * __Novelty__: Continous-time models are supposed to be simple due to their periodic nature. Since they approximate the vector fields, these models are universal. The model selection for the continuous time is not considered now, but at the time, it is acute for wearable multimedia devices for metaverse and augmented reality. 
 * __Supergoal__ To join two encoders in a signal decoding model to reveal the connection between video and fMRI, between fMRI and ECoG.
 * __Authors__: Expert-->
-   
+
 ## Problem template (EN)
 ## Problem 101
 * __Title__: Title
