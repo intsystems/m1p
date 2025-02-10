@@ -495,6 +495,31 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 * __Новизна__: Предлагается применить уже полученные результаты в области безградиентных методов [5] в реальной задаче дообучения LLM. Идеальным результатом было бы повышение качества относительно других Zero-order методов и снижение памяти относительно First-order методов.
 * __Авторы__: консультант: Веприков А.С., эксперт: Безносиков А.Н.
 
+## Задача 1XX (новая) (проект пятого курса, Игорь Игнашин)
+* __Title__: Adaptive Loss Scaling for Splitting Mods
+* __Problem__: In machine learning, numerous challenges can degrade model performance, including noisy features in tabular data and incorrect labeling in reinforcement learning from human feedback. Various approaches exist to mitigate these issues; however, this project proposes addressing them through adaptive loss scaling.  
+
+    The core idea is to weight the overall loss function at the sample level, with these weights being learned on a unit simplex. This approach formulates the problem as a minimax optimization task. As a result, the learned weights converge to a certain distribution, which may exhibit multiple modes corresponding, for example, to noisy samples or poorly labeled data.  
+    
+    To improve data quality, the project suggests correcting target labels or discarding samples associated with these problematic modes, followed by retraining on the refined dataset and potentially ensembling models. This strategy is expected to enhance model performance by generating a higher-quality dataset.
+* __Data__:
+	- Tabular Data
+	- RLHF data
+	- Some toys datasets
+    
+* __Reference__:
+	- Mirror-Prox Algorithm with Linear Convergence Rate and its Application for Dynamic Loss Scaling.
+	- Tabular DL reference:
+		- [First paper about Tabular DL (On embeddings for numerical features, 2023 oct)](https://arxiv.org/pdf/2203.05556)
+		- [Second paper (Tabred, 2024 jun)](https://arxiv.org/pdf/2406.19380v1)
+		- [Third paper (TabM, 2024 nov)](https://arxiv.org/pdf/2410.24210)
+* __Baseline__:  Some benchmark model corresponding to the selected dataset, trained on it.
+* __Proposed solution__: Improvement of the acquisition pipelines of benchmark models: Apply ALSO optimizer to the benchmark model, discard some data according to the obtained weights, or replace incorrect targets, continue training the model on the corrected dataset but with a normal optimizer.
+* __Novelty__: The novelty lies in the approach of discarding one or more data modes corresponding to different modes of weight distribution at losses in the minimax setting.
+* __Authors__:
+    - Ignashim Igor
+
+
 <!-- # Старые задачи -->
 
 <!-- ## Задача 112  (OLD)
