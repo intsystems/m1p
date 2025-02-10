@@ -444,7 +444,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 * __Novelty__: At present, the problem of matching biological and medical images has not yet been solved.
 * __Authors__:
   	- Expert: Andrey Grabovoy
-	- Consultant: Daniil Dorin
+	- Consultant: Daniil Dorin (tg: @danulkin)
 
 ## Задача 1XX (новая) (проект пятого курса, Дорин Даниил)
 * __Title__: Robust Detection of AI-Generated Images
@@ -464,7 +464,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 * __Baseline__: Use a robust encoder, such as [CLIP ViT](https://arxiv.org/abs/2103.00020) or [Barlow Twins](https://github.com/facebookresearch/barlowtwins), as a frozen model and train only the last classification layer.
 * __Authors__:
   	- Expert: Andrey Grabovoy
-	- Consultant: Daniil Dorin
+	- Consultant: Daniil Dorin (tg: @danulkin)
 
 ## Задача 1XX (Новая, ранее была частью задачи 117) (проект пятого курса, Дорин Даниил)
 * __Название__: Восстановление показаний датчиков фМРТ по прослушиваемому звуковому ряду
@@ -479,7 +479,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 	* [Код предшественников](https://github.com/intsystems/2024-Project-117).
 * __Новизна__: Анализ зависимости между показаниями датчиков и восприятиям внешнего мира человеком. Требуется проверить гипотезу зависимости между данными.
 * __Авторы__:
-	* Консультант: Даниил Дорин
+	* Консультант: Даниил Дорин (tg: @danulkin)
 	* Эксперт: Вадим Стрижов, Андрей Грабовой
 
 ## Задача 1XX (новая) (проект пятого курса, Андрей Веприков)
@@ -518,6 +518,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 * __Novelty__: The novelty lies in the approach of discarding one or more data modes corresponding to different modes of weight distribution at losses in the minimax setting.
 * __Authors__:
     - Ignashim Igor
+    - Aleksandr Beznosikov
 
 
 <!-- # Старые задачи -->
