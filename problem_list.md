@@ -541,7 +541,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 	- [[1]](https://arxiv.org/pdf/2406.09997)
 	- [[2]](https://arxiv.org/pdf/1703.03400)
 	- [[3]](https://arxiv.org/pdf/2403.02484)
-* __Базовый алгоритм__: [https://github.com/HSG-AIML/SANE](https://github.com/HSG-AIML/SANE)~-- интересный метод кодирования сеток, подходящий как для генеративных, так и дискриминативных моделей.
+* __Базовый алгоритм__: [https://github.com/HSG-AIML/SANE](https://github.com/HSG-AIML/SANE) — интересный метод кодирования сеток, подходящий как для генеративных, так и дискриминативных моделей.
 * __Авторы__:
 	- Консультант: Никитина Мария
 	- Эксперт: Бишук Антон
