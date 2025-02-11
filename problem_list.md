@@ -482,7 +482,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 	* Консультант: Даниил Дорин (tg: @danulkin)
 	* Эксперт: Вадим Стрижов, Андрей Грабовой
 
-## Задача 1XX (новая) (проект пятого курса, Андрей Веприков)
+## Задача 1XX (новая) (проект пятого курса, Веприков Андрей)
 * __Название__: Дообучение LLM с помощью оптимизации нулевого порядка 
 * __Задача__: Описание проблемы: В области обработки естественного языка стандартным подходом является дообучение больших языковых моделей (LLM) с использованием методов оптимизации первого порядка, таких как SGD и Adam. Однако с увеличением размеров LLM существенные затраты памяти, связанные с обратным проходом (back-propagation) для вычисления градиентов, становятся серьезной проблемой из-за нехватки памяти для обучения. Именно поэтому развивается все больше методов оптимизации нулевого порядка (ZO) [1, 2], которые для вычисления градиентов требуют только прямого (forward) прохода модели. В данной работе предлагается придумать новые или модифицировать уже известные ZO подходы [3] для дообучения LLM, таких как LoRA [4]. 
 * __Литература__:
@@ -495,7 +495,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 * __Новизна__: Предлагается применить уже полученные результаты в области безградиентных методов [5] в реальной задаче дообучения LLM. Идеальным результатом было бы повышение качества относительно других Zero-order методов и снижение памяти относительно First-order методов.
 * __Авторы__: консультант: Веприков А.С., эксперт: Безносиков А.Н.
 
-## Задача 1XX (новая) (проект пятого курса, Игорь Игнашин)
+## Задача 1XX (новая) (проект пятого курса, Игнашин Игорь)
 * __Title__: Adaptive Loss Scaling for Splitting Mods
 * __Problem__: In machine learning, numerous challenges can degrade model performance, including noisy features in tabular data and incorrect labeling in reinforcement learning from human feedback. Various approaches exist to mitigate these issues; however, this project proposes addressing them through adaptive loss scaling.  
 
@@ -520,7 +520,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
     - Ignashim Igor
     - Aleksandr Beznosikov
 
-## Задача 1XX (новая) (проект пятого курса, Анастасия Вознюк)
+## Задача 1XX (новая) (проект пятого курса, Вознюк Анастасия)
 * __Название__: Использование методов подсчета неопределенности для борьбы с атаками на детекторы машинно-сгенерированного текста
 * __Задача__: Для того, чтобы обойти детекторы машинно-сгенерированного текста,  иногда используются различные атаки. Но с другой стороны, эти же атаки можно использовать, чтобы проверять устойчивость детекторов. Существуют несколько типов атак, некоторые из которых детекторы легко обнаружуивают. Многие атаки можно обходить если дооюучивать детектор на текстах с этими аатками, однако хотелось бы найти подход, который бы этого не требовал. Хочется проверить гипотезу, что мы можем использовать методы подсчета неопределенности для этого в случае, когда у нас есть только текст и в случае, когда еще есть и к доступ к внутренним состояниям модели.
 * __Данные__: Датасет с атаками: https://github.com/liamdugan/raid ([paper](https://arxiv.org/pdf/2405.07940) )
@@ -533,7 +533,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 	- консультант Вознюк Анастасия, 
 	- эксперт Андрей Грабовой
 
-## Задача 1XX (новая) (проект пятого курса, Мария Никитина)
+## Задача 1XX (новая) (проект пятого курса, Никитина Мария)
 * __Название__: Кодирование дискриминативных и генеративных моделей
 * __Задача__: В работе исследуются различные методы энкодинга нейронных сетей, применяемые в дискриминативных и генеративных моделях. Основная цель проекта — имплементация и сравнительный анализ существующих методов энкодинга, представленных в научных статьях. Результатом проведенного исследования ожидается разработанная библиотека, объединяющая различные методы энкодинга, что позволит упростить их применение в практических задачах. В рамках проекта также предлагается изучить возможность комбинирования нескольких методов энкодинга и теоретически обосновать их совместную применимость. Например, рассмотреть ортогональности методов в функциональном пространстве, что может способствовать улучшению качества и эффективности кодирования нейронных сетей.
 * __Данные__: CIFAR
@@ -545,6 +545,28 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 * __Авторы__:
 	- Консультант: Никитина Мария
 	- Эксперт: Бишук Антон
+
+## Задача 1XX (новая) (проект пятого курса, Охотников Никита)
+* __Title__: Low-rank self-play fine-tuning for small LLMs
+* __Problem__: Fine-tuning of even relatively small LLM takes considerable resources. Different techniques has been proposed in the last years to accelerate that process. The most common approach for SFT stage nowadays is LoRA. However, LLMs greatly benefits from reinforcement learning, which requires human annotators and that requirement might be demanding. Recently RL-based approaches, that do not rely on human preferences were proposed for ~7B models. This project focuses on applying these to smaller ones with limited resources. The goal is to get some gains over traditional SFT without additional need of human annotation.
+* __Baseline__:
+Small pretrained LLM without RLHF tuning like Qwen2.5-0.5B/1.5B/....
+* __Proposed solution__:
+Self-Play fIne-tuNing [SPIN](https://arxiv.org/pdf/2401.01335) - an approach using just ground truth data from the dataset along with old model version replies and which is claimed to outperform DPO (common go-to RL-based method) along with [LoRA](https://arxiv.org/pdf/2106.09685).
+* __Data__: 
+	- [GSM8K](https://huggingface.co/datasets/openai/gsm8k)
+	- [Hellaswag](https://huggingface.co/datasets/Rowan/hellaswag)
+	- [Winogrande](https://leaderboard.allenai.org/winogrande/submissions/get-started)
+	- [MMLU-Pro](https://github.com/TIGER-AI-Lab/MMLU-Pro)
+	- [MMLU](https://huggingface.co/datasets/lukaemon/mmlu)
+* __Reference__: 
+	- [Self-Play Fine-Tuning Converts Weak Language Models to Strong Language Models](https://arxiv.org/pdf/2401.01335)
+	- [LORA: LOW-RANK ADAPTATION OF LARGE LANGUAGE MODELS](https://arxiv.org/pdf/2106.09685)
+	- [Direct Preference Optimization: Your Language Model is Secretly a Reward Model](https://arxiv.org/pdf/2305.18290)
+	- [Qwen2.5 Technical Report](https://arxiv.org/pdf/2412.15115)
+* __Authors__:
+  	- Expert: Andrey Grabovoy
+	- Consultant: Nikita Okhotnikov
 
 <!-- # Старые задачи -->
 
