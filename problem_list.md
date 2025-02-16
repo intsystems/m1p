@@ -568,6 +568,27 @@ Self-Play fIne-tuNing [SPIN](https://arxiv.org/pdf/2401.01335) - an approach usi
   	- Expert: Andrey Grabovoy
 	- Consultant: Nikita Okhotnikov
 
+## Задача 1XX (новая) (проект пятого курса, Латыпов Ильгам)
+* **Title:** Бандиты для Query selection
+* **Problem:** 
+In today's world, tools are needed for efficient data processing. Databases underlie all such systems, but as their complexity increases, the task of **Query Optimization** arises. In this paper, you will have to figure out this problem, implement a solution based on the Multi-Armed Bandits method proposed in [4], and also suggest a way to improve the proposed algorithm.
+* **Data:**
+Will be determined after the algorithm is developed.
+* **Reference:**
+	- [1] Hazan E. et al. Introduction to online convex optimization //Foundations and Trends® in Optimization. – 2016. – Vol. 2. – No. 3-4. – Pp. 157-325.
+	- [2] Cesa-Bianchi N., Lugosi G. Prediction, learning, and games. – Cambridge University Press, 2006.
+	- [3] Bandits M. A. Introduction to Multi-Armed Bandits.
+	- [4] Marcus R. et al. Bao: Making learned query optimization practical //Proceedings of the 2021 International Conference on Management of Data. – 2021. – С. 1275-1288.
+* **Baseline:**
+Implement [4] and check it in work.
+* **Proposed solution:** 
+To implement contextual bandit algorithm in [4]. Improve the quality using contextual bandits.
+* **Novelty:**
+There is a rumour, that the result in [4] is not reproduced in practice. It is necessary to check this and suggest an improvement.
+* **Authors:**
+	- Expert Yuriy Dorn
+	- Consultant: Ilgam Latypov
+
 <!-- # Старые задачи -->
 
 <!-- ## Задача 112  (OLD)
