@@ -589,6 +589,39 @@ There is a rumour, that the result in [4] is not reproduced in practice. It is n
 	- Expert Yuriy Dorn
 	- Consultant: Ilgam Latypov
 
+## Задача 1XX (новая) (проект пятого курса, Zabarianska Iryna)
+* **Title:** Game-Theoretic Approaches to Learning Generative Adversarial Networks
+* **Problem:** 
+	Generative adversarial networks (GANs) [4] are a type of generative model consisting of two opposing neural networks: a generator and a discriminator. These networks engage in competition through an adversarial process, which can be framed as a stochastic Nash 	equilibrium problem (SNEP). Given the difficulties associated with the training process, it is essential to develop robust algorithms to compute the equilibrium. 
+
+	One effective method for solving a SNEP is to reformulate it as a Stochastic Variational Inequality (SVI) [2], [3]. The benefit of this approach lies in the availability of numerous algorithms designed to solve SVIs, some of which have already been applied to 	GANs [2], [1].
+
+	The goal of this project is to investigate various algorithms for solving the SNEP problem. For many of these algorithms, convergence has been proven, but convergence rate estimates have not been obtained (e.g., the stochastic algorithms from paper [1]). It is 	proposed to model and compare different algorithms, formulate hypotheses, and obtain estimates for the convergence rate.
+* **Reference:**
+	- [1] B. Franci and S. Grammatico, Training generative adversarial networks via stochastic Nash games, IEEE Trans. Neural Netw. Learn. Syst., vol. 34, no. 3, pp. 1319–1328, Mar. 2023.
+	- [2] G. Gidel et al., A variational inequality perspective on generative adversarial networks, arXiv:1802.10551, 2018.
+	- [3] Q. Tao et al., Stochastic learning via optimizing the variational inequalities, IEEE Trans. Neural Netw. Learn. Syst., vol. 25, no. 10, pp.1769–1778, 2014.
+	- [4] I. Goodfellow et al., Generative adversarial nets, in Advances in Neural Inf. Processing Syst., 2014, pp. 2672–2680.
+* **Authors:**
+	- Consultant: Zabarianska Iryna
+
+## Задача 1XX (новая) (проект пятого курса, Бабкин Петр)
+* __Название__: Эволюционный метод создания ансамбля нейронных сетей с использованием предикаторных функций
+* __Задача__: Ансамбли нейронных сетей обладают более высоким предсказательным потенциалом по сравнению с одиночными нейронными сетями. Однако пространство возможных архитектур нейронных сетей само по себе огромно, а пространство поиска ансамблей растет экспоненциально с увеличением размера ансамбля. Это делает задачу поиска оптимального ансамбля крайне ресурсоемкой. Таким образом, необходимо разработать методы эффективного поиска ансамблей, которые минимизируют вычислительные затраты.
+* __Данные__:
+	- [CIFAR-100](https://pytorch.org/vision/main/generated/torchvision.datasets.CIFAR100.html) — стандартный датасет для задач классификации изображений.
+	- [AE-CNN-code](https://github.com/yn-sun/cnn-ga) — код эволюционного алгоритма, на базе которого предлагается проводить исследования.
+* __Литература__:
+	- [1] [AE-CNN](https://ieeexplore.ieee.org/abstract/document/9075201) — современный (SOTA) эволюционный алгоритм для поиска архитектуры нейронной сети.
+	- [2] [E2EPP](https://ieeexplore.ieee.org/abstract/document/8744404) — пример эволюционного алгоритма с предикаторной функцией для поиска одной архитектуры.
+	- [3] [SSENAS](https://www.aimspress.com/aimspress-data/era/2024/2/PDF/era-32-02-050.pdf) — использование предикаторной функции для оценки сходства моделей, однако в статье рассматривается поиск только одной модели.
+* __Базовый алгоритм__: Сравнение ансамбля с одиночной моделью, полученной с помощью эволюционного алгоритма. Сравнение предложенного метода построения ансамбля с другими методами создания ансамблей.
+* __Предлагаемое решение__: В работе предлагается разработать алгоритм создания ансамбля нейронных сетей на основе одного из современных подходов к поиску архитектур — эволюционного алгоритма с использованием суррогатных функций. Эти функции будут использоваться для оценки предсказательной способности моделей. Основной акцент будет сделан на исследовании суррогатной функции, которая сможет отбирать для следующего поколения не только архитектуры с высокой предсказательной способностью, но и достаточно разнообразные, чтобы обеспечить эффективность ансамбля.
+* __Новизна__: Исследование свойств суррогатной функции для построения оптимального ансамбля.
+* __Авторы__:
+  	* Эксперт: Бахтеев Олег
+  	* Консультант: Бабкин Пётр
+
 <!-- # Старые задачи -->
 
 <!-- ## Задача 112  (OLD)
