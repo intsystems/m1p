@@ -688,7 +688,7 @@ There is a rumour, that the result in [4] is not reproduced in practice. It is n
     - Консультант: Никита Киселев (tg: [@kisnikser](https://t.me/kisnikser))
     - Эксперт: Андрей Грабовой
 
-## Problem (новая (ранее была 141)) (проект пятого курса, Насыров Эрнест)
+## Problem 141 (новая) (проект пятого курса, Насыров Эрнест)
 * __Title__: Metric analysis of deep network space parameters
 * __Problem__: The structure of a neural work is exhaustive. The dimensionality of the parameter space should be reduced. The autoencoder in the subject of the investigation. Due to the continuous-time nature of the data, we analyze several types of autoencoders. We reconstruct spatial-time data, minimizing the error. 
 * __Data__: 
