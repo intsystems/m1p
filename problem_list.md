@@ -403,7 +403,7 @@ Authors: Матвеев, Протасов
 * __Новизна__: Новизна работы заключается в уникальном сочетании методов прогнозирования временных рядов и кластеризации трендов. Это позволяет применить научный подход к задаче, которая в силу высокой размерности ранее в зависела от человеческой интуиции и традиционного выявления тенденций. Этот подход может дать как прикладное ( внести вклад в область прогнозирования интересов аудитории ), так и научное значение ( перенеся алгоритм на домен трендов научных статей )
 * __Авторы__: Задворнов Егор
 
-## Задача 1XX (новая, выгрузил из формы)
+## Задача 168 (новая, выгрузил из формы)
 * __Название__: Средневзвешенная когерентность как мера интерпретируемости тематических моделей
 * __Задача__: Тематическое моделирование широко используется в социо-гуманитарных исследованиях для понимания тематической структуры больших текстовых коллекций. Типичный сценарий предполагает, что пользователь сам разделяет найденные моделью темы на "хорошие" (интерпретируемые) и "плохие". Для упрощения этой работы можно использовать ряд автоматически вычисляемых критериев качества, один из которых — когерентность (мера "согласованности" слов темы). Однако проблема когерентности в том, что при её вычислении игнорируется бОльшая часть текста, что делает оценку качества темы по когерентности ненадёжной. Задача в том, чтобы проверить новый способ вычисления когерентности, обобщающий классический подход, но при этом учитывающий распределение темы во всём тексте.
 * __Данные__: В качестве данных подойдёт любая коллекция текстов на естественном языке, про которую известна тематическая структура (сколько примерно тем, сколько документов по разным темам). Например, можно взять коллекцию статей с ПостНауки, новостей Lenta, дамп Википедии, посты с Хабрахабра, 20 Newsgroups, Reuters. Тематика коллекции должна быть интересна самому исследователю, чтобы была мотивация оценивать темы вручную.
@@ -415,7 +415,7 @@ Authors: Матвеев, Протасов
 * __Решение__: Использование библиотек тематического моделирование BigARTM и TopicNet. Разработка нового способа вычисления когерентности тем. Предложение и реализация методики измерения интерпретируемости тем (чтобы проверить "адекватность" новой когерентности: в самом ли деле для заведомо хороших тем она показывает качество выше, чем для плохих тем).
 * __Авторы__: Старожилец Всеволод Михайлович
 
-## Задача 1XX (новая, выгрузил из формы)
+## Задача 169 (новая, выгрузил из формы)
 * __Название__: Интерпретируемая иерархическая кластеризация объектов.
 * __Задача__: Требуется на обучающей выборке физических лиц (ФЛ) с меткой принадлежности классу построить такую иерархическую кластеризацию данных, что для каждого кластера можно наиболее полно интерпретировать причину его попадания в конкретный кластер.
 * __Данные__: Для исследования предлагается использовать данные из соревнования [Kaggle](https://www.kaggle.com/datasets/khusheekapoor/vehicle-insurance-fraud-detection?resource=download) по классификации мошенников в автостраховании на основе их признакового описания.
@@ -426,7 +426,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 * __Решение__: Базовый алгоритм решения задачи состоит в применении методов из пакетов sklearn, umap языка Python. Например, классическим интерпретируемым алгоритмом классификации является дерево решений (sklearn.tree.DecisionTree).
 * __Авторы__: Василий Алексеев, Константин Воронцов
 
-## Задача 1XX (новая) (проект пятого курса, Дорин Даниил)
+## Задача 170 (новая) (проект пятого курса, Дорин Даниил)
 * __Title__: Detecting Manual Alterations in Biological Image Data Using Contrastive Learning and Pairwise Image Comparison
 * __Problem__: This project aims to develop a model for pairwise comparison of biological and medical images, demonstrating high pairwise comparison metrics to detect manual modifications such as cropping, rotation, duplication, color distortion, or more subtle alterations. These alterations can compromise dataset validity and lead to erroneous conclusions, posing unique detection challenges due to the thematic and structural similarities in medical images. Additionally, the reproducibility of scientific findings is often undermined by the copying of images used as evidence or achievements, highlighting the need for robust detection methods to maintain data integrity in scientific research.
 * __Data__:
@@ -446,7 +446,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
   	- Expert: Andrey Grabovoy
 	- Consultant: Daniil Dorin (tg: @danulkin)
 
-## Задача 1XX (новая) (проект пятого курса, Дорин Даниил)
+## Задача 171 (новая) (проект пятого курса, Дорин Даниил)
 * __Title__: Robust Detection of AI-Generated Images
 * __Problem__: The rapid evolution of generative models, such as Gangs, VAEs, and diffusion-based models, has enabled the creation of highly realistic synthetic images, driving innovation in entertainment, art, and content creation. However, this has also introduced significant challenges in digital trust and authenticity, making the detection of machine-generated images crucial for combating misinformation and ensuring visual data integrity. This paper addresses the problem of identifying whether an image is machine-generated or real, aiming to develop a lightweight, efficient, and interpretable detection framework. The goal is to optimize detection accuracy while minimizing computational complexity, formulated as a binary classification problem. Key challenges include the diversity of generative models and the evolving quality of synthetic images, which increasingly mimic real-world characteristics. 
 * __Data__:
@@ -466,7 +466,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
   	- Expert: Andrey Grabovoy
 	- Consultant: Daniil Dorin (tg: @danulkin)
 
-## Задача 1XX (Новая, ранее была частью задачи 117) (проект пятого курса, Дорин Даниил)
+## Задача 117 (Новая, ранее была частью задачи 117) (проект пятого курса, Дорин Даниил)
 * __Название__: Восстановление показаний датчиков фМРТ по прослушиваемому звуковому ряду
 * __Задача__: Рассматривается задача восстановления зависимости между показаниями датчиков функциональной магнитно-резонансной томографии (фМРТ) и восприятием внешнего мира человеком. Основная цель заключается в анализе зависимости между последовательностью снимков фМРТ и звуковым рядом, а также в разработке метода прогнозирования показаний фМРТ на основе прослушиваемого звукового ряда. Кроме того, хочется проверить гипотезу о влиянии параметра задержки BOLD (Blood-oxygen-level-dependent) на качество аппроксимации.
 * __Литература__:
