@@ -403,7 +403,7 @@ Authors: Матвеев, Протасов
 * __Новизна__: Новизна работы заключается в уникальном сочетании методов прогнозирования временных рядов и кластеризации трендов. Это позволяет применить научный подход к задаче, которая в силу высокой размерности ранее в зависела от человеческой интуиции и традиционного выявления тенденций. Этот подход может дать как прикладное ( внести вклад в область прогнозирования интересов аудитории ), так и научное значение ( перенеся алгоритм на домен трендов научных статей )
 * __Авторы__: Задворнов Егор
 
-## Задача 168 (новая, выгрузил из формы)
+## Задача 168
 * __Название__: Средневзвешенная когерентность как мера интерпретируемости тематических моделей
 * __Задача__: Тематическое моделирование широко используется в социо-гуманитарных исследованиях для понимания тематической структуры больших текстовых коллекций. Типичный сценарий предполагает, что пользователь сам разделяет найденные моделью темы на "хорошие" (интерпретируемые) и "плохие". Для упрощения этой работы можно использовать ряд автоматически вычисляемых критериев качества, один из которых — когерентность (мера "согласованности" слов темы). Однако проблема когерентности в том, что при её вычислении игнорируется бОльшая часть текста, что делает оценку качества темы по когерентности ненадёжной. Задача в том, чтобы проверить новый способ вычисления когерентности, обобщающий классический подход, но при этом учитывающий распределение темы во всём тексте.
 * __Данные__: В качестве данных подойдёт любая коллекция текстов на естественном языке, про которую известна тематическая структура (сколько примерно тем, сколько документов по разным темам). Например, можно взять коллекцию статей с ПостНауки, новостей Lenta, дамп Википедии, посты с Хабрахабра, 20 Newsgroups, Reuters. Тематика коллекции должна быть интересна самому исследователю, чтобы была мотивация оценивать темы вручную.
@@ -415,7 +415,7 @@ Authors: Матвеев, Протасов
 * __Решение__: Использование библиотек тематического моделирование BigARTM и TopicNet. Разработка нового способа вычисления когерентности тем. Предложение и реализация методики измерения интерпретируемости тем (чтобы проверить "адекватность" новой когерентности: в самом ли деле для заведомо хороших тем она показывает качество выше, чем для плохих тем).
 * __Авторы__: Старожилец Всеволод Михайлович
 
-## Задача 169 (новая, выгрузил из формы)
+## Задача 169
 * __Название__: Интерпретируемая иерархическая кластеризация объектов.
 * __Задача__: Требуется на обучающей выборке физических лиц (ФЛ) с меткой принадлежности классу построить такую иерархическую кластеризацию данных, что для каждого кластера можно наиболее полно интерпретировать причину его попадания в конкретный кластер.
 * __Данные__: Для исследования предлагается использовать данные из соревнования [Kaggle](https://www.kaggle.com/datasets/khusheekapoor/vehicle-insurance-fraud-detection?resource=download) по классификации мошенников в автостраховании на основе их признакового описания.
@@ -426,7 +426,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 * __Решение__: Базовый алгоритм решения задачи состоит в применении методов из пакетов sklearn, umap языка Python. Например, классическим интерпретируемым алгоритмом классификации является дерево решений (sklearn.tree.DecisionTree).
 * __Авторы__: Василий Алексеев, Константин Воронцов
 
-## Задача 170 (новая) (проект пятого курса, Дорин Даниил)
+## Задача 170
 * __Title__: Detecting Manual Alterations in Biological Image Data Using Contrastive Learning and Pairwise Image Comparison
 * __Problem__: This project aims to develop a model for pairwise comparison of biological and medical images, demonstrating high pairwise comparison metrics to detect manual modifications such as cropping, rotation, duplication, color distortion, or more subtle alterations. These alterations can compromise dataset validity and lead to erroneous conclusions, posing unique detection challenges due to the thematic and structural similarities in medical images. Additionally, the reproducibility of scientific findings is often undermined by the copying of images used as evidence or achievements, highlighting the need for robust detection methods to maintain data integrity in scientific research.
 * __Data__:
@@ -446,7 +446,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
   	- Expert: Andrey Grabovoy
 	- Consultant: Daniil Dorin (tg: @danulkin)
 
-## Задача 171 (новая) (проект пятого курса, Дорин Даниил)
+## Задача 171
 * __Title__: Robust Detection of AI-Generated Images
 * __Problem__: The rapid evolution of generative models, such as Gangs, VAEs, and diffusion-based models, has enabled the creation of highly realistic synthetic images, driving innovation in entertainment, art, and content creation. However, this has also introduced significant challenges in digital trust and authenticity, making the detection of machine-generated images crucial for combating misinformation and ensuring visual data integrity. This paper addresses the problem of identifying whether an image is machine-generated or real, aiming to develop a lightweight, efficient, and interpretable detection framework. The goal is to optimize detection accuracy while minimizing computational complexity, formulated as a binary classification problem. Key challenges include the diversity of generative models and the evolving quality of synthetic images, which increasingly mimic real-world characteristics. 
 * __Data__:
@@ -466,7 +466,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
   	- Expert: Andrey Grabovoy
 	- Consultant: Daniil Dorin (tg: @danulkin)
 
-## Задача 117 (Новая, ранее была частью задачи 117) (проект пятого курса, Дорин Даниил)
+## Задача 172
 * __Название__: Восстановление показаний датчиков фМРТ по прослушиваемому звуковому ряду
 * __Задача__: Рассматривается задача восстановления зависимости между показаниями датчиков функциональной магнитно-резонансной томографии (фМРТ) и восприятием внешнего мира человеком. Основная цель заключается в анализе зависимости между последовательностью снимков фМРТ и звуковым рядом, а также в разработке метода прогнозирования показаний фМРТ на основе прослушиваемого звукового ряда. Кроме того, хочется проверить гипотезу о влиянии параметра задержки BOLD (Blood-oxygen-level-dependent) на качество аппроксимации.
 * __Литература__:
@@ -482,7 +482,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 	* Консультант: Даниил Дорин (tg: @danulkin)
 	* Эксперт: Вадим Стрижов, Андрей Грабовой
 
-## Задача 1XX (новая) (проект пятого курса, Веприков Андрей)
+## Задача 173
 * __Название__: Дообучение LLM с помощью оптимизации нулевого порядка 
 * __Задача__: Описание проблемы: В области обработки естественного языка стандартным подходом является дообучение больших языковых моделей (LLM) с использованием методов оптимизации первого порядка, таких как SGD и Adam. Однако с увеличением размеров LLM существенные затраты памяти, связанные с обратным проходом (back-propagation) для вычисления градиентов, становятся серьезной проблемой из-за нехватки памяти для обучения. Именно поэтому развивается все больше методов оптимизации нулевого порядка (ZO) [1, 2], которые для вычисления градиентов требуют только прямого (forward) прохода модели. В данной работе предлагается придумать новые или модифицировать уже известные ZO подходы [3] для дообучения LLM, таких как LoRA [4]. 
 * __Литература__:
@@ -495,7 +495,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 * __Новизна__: Предлагается применить уже полученные результаты в области безградиентных методов [5] в реальной задаче дообучения LLM. Идеальным результатом было бы повышение качества относительно других Zero-order методов и снижение памяти относительно First-order методов.
 * __Авторы__: консультант: Веприков А.С., эксперт: Безносиков А.Н.
 
-## Задача 1XX (новая) (проект пятого курса, Веприков Андрей)
+## Задача 174
 * **Название:** 
 Эффекты самоорганизации в рекомендательных системах
 * **Описание проблемы:** 
@@ -519,7 +519,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 	* Консультант - Веприков А.С.,
 	* Эксперт - Хританков А.С.
 
-## Задача 1XX (новая) (проект пятого курса, Игнашин Игорь)
+## Задача 175
 * __Title__: Adaptive Loss Scaling for Splitting Mods
 * __Problem__: In machine learning, numerous challenges can degrade model performance, including noisy features in tabular data and incorrect labeling in reinforcement learning from human feedback. Various approaches exist to mitigate these issues; however, this project proposes addressing them through adaptive loss scaling.  
 
@@ -544,7 +544,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
     - Ignashim Igor
     - Aleksandr Beznosikov
 
-## Задача 1XX (новая) (проект пятого курса, Вознюк Анастасия)
+## Задача 176
 * __Название__: Использование методов подсчета неопределенности для борьбы с атаками на детекторы машинно-сгенерированного текста
 * __Задача__: Для того, чтобы обойти детекторы машинно-сгенерированного текста,  иногда используются различные атаки. Но с другой стороны, эти же атаки можно использовать, чтобы проверять устойчивость детекторов. Существуют несколько типов атак, некоторые из которых детекторы легко обнаружуивают. Многие атаки можно обходить если дооюучивать детектор на текстах с этими аатками, однако хотелось бы найти подход, который бы этого не требовал. Хочется проверить гипотезу, что мы можем использовать методы подсчета неопределенности для этого в случае, когда у нас есть только текст и в случае, когда еще есть и к доступ к внутренним состояниям модели.
 * __Данные__: Датасет с атаками: https://github.com/liamdugan/raid ([paper](https://arxiv.org/pdf/2405.07940) )
@@ -557,7 +557,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 	- консультант Вознюк Анастасия, 
 	- эксперт Андрей Грабовой
 
-## Задача 1XX (новая) (проект пятого курса, Никитина Мария)
+## Задача 177
 * __Название__: Кодирование дискриминативных и генеративных моделей
 * __Задача__: В работе исследуются различные методы энкодинга нейронных сетей, применяемые в дискриминативных и генеративных моделях. Основная цель проекта — имплементация и сравнительный анализ существующих методов энкодинга, представленных в научных статьях. Результатом проведенного исследования ожидается разработанная библиотека, объединяющая различные методы энкодинга, что позволит упростить их применение в практических задачах. В рамках проекта также предлагается изучить возможность комбинирования нескольких методов энкодинга и теоретически обосновать их совместную применимость. Например, рассмотреть ортогональности методов в функциональном пространстве, что может способствовать улучшению качества и эффективности кодирования нейронных сетей.
 * __Данные__: CIFAR
@@ -570,7 +570,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 	- Консультант: Никитина Мария
 	- Эксперт: Бишук Антон
 
-## Задача 1XX (новая) (проект пятого курса, Охотников Никита)
+## Задача 178
 * __Title__: Low-rank self-play fine-tuning for small LLMs
 * __Problem__: Fine-tuning of even relatively small LLM takes considerable resources. Different techniques has been proposed in the last years to accelerate that process. The most common approach for SFT stage nowadays is LoRA. However, LLMs greatly benefits from reinforcement learning, which requires human annotators and that requirement might be demanding. Recently RL-based approaches, that do not rely on human preferences were proposed for ~7B models. This project focuses on applying these to smaller ones with limited resources. The goal is to get some gains over traditional SFT without additional need of human annotation.
 * __Baseline__:
@@ -592,7 +592,7 @@ Self-Play fIne-tuNing [SPIN](https://arxiv.org/pdf/2401.01335) - an approach usi
   	- Expert: Andrey Grabovoy
 	- Consultant: Nikita Okhotnikov
 
-## Задача 1XX (новая) (проект пятого курса, Латыпов Ильгам)
+## Задача 179
 * **Title:** Бандиты для Query selection
 * **Problem:** 
 In today's world, tools are needed for efficient data processing. Databases underlie all such systems, but as their complexity increases, the task of **Query Optimization** arises. In this paper, you will have to figure out this problem, implement a solution based on the Multi-Armed Bandits method proposed in [4], and also suggest a way to improve the proposed algorithm.
@@ -613,7 +613,7 @@ There is a rumour, that the result in [4] is not reproduced in practice. It is n
 	- Expert Yuriy Dorn
 	- Consultant: Ilgam Latypov
 
-## Задача 1XX (новая) (проект пятого курса, Zabarianska Iryna)
+## Задача 180
 * **Title:** Game-Theoretic Approaches to Learning Generative Adversarial Networks
 * **Problem:** 
 	Generative adversarial networks (GANs) [4] are a type of generative model consisting of two opposing neural networks: a generator and a discriminator. These networks engage in competition through an adversarial process, which can be framed as a stochastic Nash 	equilibrium problem (SNEP). Given the difficulties associated with the training process, it is essential to develop robust algorithms to compute the equilibrium. 
@@ -629,7 +629,7 @@ There is a rumour, that the result in [4] is not reproduced in practice. It is n
 * **Authors:**
 	- Consultant: Zabarianska Iryna
 
-## Задача 1XX (новая) (проект пятого курса, Бабкин Петр)
+## Задача 181
 * __Название__: Эволюционный метод создания ансамбля нейронных сетей с использованием предикаторных функций
 * __Задача__: Ансамбли нейронных сетей обладают более высоким предсказательным потенциалом по сравнению с одиночными нейронными сетями. Однако пространство возможных архитектур нейронных сетей само по себе огромно, а пространство поиска ансамблей растет экспоненциально с увеличением размера ансамбля. Это делает задачу поиска оптимального ансамбля крайне ресурсоемкой. Таким образом, необходимо разработать методы эффективного поиска ансамблей, которые минимизируют вычислительные затраты.
 * __Данные__:
@@ -646,7 +646,7 @@ There is a rumour, that the result in [4] is not reproduced in practice. It is n
   	* Эксперт: Бахтеев Олег
   	* Консультант: Бабкин Пётр
 
-## Задача 1XX (новая) (проект пятого курса, Киселев Никита)
+## Задача 182
 * __Название__: Сходимость поверхности функции потерь в трансформерных архитектурах нейронных сетей
 * __Задача__: Обучение нейронной сети подразумевает поиск точки минимума функции потерь, которая задает поверхность в пространстве параметров модели. Свойства этой поверхности определяются выбранной архитектурой, функцией потерь, а также данными для обучения. Существующие исследования показывают, что с ростом числа объектов в выборке поверхность функции потерь перестает значимо меняться. В работе предлагается получить оценку на сходимость поверхности функции потерь для трансформерной архитектуры нейронной сети со слоями внимания, а также провести вычислительные эксперименты, подтверждающие полученные теоретические результаты.
 * __Литература__:
@@ -668,7 +668,7 @@ There is a rumour, that the result in [4] is not reproduced in practice. It is n
     - Консультант: Никита Киселев (tg: [@kisnikser](https://t.me/kisnikser))
     - Эксперт: Андрей Грабовой
 
-## Задача 1XX (новая) (проект пятого курса, Киселев Никита)
+## Задача 183
 * __Название__: Сравнение Монте-Карло оценок в различных низкоразмерных подпространствах для оценки сходимости поверхности функции потерь
 * __Задача__: Обучение нейронной сети подразумевает поиск точки минимума функции потерь, которая задает поверхность в пространстве параметров модели. Свойства этой поверхности определяются выбранной архитектурой, функцией потерь, а также данными для обучения. Существующие исследования показывают, что с ростом числа объектов в выборке поверхность функции потерь перестает значимо меняться. Один из возможных способов практической оценки сходимости — численно измерять изменение поверхности в окрестности локальных минимумов. Делать это можно, например, методом Монте-Карло, однако сэмплирование в пространстве параметров модели осложняется его большой размерностью. В работе предлагается сравнить несколько подпространств, в которых можно производить сэмплирование: натянутое на случайные вектора, собственное подпространство Гессиана нейронной сети и другие. Вычислительный эксперимент на задаче классификации изображений позволит обозначить практическое применение предложенных методов.
 * __Литература__:
@@ -688,7 +688,7 @@ There is a rumour, that the result in [4] is not reproduced in practice. It is n
     - Консультант: Никита Киселев (tg: [@kisnikser](https://t.me/kisnikser))
     - Эксперт: Андрей Грабовой
 
-## Problem 141 (новая) (проект пятого курса, Насыров Эрнест)
+## Problem 184
 * __Title__: Metric analysis of deep network space parameters
 * __Problem__: The structure of a neural work is exhaustive. The dimensionality of the parameter space should be reduced. The autoencoder in the subject of the investigation. Due to the continuous-time nature of the data, we analyze several types of autoencoders. We reconstruct spatial-time data, minimizing the error. 
 * __Data__: 
