@@ -97,8 +97,8 @@
 ## Задача 154 (была)
 * **Название:** Декодирования сигналов головного мозга в аудиоданные
 * **Описание проблемы:** Декодирования сигналов головного мозга в аудиоданные (чтение мыслей) на выбор из двух математических постановок:
-	- 1. Classification problem in a match-mismatch paradigm: the task of the model is to determine which of the input stimulus segments of audio corresponds to the EEG https://exporl.github.io/auditory-eeg-challenge-2024/task1/description/
-	- 2. Regression problem: to reconstruct the mel spectrogram from the EEG https://exporl.github.io/auditory-eeg-challenge-2024/task2/description/ 
+	- Classification problem in a match-mismatch paradigm: the task of the model is to determine which of the input stimulus segments of audio corresponds to the EEG https://exporl.github.io/auditory-eeg-challenge-2024/task1/description/
+	- Regression problem: to reconstruct the mel spectrogram from the EEG https://exporl.github.io/auditory-eeg-challenge-2024/task2/description/ 
 * **Данные:** Датасет был собран на базе Лёвенского университета - https://rdr.kuleuven.be/dataset.xhtml?persistentId=doi:10.48804/K3VSND Для сбора датаесета были приглашены 85 человек без проблем со слухом и нервной системой, носители бельгийского голландского языка. Измерения производились в звуконепроницаемой лаборатории с помощью высокоточных приборов для снятия ЭЭГ с 64 электродами. Частота дискретезации даных 8192 Гц. Каждому учатнику предлагалось послушать отрывок подкаста или аудиокниги (случайно) длиной до 15 минут. Всего имеем 668 пар ЭЭГ-стимул (прослушанный отрывок) общей продолжительностью 9431 минута
 * **Литература**
 	1. Pre-LN FFT: Baseline решение с использованием иной архитектуры обработки аудио https://arxiv.org/pdf/2305.06806.pdf  (код https://github.com/jkyunnng/HappyQuokka_system_for_EEG_Challenge)
