@@ -94,20 +94,24 @@
 **Описание проблемы:** При оптимизации различных моделей в Машинном Обучении, часто возникают ситуации, когда стандартные методы типа градиентного спуска, работают не так эффективно. Поэтому приходится придумывать модификации, что сделать процедуру более стабильной и быстрой. В этом проекте предлагается поисследовать sign оператор в следующих постановках: (L0,L1) гладкость минимизируемой функции, борьба с тяжёлым шумом,  сходимость с высокой вероятностью, обобщение на выпуклые функции. Проект во многом теоретический, придется доказывать вещи из оптимизации. И не факт, что все получится, это нормально. Но и небольшие эксперименты будут. Релевантные статьи: https://arxiv.org/abs/1802.04434 https://arxiv.org/abs/2502.07923 https://arxiv.org/pdf/2409.14989
 **Авторы:** Корнилов Никита, Марк Иконников 
 
-## Задача 154 (была)(???) Утвердить у Даниила Дорина см. 117
+## Задача 154 (была)
 * **Название:** Декодирования сигналов головного мозга в аудиоданные
 * **Описание проблемы:** Декодирования сигналов головного мозга в аудиоданные (чтение мыслей) на выбор из двух математических постановок:
-1. Classification problem in a match-mismatch paradigm: the task of the model is to determine which of the input stimulus segments of audio corresponds to the EEG https://exporl.github.io/auditory-eeg-challenge-2024/task1/description/
-2. Regression problem: to reconstruct the mel spectrogram from the EEG https://exporl.github.io/auditory-eeg-challenge-2024/task2/description/ 
+	- 1. Classification problem in a match-mismatch paradigm: the task of the model is to determine which of the input stimulus segments of audio corresponds to the EEG https://exporl.github.io/auditory-eeg-challenge-2024/task1/description/
+	- 2. Regression problem: to reconstruct the mel spectrogram from the EEG https://exporl.github.io/auditory-eeg-challenge-2024/task2/description/ 
 * **Данные:** Датасет был собран на базе Лёвенского университета - https://rdr.kuleuven.be/dataset.xhtml?persistentId=doi:10.48804/K3VSND Для сбора датаесета были приглашены 85 человек без проблем со слухом и нервной системой, носители бельгийского голландского языка. Измерения производились в звуконепроницаемой лаборатории с помощью высокоточных приборов для снятия ЭЭГ с 64 электродами. Частота дискретезации даных 8192 Гц. Каждому учатнику предлагалось послушать отрывок подкаста или аудиокниги (случайно) длиной до 15 минут. Всего имеем 668 пар ЭЭГ-стимул (прослушанный отрывок) общей продолжительностью 9431 минута
 * **Литература**
 	1. Pre-LN FFT: Baseline решение с использованием иной архитектуры обработки аудио https://arxiv.org/pdf/2305.06806.pdf  (код https://github.com/jkyunnng/HappyQuokka_system_for_EEG_Challenge)
 	2. Линейные модели, FCCN (2022) - https://www.researchgate.net/publication/361380348_Robust_decoding_of_the_speech_envelope_from_EEG_recordings_through_deep_neural_networks
 	3. VLAAI (2023, Nature) https://www.nature.com/articles/s41598-022-27332-2
 	4. Decoding speech perception from non-invasive brain recordings (2023) https://arxiv.org/pdf/2208.12266.pdf
+	5. [Работа прошлого года](https://github.com/intsystems/2024-Project-154)
 * **Базовый алгоритм:** Описание baseline решения предоставлено на сайте соревнования: https://exporl.github.io/auditory-eeg-challenge-2024/task2/description/
 * **Новизна:** Попробовать современные методы получения эмбеддингов аудиоданных для улучшения бейзлайн решения (например wav2vec, fastspeech2). Цель: показать, что модели, учитывающие законы физики/мира (как например fastspeech2) улучшают качество декодирования сигналов головного мозга в аудиоданные
-* **Авторы:** Дорин, Стрижов (был Павел Северилов)
+* **Авторы:**
+	- Консультант: Дорин Даниил (tg: [@danulkin](https://t.me/danulkin))
+ 	- Эксперт: Стрижов
+	- Ранее был Павел Северилов
 
 ## Задача 117 (Вадим Викторович хотел скорректировать, убрать отсюда прогноз фМРТ по звуку)
 * **Название:** Поиск зависимостей биомеханических системах и (Метод Convergence Cross-Mpping, теорема Такенса)
@@ -421,11 +425,11 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 * __Novelty__: At present, the problem of matching biological and medical images has not yet been solved.
 * __Authors__:
   	- Expert: Andrey Grabovoy
-	- Consultant: Daniil Dorin (tg: @danulkin)
+	- Consultant: Daniil Dorin (tg: [@danulkin](https://t.me/danulkin))
 
 ## Задача 171
 * __Title__: Robust Detection of AI-Generated Images
-* __Problem__: The rapid evolution of generative models, such as Gangs, VAEs, and diffusion-based models, has enabled the creation of highly realistic synthetic images, driving innovation in entertainment, art, and content creation. However, this has also introduced significant challenges in digital trust and authenticity, making the detection of machine-generated images crucial for combating misinformation and ensuring visual data integrity. This paper addresses the problem of identifying whether an image is machine-generated or real, aiming to develop a lightweight, efficient, and interpretable detection framework. The goal is to optimize detection accuracy while minimizing computational complexity, formulated as a binary classification problem. Key challenges include the diversity of generative models and the evolving quality of synthetic images, which increasingly mimic real-world characteristics. 
+* __Problem__: The rapid evolution of generative models, such as Gans, VAEs, and diffusion-based models, has enabled the creation of highly realistic synthetic images, driving innovation in entertainment, art, and content creation. However, this has also introduced significant challenges in digital trust and authenticity, making the detection of machine-generated images crucial for combating misinformation and ensuring visual data integrity. This paper addresses the problem of identifying whether an image is machine-generated or real, aiming to develop a lightweight, efficient, and interpretable detection framework. The goal is to optimize detection accuracy while minimizing computational complexity, formulated as a binary classification problem. Key challenges include the diversity of generative models and the evolving quality of synthetic images, which increasingly mimic real-world characteristics. 
 * __Data__:
 	- Real Images:  
    		- [COCO](https://cocodataset.org/#home): A large-scale dataset with natural images of various objects and scenes.  
@@ -441,7 +445,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 * __Baseline__: Use a robust encoder, such as [CLIP ViT](https://arxiv.org/abs/2103.00020) or [Barlow Twins](https://github.com/facebookresearch/barlowtwins), as a frozen model and train only the last classification layer.
 * __Authors__:
   	- Expert: Andrey Grabovoy
-	- Consultant: Daniil Dorin (tg: @danulkin)
+	- Consultant: Daniil Dorin (tg: [@danulkin](https://t.me/danulkin))
 
 ## Задача 172
 * __Название__: Восстановление показаний датчиков фМРТ по прослушиваемому звуковому ряду
@@ -456,7 +460,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 	* [Код предшественников](https://github.com/intsystems/2024-Project-117).
 * __Новизна__: Анализ зависимости между показаниями датчиков и восприятиям внешнего мира человеком. Требуется проверить гипотезу зависимости между данными.
 * __Авторы__:
-	* Консультант: Даниил Дорин (tg: @danulkin)
+	* Консультант: Даниил Дорин (tg: [@danulkin](https://t.me/danulkin))
 	* Эксперт: Стрижов, Андрей Грабовой
 
 ## Задача 173
