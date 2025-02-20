@@ -1,5 +1,6 @@
 # Список задач по курсу Моя первая научная статья, весна 2025
 
+<!--
  ## Задача 125 (была)
 * **Название:** Изучение влияния гиперпараметров на точность алгоритма агрегирования экспертных прогнозов с переменным числом экспертов
 * **Задача:** Рассматривается прогнозирование локально стационарных  временных рядов в режиме онлайн при помощи алгоритма на базе Fixed Share. Данный подход предполагает теоретико-игровую постановку.    Задача заключается в изучении влияния гиперпараметров на качество работы алгоритма в зависимости от свойств временного ряда. 
@@ -12,7 +13,7 @@
 * **Решение: ** Предлагается написать генератор моделирующий (или синтезирующий) временные ряды с заданными свойствами: количеством промежутков локальной стационарности, частотой переключения и т.д.  На полученных данных поставить ряд экспериментов в с различными гиперпараметрами алгоритма. Сделать вывод об их влиянии. 
 * **Авторы:** В.В.  Вьюгин, Р. Д. Зухба
 * **Консультант:** А.В. Зухба
-* 
+
 ## Задача 118  (была) (renew for 2024)
 * __Название__ Непрерывное время при построении нейроинтерфейса BCI 
 * __Задача__: В задачах декодирования сигнала данные представляются как многомерные временные ряды. При решении задач используется дискретное представление
@@ -26,6 +27,7 @@
 * __Решение__: Использование вариаций  NeurODE для аппроксимации исходного сигнала. Сравнительный анализ существующих подходов к применению дифференциальных уравнений для классификации EEG. (***Энкодер-тензорное разложение, декодер NeuroCDE***)
 * __Новизна__: предлагается способ построения непрервыного представления сигнала. Работа с функциональным пространством сигнала, а не его дискретным представлением. Использование параметров полученной функции в качестве признакового пространства результирующей модели. Основная задача - построить обращаемый поток и указать оптимальные размерности на каждом слое нейросети. 
 * **Авторы:** Алина Самохина,   
+-->
 
 ## Задача 159 (была)
 * **Название:** Восстановление функциональных групп головного мозга с помощью графовых диффузных моделей
@@ -38,8 +40,9 @@
 * **Литература** Магистерская работа Наталии Вареник
 * **Базовый алгоритм:** Graph Neural Diffusion: https://github.com/twitter-research/graph-neural-pde
 * **Новизна:** Построить карту функциональных групп с изменением во времени в зависимости от внешнего воздействия (видео Пеппи)
-* **Авторы:** Святослав Панченко
+* **Авторы:** Святослав Панченко, Стрижов
 
+<!-- 
 ## Задача 159 (???) (отложена на 2025-2026 в связи с тем, что нет разработанных методов решения этой задачи)
 * **Название:** Прогнозирование деформаций и напряжений в биологических тканях и органах
 * **Описание проблемы:** Требуется выбрать модель аппроксимации поля поле деформаций и напряжений в материале под разными условиями. Целью исследования является разработка модели и метода, которые по имеющимся ограниченным экспериментальным данным достоверно восстанавливает поля в материале.
@@ -48,7 +51,8 @@
 	- https://arxiv.org/abs/2302.06594
 	- Что было опубликовано после этой работы вместе со словами Physics-informed learning + tensor analysis
 * **Авторы:**
-
+-->
+<!--
 ## Задача 157 (???)
 * **Название:** Приближение временных рядов стохастическими дифференциальными уравнениями (вставить мотивацию)
 * **Описание проблемы:** Требуется построить прогноз набора временных рядов (с высокой ковариацией), вплоть до редсказания аномалий (аномалия означает отказ от прогнозирования, она не относится ни к детерминированой, ни к стохастической составляющей). Требуется декомпозировать реализзцию случайного процесса (временного ряда) и восстановить модель случайного процесса (со сносом, скачками). Требуется выбать адекватную порождабщую нейросеть, указать способ прореживания числа слоёв и снижения их размерности.
@@ -61,17 +65,13 @@
   - обсудить da Prato–Debussche trick (возмущения решений посредством порождающих моделей)
 * **Базовый алгоритм:** 
 * **Новизна:**  
-* **Авторы:** Эдуард Владимиров, Иван Папай 
+* **Авторы:** Эдуард Владимиров, Иван Папай, Стрижов
+-->
 
-## Задача 158 (???) (индустриальная)
+## Задача 158 (???) (индустриальная) (Необходимо получить согласие эксперта, на данный момент есть стажировка, но задача не утверждена)
 * **Описание проблемы:**
 	- Ранжирование риск-сигналов о признаках развития неправомерной торговой стратегии на финансовом рынке. Задача выявления ранних признаков аномального поведения участника торгов [Данные: набор агрегатов, построенных на обезличенных данных торгов].
 	- Классификация субъектов ПНИИИМР, ПОД/ФТ, … . Выявление аномального поведения субъектов, классификация, кластеризация стратегий или профилей финансового поведения [Данные: набор агрегатов, построенных на обезличенных данных торгов].
-* **Данные:** ВАЖНО! Требуется найти или синтезировать открытые данные
-* **Авторы:** Андрей Сергеевич Инякин
-
-## Задача 157 (???) (индустриальная)
-* **Описание проблемы:**
 	- Использование (дообучение, «компрессия» / дистиляция, прунинг, квантизация) SOTA LLM/GAN (генеративных моделей) для формирования последовательности тестовых сценариев (тест-кейсов) по заданному набору функциональных требований [Данные: реестр требований, тест-кейсы].
 	- Использование (дообучение, «компрессия» / дистиляция, прунинг, квантизация) SOTA LLM/GAN для формирования и актуализации реестра «атомарных» и непротиворечивых функциональных / нефункциональных требований к программной Системе на основе набора функциональных, технических заданий и иных документов [Данные: реестр требований, реестр ФЗ, реестр ТЗ].
 * **Данные:** ВАЖНО! Требуется найти или синтезировать открытые данные
@@ -90,23 +90,7 @@
 * **Базовый алгоритм:**  https://github.com/Jhomanik/InterRel
 * **Авторы:** Корнилов Никита
   
-## Задача 155 (???) (была закомментирована)
-* **Название:** Identification of the relationship between labels using an algorithm based on one's own attention for the classification problem with multiple labels, justifying the connection with Hawkes processes.
-* **Описание проблемы:** Most of the available user information can be represented as a sequence of events with timestamps. Each event is assigned a set of categorical labels, the future structure of which is of great interest. This is a temporal sets prediction problem for sequential data. Modern approaches focus on the transformation architecture for sequential data, introducing independent attention to the elements in the sequence. In this case, we take into account the temporal interactions of events, but lose information about the interdependencies of labels. Motivated by this disadvantage, we propose to use the mechanism of independent attention to the marks preceding the predicted step. Since our approach is a network of attention to labels, we call it a LANET.  We also justify this aggregation method, it affects the intensity of the event positively, assuming that the intensity is represented by the basic Hawkes process.
-* **Данные:** A brief description of data in the computational experiment and. Links to the datasets. The datasets shall be open-source. The data shall be ready-to-model
-	- https://www.kaggle.com/c/competitive-data-science-predict-future-sales/data
-	- https://www.kaggle.com/c/python-and-analyze-data-final-project/data
-Based on the dataset data, we will compare the state of the art solutions in this area with our solution in this problem statement.
-* **Литература** 1-2 Predicting Temporal Sets with Deep Neural Networks, Predicting Temporal Sets with Simplified Fully Connected Networks  3 Transformer Hawkes Process, The Neural Hawkes Process: A Neurally Self-Modulating Multivariate Point Process - introduction to idea with process Hawkes
-* **Базовый алгоритм:**
-	- https://github.com/yule-BUAA/SFCNTSP
-	- https://github.com/yule-BUAA/DNNTSP The state of the art methods for temporal sets prediction
-* **Новизна:** The idea of the proposed solution and methods for conducting the research. Ways of visualizing data and error analysis
-Most of the transformer-related models used for temporal sets prediction use self-attention computation between consecutive input timestamps representations. The LANET instead uses the self-attention between label representations. So, it has the input that consists of K vectors. Below, we describe how to aggregate a sequence of size τ to K vectors via an Embedding layer. Then we define the Self-attention layer. To get the predictions, we apply a Prediction layer.  Also, to justify such aggregation by labels, instead of time dependence, we introduce the concept of Cox processes, which describe the probability of an event at a given time through the integral of the intensity function. And we can show that such aggregation can either not worsen it, or make a positive contribution to probability. LANET will train with the cross-entropy loss adapted for the multi-label task through
-independent consideration of each label score. Comparison tables with basic approaches will be carried out, as well as visualization of quality changes from selected parameters, visualization of attention for analyzing the relationship of label representations, as well as tables comparing the effect of vector representations on the result of the model.
-* **Авторы:**  Consultant - Andrey Grabovoy, Expert - Alexey Zaytsev, Author of research - Galina Boeva 
-
-## Задача 154 (была)
+## Задача 154 (была)(???) Утвердитьу Дорина см. 117
 * **Название:** Декодирования сигналов головного мозга в аудиоданные
 * **Описание проблемы:** Декодирования сигналов головного мозга в аудиоданные (чтение мыслей) на выбор из двух математических постановок:
 1. Classification problem in a match-mismatch paradigm: the task of the model is to determine which of the input stimulus segments of audio corresponds to the EEG https://exporl.github.io/auditory-eeg-challenge-2024/task1/description/
@@ -119,7 +103,7 @@ independent consideration of each label score. Comparison tables with basic appr
 	4. Decoding speech perception from non-invasive brain recordings (2023) https://arxiv.org/pdf/2208.12266.pdf
 * **Базовый алгоритм:** Описание baseline решения предоставлено на сайте соревнования: https://exporl.github.io/auditory-eeg-challenge-2024/task2/description/
 * **Новизна:** Попробовать современные методы получения эмбеддингов аудиоданных для улучшения бейзлайн решения (например wav2vec, fastspeech2). Цель: показать, что модели, учитывающие законы физики/мира (как например fastspeech2) улучшают качество декодирования сигналов головного мозга в аудиоданные
-* **Авторы:** Павел Северилов pseverilov@gmail.com
+* **Авторы:** Дорин, Стрижов (был Павел Северилов)
 
 ## Задача 117 (Вадим Викторович хотел скорректировать, убрать отсюда прогноз фМРТ по звуку)
 * **Название:** Поиск зависимостей биомеханических системах и (Метод Convergence Cross-Mpping, теорема Такенса)
@@ -135,9 +119,9 @@ independent consideration of each label score. Comparison tables with basic appr
 	* Базовое в работе Карины
 	* Наше построить Neural ODE для обеих сигналов и решить, относятся ли обе модели к одной динамической системе. Требуется построить модель зависимости показания датчиков FMRI и звуковому сопровождению, который в этот момент прослушивает человек.
 	* Построен [метод апроксимации показаний FMRI по прослушиваемому звуковому ряду](https://github.com/intsystems/2024-Project-117/tree/master).
-* **Авторы:** Денис Тихонов, Даниил Дорин
+* **Авторы:** Денис Тихонов, Даниил Дорин, Стрижов
 
-## Задача 153 (была)
+ <!--- ## Задача 153 (была)
 * **Название:**  Погружение временных рядов с высокой волатильностью в метрическое пространство
 * **Описание проблемы:**  Решается задача выбора оптимального порфеля финансовых инструментов по результатам прогноза наборов временных рядов. Проблема при постановке задачи выбора заключается в том, что оценка ковариационной матрицы пар временных рядов не имеет требуемых статистических свойств (устойчивость, состоятельность, несмещенность). Предлагается выполнить сравнительный анализ различных методов вычисления парных расстояний между временными рядами. 
 * **Данные:**
@@ -148,7 +132,7 @@ independent consideration of each label score. Comparison tables with basic appr
 	- диссертация А.А. Адуенко
  * **Базовый алгоритм:** Задача квадратичного программирования с расстоянием между временными рядами в виде ковариационной матрицы из книги Бойда. Прогностическая модель произвольна, начиная с линейной регрессии. 
 * **Новизна:** Задача выбора метрики между сильно зашумленными временными рядами является открытой. Функицю выбора предлагается строить исходя из Бойдовского критерия, против свертки прогноза с функцией доходности. 
-* **Авторы:**  Яковлев
+* **Авторы:**  
 
 ## Задача 152
 * **Название:**  Метрическое прогнозирование временных рядов с высокой ковариацией
@@ -163,9 +147,9 @@ independent consideration of each label score. Comparison tables with basic appr
 	- Multidimensional scaling
 * **Базовый алгоритм:** Базовый прогноз выполнятется методами Singular Spectrum Analysis, LSTM+attention, Transformer
 * **Новизна:** Предлагаемое решение использует 1) Римановы модели но не для классификации, а для арегрессии, 2) Римановы генеративные диффузные модели. 
-* **Авторы:**  Яковлев
+* **Авторы:**  Яковлев Яковлев -->
   
-## Задача 150 (была)
+<!--- ## Задача 150 (была)
 * **Название:** Tree-width Driven SDP for The Max-Cut Problem
 * **Описание проблемы:** The Max Cut problem is computationally intractable (NP hard) over general graphs; however, for trees and graphs with small tree-width it is easy to solve exactly in polynomial time. Furthermore, the SDP or Lovász-Schrijver relaxations allows to approximate the Max-Cut value over general graphs. The contribution is to combine both the tree-width and relaxation approaches to improve (empirically) the Max-Cut approximation quality. 
 * **Данные:**
@@ -182,9 +166,9 @@ independent consideration of each label score. Comparison tables with basic appr
 	(c) find a matrix k-diagonal C dominating (in a spectral sence) the laplacian of the initial graph. Use the treewidth max-cut over a "dominating" graph
 	(d*) Use graph sparsification [5] to create a nice approximation to the initial graph, but having lower number of edges and treewidth
 	- [5] A nice course of 3 lectures on Graph sparsification: https://simons.berkeley.edu/graph-sparsification
-* **Авторы:** Alex Bulkin
+* **Авторы:** Alex Bulkin -->
  
-## Задача 149 (???)
+<!---  ## Задача 149 (???)
 * **Название:** The Optimal Binning Problem: A Statistical ViewPoint
 * **Описание проблемы:** The Optimal Binning problem is the optimal discretization of a variable into bins given a discrete or continuous numeric target. Given a dataset of N samples in [0,1] we are looking for a binning on M bins maximizing the weight-of-evidence metric [1]. The latter metric allows to understand the predictive power of an independent variable. Weight-of-evidence helps to understand if a particular class of an independent variable has a higher distribution of good or bad. Our problem is for a sufficiently large N and constant M to find such an optimal binning.  [1] https://medium.com/mlearning-ai/weight-of-evidence-woe-and-information-value-iv-how-to-use-it-in-eda-and-model-building-3b3b98efe0e8
 * **Данные:** the baseline experiment over simulated datasets or any of the Kaggle datasets would be ok
@@ -195,8 +179,8 @@ independent consideration of each label score. Comparison tables with basic appr
   	- [3] https://iopscience.iop.org/article/10.1088/0266-5611/18/4/201/meta
 * **Базовый алгоритм:** The baseline algorithms are (a) CART and similar techniques (b) convex relaxation
 * **Новизна:** quantile splitting of the inverse transform to the empirical distribution; probably with some a-posteriori empirical tuning
-* **Авторы:** Alex Bulkin
-* 
+* **Авторы:** Alex Bulkin --->
+
 ## Задача 148 (была)
 * **Название:** Средневзвешенная когерентность как мера интерпретируемости тематических моделей
 * **Описание проблемы:** Тематическое моделирование широко используется в социо-гуманитарных исследованиях для понимания тематической структуры больших текстовых коллекций. Типичный сценарий предполагает, что пользователь сам разделяет найденные моделью темы на "хорошие" (интерпретируемые) и "плохие". Для упрощения этой работы можно использовать ряд автоматически вычисляемых критериев качества, один из которых — когерентность (мера "согласованности" слов темы). Однако проблема когерентности в том, что при её вычислении игнорируется бòльшая часть текста, что делает оценку качества темы по когерентности ненадёжной. Задача в том, чтобы проверить новый способ вычисления когерентности, обобщающий классический подход, но при этом учитывающий распределение темы во всём тексте.
@@ -252,7 +236,7 @@ P.S. Были надежды на редукцию дисперсии с importa
 * **Новизна:** Предлагается исследовать свойства оператора D в зависимости от возможных предположений и ограничений, и применить ранее полученные в [4] результаты в предлагаемой постановке. Затем для простых моделей рекомендаций провести вычислительный эксперимент с симуляцией работы системы во времени с использованием базового кода для сравнения теоретических результатов по вопросам 1)-2) с фактическими наблюдениями.
 * **Авторы:**  консультант - Веприков А.С., эксперт - Хританков А.С.
 
-## Задача 143 (???) (индустриальная)
+<!-- ## Задача 143 (???) (индустриальная)
 * **Название:** Интерпретируемая иерархическая кластеризация объектов
 * **Описание проблемы:** Требуется на обучающей выборке физических лиц (ФЛ) с меткой принадлежности классу построить такую иерархическую кластеризацию данных, что для каждого кластера можно наиболее полно интерпретировать причину его попадания в конкретный кластер.
 * **Данные:** Для исследования предлагается использовать данные из соревнования Kaggle по классификации мошенников в автостраховании на основе их признакового описания. https://www.kaggle.com/datasets/khusheekapoor/vehicle-insurance-fraud-detection?resource=download 
@@ -262,18 +246,18 @@ P.S. Были надежды на редукцию дисперсии с importa
 	- https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53
 * **Базовый алгоритм:** Базовый алгоритм решения задачи состоит в применении методов из пакетов sklearn, umap языка Python. Интерпретируемым алгоритмом классификации является дерево решений (sklearn.tree.DecisionTree).
 * **Новизна:** Индустриальная задача
-* **Авторы:** Старожилец Всеволод Михайлович
+* **Авторы:** Старожилец Всеволод Михайлович -->
 
-## Задача 142 (была) (индустриальная)
+<!-- ## Задача 142 (была) (индустриальная)
 * ** **Название:**  Классификация товаров по ОКПД2 кодам.
 * **Описание проблемы:**  Требуется по краткому текстовому описанию товара классифицировать товар по кодам ОКПД2 классификатора. Предполагается исследование зависимости точности и полноты классификации от рассматриваемой глубины ОКПД2 классификатора (например, для двух первых чисел классификатора задача практически тривиальна). 
 * **Данные:** Около 40% данных госзакупок из открытых источников за 2022 год. https://drive.google.com/file/d/1bg1wdpsxv797dB8RBWaq8JLp_qQp_uc0/view?usp=drive_link
 * **Литература** Рарерs with 1) the formulation of the problem, 2) baseline and new results, 3) fast introduction https://www.kaggle.com/competitions/ndsc-beginner/overview
 * **Базовый алгоритм:** Построение текстовых эмбеддингов каким-либо открытым переобученным пакетом. Например, spaCy (у него есть русский язык). Далее решается задача классификации.
 * **Новизна:** Индустриальная задача
-* **Авторы:** Старожилец Всеволод Михайлович
+* **Авторы:** Старожилец Всеволод Михайлович -->
 
-## Задача (???) 140 
+## Задача 140  (???) Утвержить у Бахтеева
 * **Название**: Адаптация архитектуры модели глубокого обучения с контролем эксплуатационных характеристик
 *  **Задача:** рассматривается задача адаптация структуры обученной модели глубокого обучения для ограниченных вычислителньых ресурсов. Предполагается, что полученная архитектура (или несколько архитектур) должны работать эффективно на нескольких типах вычислительных серверов (например, на разных моделях GPU или различных мобильных устройствах). Требуется предложить метод поиска модели, позволяющий контролировать её сложность учетом целевых эксплуатационных характеристик.
 *  **Данные:** MNIST, CIFAR
@@ -285,10 +269,9 @@ P.S. Были надежды на редукцию дисперсии с importa
 Новизна: предложенный метод позволяет контролировать сложность модели, в процессе поиска архитектуры без дополнительных эвристик.
 *  **Авторы:** Константин Яковлев, Олег Бахтеев
   
-
 # Проекты пятикурсников и назначенные проекты=
 
-## Задача 160 (???) (Алексей Ребриков)
+## Задача 160 (новая) (Алексей Ребриков)
 * __Название__: Ускоренные методы нулевого порядка с одноточечным фидбэком
 * __Задача__: Обычно для целевых функций в задачах оптимизации мы можем считать градиенты и даже информацию более высоких порядков. Но также существуют приложения, в которых подсчет градиента или затруднен или вообще невозможен. В таких приложениях на помощь приходят безградиентные методы. Довольно натуральной идеей в данном случае является аппроксимация градиента через конечные разности (https://arxiv.org/pdf/2211.13566.pdf): $\nabla f_\gamma(x, e) = \frac{f(x + \gamma e) - f(x - \gamma e)}{2 \gamma} e.$ Более того, в более близких для практики приложениях мы имеем доступ к зашумленной версии функции. Это порождает дополнительные проблемы. В более простом с точки зрения теоретического анализа, но менее приближенным к реальности случае можно рассматривать так называемый two-point feedback: $\nabla f_\gamma(x, \xi, e) = \frac{f(x + \gamma e, \xi) - f(x - \gamma e, \xi)}{2 \gamma} e.$ Ключевая особенность – одна и та же случайность в обеих точках. Более сложный и неприятный случай – one-point feedback: $\nabla f_\gamma(x, \xi^+, \xi^-, e) = \frac{f(x + \gamma e, \xi^+) - f(x - \gamma e, \xi^-)}{2 \gamma} e,$ который и будет рассматриваться в работе.
 * __Данные__:  1) Датасет mushroom 2) Квадратичная задача
@@ -332,7 +315,7 @@ https://www.cs.toronto.edu/~kriz/cifar.html В экспериментах пре
 * __Авторы__:   Expert: Dmitry Dylov Consultant: Artem Razumov  Me: Bair Mikhailov
 
 
-## Задача 155 (???)
+## Задача 155 (продолжение)
 * __Название__:  Identification of the relationship between labels using an algorithm based on one's own attention for the classification problem with multiple labels, justifying the connection with Hawkes processes.
 * __Задача__: A description of your problem, its motivation  and goals. An optimization-style problem statement is welcome
 Most of the available user information can be represented as a sequence of events with timestamps. Each event is assigned a set of categorical labels, the future structure of which is of great interest. This is a temporal sets prediction problem for sequential data. Modern approaches focus on the transformation architecture for sequential data, introducing independent attention to the elements in the sequence. In this case, we take into account the temporal interactions of events, but lose information about the interdependencies of labels. Motivated by this disadvantage, we propose to use the mechanism of independent attention to the marks preceding the predicted step. Since our approach is a network of attention to labels, we call it a LANET.  We also justify this aggregation method, it affects the intensity of the event positively, assuming that the intensity is represented by the basic Hawkes process.
@@ -345,15 +328,6 @@ Most of the available user information can be represented as a sequence of event
 independent consideration of each label score. Comparison tables with basic approaches will be carried out, as well as visualization of quality changes from selected parameters, visualization of attention for analyzing the relationship of label representations, as well as tables comparing the effect of vector representations on the result of the model. 
 * __Авторы__:  Consultant - Andrey Grabovoy Expert - Alexey Zaytsev Author of research - Galina Boeva
   
-## Задача 1XX (???) (Who are the problem owners?)
-* __Название__:  Support strategies for advanced Post-Training Quantization
-* __Задача__: Advanced PTQ methods do not require a lot of computing resources, demonstrate high quality and work quickly. Modern approaches tend to be consistent and optimize the model block-by-block or layer-by-layer. However, these approaches have several fundamental problems. The first of these is the poor correlation of reconstruction losses, which are used for optimization, with target losses. This leads to a decrease in quality, especially for models with a sharp loss landscape. In sequential approaches, the optimization of the following blocks or layers is based on the optimization of all previous blocks or layers. Because of this design, the second problem is an incorrectly set optimization task for the last blocks or layers in the network.
-* __Данные__: Cifar-10, ImageNet
-* __Литература__:  https://arxiv.org/abs/2203.05740, https://arxiv.org/abs/2312.07950
-* __Базовой алгоритм__:  https://github.com/wimh966/QDrop
-* __Решение__:   Theoretical justification of mentioned problems, generalization and ablation study of basic solutions and their modification.
-* __Авторы__: 
-
 ## Задача 164 (была) (проект пятого курса, Парвиз Каримов)
 * __Название__:  Методы составления эмбеддингов коллекций
 * __Задача__: Пусть дан датасет $\mathfrak{G} = \{(x_i, y_i)\}_{i = 1}^{n}$, $x_i \in X$, $y_i \in \{1, ..., K\}$. Составим из этих точек данных множества: $$G_{j, k} = \{x_i | (x_i, y_i) \in \mathfrak{G} \wedge y_i = k \forall i \} : \forall j_1, j_2 G_{j_1, k} \cap G_{j_2, k} = \emptyset$$ю Задача состоит в том, чтобы сопоставить каждой коллекции $G_{j, k}$ эмбеддинг $f_{\theta}(G_{j, k})$, представляющий собой информативное векторное представление $G_{j, k}$.
@@ -376,7 +350,6 @@ data to augment training resources. This approach offers a new way to potentiall
 * __Базовой алгоритм__: Solution1: https://github.com/magenta/mt3/tree/main (sota 2022), Solutions2: https://github.com/vpavlenko/study-music/blob/main/parts/transcription.d
 * __Решение__:  The idea of the proposed solution and methods for conducting the research. Ways of visualizing data and error analysisю Extracting individual musical characteristics (chord-progression, tonality, bpm, instrument), and using synthetic datasets for data augmentation.
 Authors: Матвеев, Протасов
-
 
 ## Задача 166 
 * __Название__: Machine learning methods for functional brain mapping
@@ -401,8 +374,8 @@ Authors: Матвеев, Протасов
 * __Базовой алгоритм__: ARIMA и Exponential Smoothing 
 * __Решение__: Для решения данной задачи предлагается снизить волатильность домена путем построения пространства кластеров интересов. Прогноз осуществляется в этом пространстве, чтобы определить сезонность и жизненные циклы тем и предсказать их динамику в будущих периодах. В данной статье сравниваются методы кластеризации социальных трендов, а также алгоритмы их предсказания. Помимо этого, приводится оценка качества прогноза.
 * __Новизна__: Новизна работы заключается в уникальном сочетании методов прогнозирования временных рядов и кластеризации трендов. Это позволяет применить научный подход к задаче, которая в силу высокой размерности ранее в зависела от человеческой интуиции и традиционного выявления тенденций. Этот подход может дать как прикладное ( внести вклад в область прогнозирования интересов аудитории ), так и научное значение ( перенеся алгоритм на домен трендов научных статей )
-* __Авторы__: Задворнов Егор
-
+* __Авторы__: Задворнов Егор Кто эксперт???
+* 
 ## Задача 168
 * __Название__: Средневзвешенная когерентность как мера интерпретируемости тематических моделей
 * __Задача__: Тематическое моделирование широко используется в социо-гуманитарных исследованиях для понимания тематической структуры больших текстовых коллекций. Типичный сценарий предполагает, что пользователь сам разделяет найденные моделью темы на "хорошие" (интерпретируемые) и "плохие". Для упрощения этой работы можно использовать ряд автоматически вычисляемых критериев качества, один из которых — когерентность (мера "согласованности" слов темы). Однако проблема когерентности в том, что при её вычислении игнорируется бОльшая часть текста, что делает оценку качества темы по когерентности ненадёжной. Задача в том, чтобы проверить новый способ вычисления когерентности, обобщающий классический подход, но при этом учитывающий распределение темы во всём тексте.
@@ -480,7 +453,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 * __Новизна__: Анализ зависимости между показаниями датчиков и восприятиям внешнего мира человеком. Требуется проверить гипотезу зависимости между данными.
 * __Авторы__:
 	* Консультант: Даниил Дорин (tg: @danulkin)
-	* Эксперт: Вадим Стрижов, Андрей Грабовой
+	* Эксперт: Стрижов, Андрей Грабовой
 
 ## Задача 173
 * __Название__: Дообучение LLM с помощью оптимизации нулевого порядка 
@@ -529,8 +502,7 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 * __Data__:
 	- Tabular Data
 	- RLHF data
-	- Some toys datasets
-    
+	- Some toys datasets    
 * __Reference__:
 	- Mirror-Prox Algorithm with Linear Convergence Rate and its Application for Dynamic Loss Scaling.
 	- Tabular DL reference:
@@ -629,7 +601,7 @@ There is a rumour, that the result in [4] is not reproduced in practice. It is n
 	- [3] Q. Tao et al., Stochastic learning via optimizing the variational inequalities, IEEE Trans. Neural Netw. Learn. Syst., vol. 25, no. 10, pp.1769–1778, 2014.
 	- [4] I. Goodfellow et al., Generative adversarial nets, in Advances in Neural Inf. Processing Syst., 2014, pp. 2672–2680.
 * **Authors:**
-	- Consultant: Zabarianska Iryna
+	- Consultant: Zabarianska Iryna, Expert???
 
 ## Задача 181
 * __Название__: Эволюционный метод создания ансамбля нейронных сетей с использованием предикаторных функций
@@ -722,7 +694,7 @@ There is a rumour, that the result in [4] is not reproduced in practice. It is n
 * __Proposed solution__: description of the idea to implement in the project
 * __Novelty__: Continous-time models are supposed to be simple due to their periodic nature. Since they approximate the vector fields, these models are universal. The model selection for the continuous time is not considered now, but at the time, it is acute for wearable multimedia devices for metaverse and augmented reality. 
 * __Supergoal__ To join two encoders in a signal decoding model to reveal the connection between video and fMRI, between fMRI and ECoG.
-* __Authors__: Expert Strijov, consultant Ernest Nasyrov
+* __Authors__: Expert Стрижов, consultant Ernest Nasyrov
 
 ## Problem 185
 * **Title** 
@@ -745,7 +717,7 @@ Using an operator learning framework, propose a solution for different types of 
 * **Novelity**
 There are no soluton to learning the operators used in physics.
 * **Authors** 
-    - Expert: Vadim Strijov
+    - Expert: Стрижов
     - Consultant: Alexander Terentyev
 
 ## Задача 186
@@ -768,7 +740,7 @@ There are no soluton to learning the operators used in physics.
 * __Новизна__: заключается в неоднородности рассматриваемой системы, а также объединения ML-подходов и теории динамических систем
 * __Авторы__:
     - Консультант: Кирилл Сёмкин
-    - Эксперт: Вадим Стрижов
+    - Эксперт: Стрижов
 
 <!-- # Старые задачи -->
 
