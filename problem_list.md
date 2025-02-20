@@ -746,6 +746,110 @@ There are no soluton to learning the operators used in physics.
     - Консультант: Кирилл Сёмкин
     - Эксперт: Стрижов
 
+ ## Задача 187
+ * __Title__: Hybrid Memory System for Personalized AI Agent Responses Using Knowledge Graphs
+* __Problem__: Modern AI assistants, particularly in banking risk assessment, require personalized and context-aware interactions. However, they often lack effective memory mechanisms for recalling and utilizing past interactions, leading to impersonalized responses. This research develops a hybrid memory system that integrates short-term and long-term memory to improve personalization while maintaining computational efficiency. The proposed system combines short-term memory for preserving recent interactions and long-term memory for accumulating knowledge. Knowledge graphs (AriGraph) structure semantic and episodic memory, while an intelligent memory selection mechanism dynamically adjusts storage strategies based on interaction complexity and computational constraints. Additionally, triplets and subgraphs from the knowledge graph are transformed into structured memory storage for efficient retrieval and response generation.
+* __Data__: The study uses open-source datasets. Potential sources include banking risk assessment interaction logs, knowledge graph datasets such as Wikidata and DBpedia, and conversation datasets.
+* __Reference__:
+  	- Li, X., Wang, S., Zeng, S., Wu, Y., & Yang, Y. (2024). A survey on LLM-based multi-agent systems: workflow, infrastructure, and challenges. Vicinagearth, 1(1), p.9.
+ 	- Huang, X., Liu, W., Chen, X., Wang, X., Wang, H., Lian, D., Wang, Y., Tang, R., & Chen, E. (2024). Understanding the planning of LLM agents: A survey. arXiv preprint arXiv:2402.02716.
+ 	- Anokhin, P., Semenov, N., Sorokin, A., Evseev, D., Burtsev, M., & Burnaev, E. (2024). Arigraph: Learning knowledge graph world models with episodic memory for LLM agents. arXiv preprint arXiv:2407.04363.
+ 	- Hu, M., Chen, T., Chen, Q., Mu, Y., Shao, W., & Luo, P. (2024). Hiagent: Hierarchical working memory management for solving long-horizon agent tasks with large language models. arXiv preprint arXiv:2408.09559.
+* __Baseline__: The baseline approaches compared with the proposed solution include retrieval-augmented generation (RAG), and hierarchical memory models like Hiagent. 
+* __Proposed solution__: The research develops a hybrid memory system integrating different approaches for structured memory management. A modular architecture combines short-term (context-aware) and long-term (knowledge-based) memory with an intelligent selection mechanism optimizing retrieval efficiency. Knowledge graph triplets and subgraphs are transformed into structured memory representations.
+Experimental validation on a banking risk assessment AI assistant evaluates personalization, retrieval efficiency, and response quality. Performance metrics include retrieval time, contextual accuracy using semantic similarity metrics, and storage efficiency versus response accuracy trade-offs.
+* __Authors__:
+  	- Professor Yury Maximov
+	- Consultant: Ivan Novikov - Ph.D stident at MIPT
+		Seminarist on Quantitative Finance, research Scientist at Skolkovo.
+		Consultant at InteRData and Scientific Programming Centre. 
+		Participated in 7 industrial projects for banks and steel industry. 
+
+ ## Задача 188
+ * __Title__: Multi-Agent Simulation for Economic and Social Behavior Modeling: From Individual Agents to Synthetic Populations and Integrated Environments
+* __Problem__:
+This project aims to develop a multi-agent simulation framework to model social and economic behavior in financial contexts, progressively advancing from individual agent decision-making to population-scale interactions and a fully integrated simulation environment. The research is structured into three phases:
+ 	- 1. Single-Agent Simulation: Modeling an LLM-based consumer agent that simulates decision-making, spatial mobility, and responses to financial stimuli.
+ 	- 2. Synthetic Population Modeling: Extending the framework to generate a heterogeneous synthetic population with realistic socio-economic characteristics and network interactions.
+ 	- 3. Integrated Multi-Agent Environment: Creating a large-scale, data-driven simulation that incorporates real socio-economic data, spatial topology, and agent synchronization for financial behavior analysis.
+
+	This research bridges the gap between theoretical consumer behavior models and empirical financial decision-making. The findings can be applied in banking, financial risk assessment, and economic policy optimization.
+* __Data__: The computational experiments will use the following datasets:
+ 	- Nielsen Consumer Panel Data – Consumer purchase behavior and spending trends.
+ 	- Public Census and Financial Data – Socio-economic and demographic datasets.
+ 	- Bank Transactional Data (Anonymized) – Patterns in financial decisions and responses to market changes.
+ 	- GIS Data for Spatial Analysis – Geospatial information to model mobility and location-based financial decisions.
+* __Reference__:
+	- Park et al. (2023). "Generative Agents: Interactive Simulacra of Human Behavior."
+ 	- Leng, Y. (2024). "Can LLMs Mimic Human-Like Mental Accounting and Behavioral Biases?"
+	- Wang, J. et al. (2024). "Large Language Models as Urban Residents: An LLM Agent Framework for Personal Mobility Generation."
+ 	- Azamuke, D., et al. (2024). "MoMTSim: A Multi-agent-based Simulation Platform Calibrated for Mobile Money Transactions." IEEE Access.
+ 	- Guo, T. et al. (2024). "Large Language Model-based Multi-Agents: A Survey of Progress and Challenges." arXiv.
+* __Baseline__:
+	- 1. Baseline for agent-based simulations can be taken from AgentScope, an existing multi-agent framework optimized for large-scale simulations (arXiv:2407.17789).
+	- 2. Existing financial decision models and LLM-based decision-making (Generative Agents).
+* __Proposed solution__:
+	- Phase / Project 1: Individual LLM-Based Consumer Agent
+	An LLM-based agent is developed with structured financial reasoning, decision-making capabilities, and adaptive learning. It models consumer behavior by optimizing budget constraints, managing credit usage, and responding to financial incentives such as 		banking offers and interest rate changes. The agent navigates a simulated financial environment, making purchasing decisions and interacting with virtual financial entities. Its behavior is validated by comparing simulation results with real-world consumer 	transaction data.
+
+	- Phase / Project 2: Synthetic Population and Network Interactions
+	A synthetic population is generated using LLM-based personas with diverse demographic, financial, and psychographic characteristics. Network structures such as small-world and scale-free models capture peer influence, social interactions, and collective 		financial trends. The system models the emergence of financial behaviors such as herd effects, viral banking trends, and shifts in credit adoption. The synthetic population’s behavior is compared with empirical financial datasets to ensure representativeness 	and realism.
+
+	- Phase / Project 3: Large-Scale Multi-Agent Environment
+	A spatially structured multi-agent system is developed, integrating GIS data to model consumer mobility in urban and regional settings. Agents interact dynamically with banking institutions, businesses, and financial markets, responding to real-time 		macroeconomic changes. The simulation incorporates real-world socio-economic data, enabling predictive modeling of financial behavior under different economic policies. Optimization techniques ensure the framework scales efficiently for large simulations. The 	model is validated against historical financial events and economic trends.
+* __Authors__:
+	- Professor Yury Maximov
+
+	- Consultant:
+	Ivan Novikov - Ph.D stident at MIPT
+	Seminarist on Quantitative Finance, research Scientist at Skolkovo.
+	Consultant at InteRData and Scientific Programming Centre. 
+	Participated in 7 industrial projects for banks and steel industry. 
+
+ ## Задача 189
+ * __Title__: Learning to Rank problems
+* __Problem__: In the field of Learning-to-Rank (LTR), two key challenges persist: determining an appropriate surrogate loss function for training and designing an effective architecture for ranking problems. In this work, we address both aspects comprehensively. 	Leveraging the attention mechanism in transformers, we explicitly model the inter-document relationships directly within the neural network architecture, rather than relying solely on the loss function. Despite the conventional view that pointwise methods 	resign to pair- and listwise, we demonstrate that incorporating them into our transformer-based architecture yields promising results. Furthermore, we enhance the training process by introducing a ListNet-inspired term to the loss function, leading to our best 	performance, which significantly surpasses many state-of-the-art results.
+* __Data__:
+	The links to the most popular datasets being used in l2r community are presented below:
+	- https://www.tensorflow.org/datasets/catalog/istella?hl=ru
+	- https://www.tensorflow.org/datasets/catalog/mslr_web?hl=ru
+* __Reference__:
+	- [Links to the literature](https://arxiv.org/abs/2012.06731
+	- https://arxiv.org/abs/2005.10084
+	- https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/MSR-TR-2010-82.pdf (A must-have for understanding the basics))
+* __Baseline__: We are unable to provide our code at this time as our paper is currently under review. However, we can outline the key components verbally. A related implementation that utilizes a transformer for ranking can be found here: https://github.com/allegro/allRank
+* __Proposed solution__: The idea of the proposed solution and methods for conducting the research. Ways of visualizing data and error analysis
+	Exploring Different Architectures with Attention Mechanisms.
+	In our study, we examined only a basic transformer architecture. However, GNNs or another neural networks may offer superior performance.
+
+	Developing Novel Loss Functions.
+	Our results demonstrated that even a pointwise approach can be effective when combined with attention mechanisms, sometimes outperforming other techniques. Extending this line of research by designing new loss functions tailored to these architectures could 	open new avenues for improvement and innovation.
+
+	Incorporating Riemannian Optimization for Working with Unimodal Matrices.
+	The PiRank paper employs permutation matrices as a core component of its approach. A promising idea is to integrate Riemannian optimization techniques into this framework to handle unimodal matrices more effectively. However, the feasibility and benefits of 	this approach require further investigation.
+* __Authors__: Sapronov Yuri, Aletov Vladimir
+
+ ## Задача 190 (неизвестный автор)
+ * __Title__: Foundation Models for Human Digital Twins: Integrating Heterogeneous Banking and Consumer Data for Personalized Insights
+* __Problem__: Human Digital Twins (HDTs) aim to create dynamic, data-driven representations of individuals to predict behaviors and optimize services. However, existing architectures struggle with integrating heterogeneous data (e.g., banking transactions, consumption patterns, socio-demographics) while preserving privacy and scalability. We focus on integrating anonymized, real-world data of banking transactions, consumer credit histories, and other relevant economic indicators. The core tasks include building multi-modal representations of financial and personal data, predicting various customer-related labels (e.g., churn, default risk, product preferences), and enabling personalized financial services. Our primary objective is to innovate new foundation model architectures — specifically, GNN-based models — that can learn from intricate relational structures and large-scale consumption data in the Russian banking market.
+* __Data__: Banking Data, consumer data, healthcare. Data will be anonymized, temporally aligned, and encoded into a heterogeneous graph.
+* __Reference__:
+  	- Retrofitting Temporal Graph Neural Networks with Transformer: https://arxiv.org/pdf/2409.05477
+	- Open Graph Benchmark: Datasets for Machine Learning on Graphs: https://arxiv.org/pdf/2005.00687
+* __Baseline__: Graph Neural Networks (GNNs) with temporal pooling
+* __Proposed solution__: Architecture: Temporal Graph Transformer – combines graph attention with temporal convolutions to model dynamic interactions
+* __Authors__: ???
+
+## Задача 191
+ * __Title__: Synthetic generation of transactions data
+* __Problem__: Recently bank seriously improved modeling integrating SOTA models. However, some research still require experiments and/or datasets are sparse. Thus synthetic data generation is expected to be helpful for the task.
+* __Data__: No dataset available. We are on the way to access, but there is no certainty on that point. 
+In case of any delay search of the dataset is a challenge
+* __Reference__: [Links to the literature](https://www.vldb.org/pvldb/vol17/p305-huang.pdf)  Paper is dedicated to the timeseries data. The idea is apply the same (or similar) methods to transactions data. However, additional research required. This approach could be already tested)
+* __Baseline__: Cited paper has a link to the repo
+* __Proposed solution__: GAN or VAE for synthetic transactions generation
+* __Authors__: Taniushkina Daria/Maximov Yury
+
 <!-- # Старые задачи -->
 
 <!-- ## Задача 112  (OLD)
