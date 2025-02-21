@@ -340,7 +340,7 @@ data to augment training resources. This approach offers a new way to potentiall
 * __Решение__:  The idea of the proposed solution and methods for conducting the research. Ways of visualizing data and error analysisю Extracting individual musical characteristics (chord-progression, tonality, bpm, instrument), and using synthetic datasets for data augmentation.
 Authors: Матвеев, Протасов
 
-## Задача 166 
+<!-- ## Задача 166 
 * __Название__: Machine learning methods for functional brain mapping
 * __Задача__: Segmentation of functional areas of fMRI brain scans ([article with problem statement](https://www.sciencedirect.com/science/article/pii/S1053811922005353)) 
 * __Данные__: [Dataset](https://www.humanconnectome.org/): Human Connectome Project: ≈ 1200 healthy subjects with both resting-state and task fMRI data; 4D (3D time-dependent data) $1.5 \times 10^6$ -dimensional MRI-measurements received per a few seconds
@@ -364,7 +364,8 @@ Authors: Матвеев, Протасов
 * __Решение__: Для решения данной задачи предлагается снизить волатильность домена путем построения пространства кластеров интересов. Прогноз осуществляется в этом пространстве, чтобы определить сезонность и жизненные циклы тем и предсказать их динамику в будущих периодах. В данной статье сравниваются методы кластеризации социальных трендов, а также алгоритмы их предсказания. Помимо этого, приводится оценка качества прогноза.
 * __Новизна__: Новизна работы заключается в уникальном сочетании методов прогнозирования временных рядов и кластеризации трендов. Это позволяет применить научный подход к задаче, которая в силу высокой размерности ранее в зависела от человеческой интуиции и традиционного выявления тенденций. Этот подход может дать как прикладное ( внести вклад в область прогнозирования интересов аудитории ), так и научное значение ( перенеся алгоритм на домен трендов научных статей )
 * __Авторы__: Задворнов Егор Кто эксперт???
-* 
+-->
+
 ## Задача 168
 * __Название__: Средневзвешенная когерентность как мера интерпретируемости тематических моделей
 * __Задача__: Тематическое моделирование широко используется в социо-гуманитарных исследованиях для понимания тематической структуры больших текстовых коллекций. Типичный сценарий предполагает, что пользователь сам разделяет найденные моделью темы на "хорошие" (интерпретируемые) и "плохие". Для упрощения этой работы можно использовать ряд автоматически вычисляемых критериев качества, один из которых — когерентность (мера "согласованности" слов темы). Однако проблема когерентности в том, что при её вычислении игнорируется бОльшая часть текста, что делает оценку качества темы по когерентности ненадёжной. Задача в том, чтобы проверить новый способ вычисления когерентности, обобщающий классический подход, но при этом учитывающий распределение темы во всём тексте.
@@ -575,7 +576,7 @@ There is a rumour, that the result in [4] is not reproduced in practice. It is n
 * **Authors:**
 	- Expert Yuriy Dorn
 	- Consultant: Ilgam Latypov
-
+<!--
 ## Задача 180
 * **Title:** Game-Theoretic Approaches to Learning Generative Adversarial Networks
 * **Problem:** 
@@ -591,7 +592,7 @@ There is a rumour, that the result in [4] is not reproduced in practice. It is n
 	- [4] I. Goodfellow et al., Generative adversarial nets, in Advances in Neural Inf. Processing Syst., 2014, pp. 2672–2680.
 * **Authors:**
 	- Consultant: Zabarianska Iryna, Expert???
-
+-->
 ## Задача 181
 * __Название__: Эволюционный метод создания ансамбля нейронных сетей с использованием предикаторных функций
 * __Задача__: Ансамбли нейронных сетей обладают более высоким предсказательным потенциалом по сравнению с одиночными нейронными сетями. Однако пространство возможных архитектур нейронных сетей само по себе огромно, а пространство поиска ансамблей растет экспоненциально с увеличением размера ансамбля. Это делает задачу поиска оптимального ансамбля крайне ресурсоемкой. Таким образом, необходимо разработать методы эффективного поиска ансамблей, которые минимизируют вычислительные затраты.
@@ -814,6 +815,7 @@ This project aims to develop a multi-agent simulation framework to model social 
 	The PiRank paper employs permutation matrices as a core component of its approach. A promising idea is to integrate Riemannian optimization techniques into this framework to handle unimodal matrices more effectively. However, the feasibility and benefits of 	this approach require further investigation.
 * __Authors__: Sapronov Yuri, Aletov Vladimir
 
+<!--
  ## Задача 190 (неизвестный автор)
  * __Title__: Foundation Models for Human Digital Twins: Integrating Heterogeneous Banking and Consumer Data for Personalized Insights
 * __Problem__: Human Digital Twins (HDTs) aim to create dynamic, data-driven representations of individuals to predict behaviors and optimize services. However, existing architectures struggle with integrating heterogeneous data (e.g., banking transactions, consumption patterns, socio-demographics) while preserving privacy and scalability. We focus on integrating anonymized, real-world data of banking transactions, consumer credit histories, and other relevant economic indicators. The core tasks include building multi-modal representations of financial and personal data, predicting various customer-related labels (e.g., churn, default risk, product preferences), and enabling personalized financial services. Our primary objective is to innovate new foundation model architectures — specifically, GNN-based models — that can learn from intricate relational structures and large-scale consumption data in the Russian banking market.
@@ -823,7 +825,7 @@ This project aims to develop a multi-agent simulation framework to model social 
 	- Open Graph Benchmark: Datasets for Machine Learning on Graphs: https://arxiv.org/pdf/2005.00687
 * __Baseline__: Graph Neural Networks (GNNs) with temporal pooling
 * __Proposed solution__: Architecture: Temporal Graph Transformer – combines graph attention with temporal convolutions to model dynamic interactions
-* __Authors__: ???
+* __Authors__: ??? -->
 
 ## Задача 191
  * __Title__: Synthetic generation of transactions data
