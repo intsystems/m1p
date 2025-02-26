@@ -745,7 +745,6 @@ There are no soluton to learning the operators used in physics.
 * __Proposed solution__: The research develops a hybrid memory system integrating different approaches for structured memory management. A modular architecture combines short-term (context-aware) and long-term (knowledge-based) memory with an intelligent selection mechanism optimizing retrieval efficiency. Knowledge graph triplets and subgraphs are transformed into structured memory representations.
 Experimental validation on a banking risk assessment AI assistant evaluates personalization, retrieval efficiency, and response quality. Performance metrics include retrieval time, contextual accuracy using semantic similarity metrics, and storage efficiency versus response accuracy trade-offs.
 * __Authors__:
-  	- Professor Yury Maximov
 	- Consultant: Ivan Novikov - Ph.D stident at MIPT
 		Seminarist on Quantitative Finance, research Scientist at Skolkovo.
 		Consultant at InteRData and Scientific Programming Centre. 
@@ -783,9 +782,7 @@ This project aims to develop a multi-agent simulation framework to model social 
 
 	- Phase / Project 3: Large-Scale Multi-Agent Environment
 	A spatially structured multi-agent system is developed, integrating GIS data to model consumer mobility in urban and regional settings. Agents interact dynamically with banking institutions, businesses, and financial markets, responding to real-time 		macroeconomic changes. The simulation incorporates real-world socio-economic data, enabling predictive modeling of financial behavior under different economic policies. Optimization techniques ensure the framework scales efficiently for large simulations. The 	model is validated against historical financial events and economic trends.
-* __Authors__:
-	- Professor Yury Maximov
-
+* __Authors__
 	- Consultant:
 	Ivan Novikov - Ph.D stident at MIPT
 	Seminarist on Quantitative Finance, research Scientist at Skolkovo.
@@ -835,7 +832,7 @@ In case of any delay search of the dataset is a challenge
 * __Reference__: [Links to the literature](https://www.vldb.org/pvldb/vol17/p305-huang.pdf)  Paper is dedicated to the timeseries data. The idea is apply the same (or similar) methods to transactions data. However, additional research required. This approach could be already tested)
 * __Baseline__: Cited paper has a link to the repo
 * __Proposed solution__: GAN or VAE for synthetic transactions generation
-* __Authors__: Taniushkina Daria/Maximov Yury
+* __Authors__: Taniushkina Daria
 
 <!--## Задача 192
 * __Название__: Создание позиционных эбмедингов для медицинских картинок (КТ)
