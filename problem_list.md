@@ -29,7 +29,7 @@
 * **Авторы:** Алина Самохина,   
 -->
 
-## Задача 159 (была)
+## Задача 159 (Спросить Святослава)
 * **Название:** Восстановление функциональных групп головного мозга с помощью графовых диффузных моделей
 * **Описание проблемы:** Решается задача построения модели анализа активности головного мозга, учитывающей пространственную структуру сигнала. Данные об активности мозга представлены в виде многомерных временных рядов, считываемых
 электродами, расположенными на голове испытуемого одним из универсальных стандартов размещения. Из-за отсутствия регулярного определения окрестности на сферической поверхности мозга классические сверточные нейронные
@@ -68,6 +68,7 @@
 * **Авторы:** Эдуард Владимиров, Иван Папай, Стрижов
 -->
 
+<!---
 ## Задача 158 (???) (индустриальная) (Необходимо получить согласие эксперта, на данный момент есть стажировка, но задача не утверждена)
 * **Описание проблемы:**
 	- Ранжирование риск-сигналов о признаках развития неправомерной торговой стратегии на финансовом рынке. Задача выявления ранних признаков аномального поведения участника торгов [Данные: набор агрегатов, построенных на обезличенных данных торгов].
@@ -76,6 +77,7 @@
 	- Использование (дообучение, «компрессия» / дистиляция, прунинг, квантизация) SOTA LLM/GAN для формирования и актуализации реестра «атомарных» и непротиворечивых функциональных / нефункциональных требований к программной Системе на основе набора функциональных, технических заданий и иных документов [Данные: реестр требований, реестр ФЗ, реестр ТЗ].
 * **Данные:** ВАЖНО! Требуется найти или синтезировать открытые данные
 * **Авторы:** Андрей Сергеевич Инякин
+-->
 
 <!--- ## Задача 156 (была)
 * **Название:** Optimal Gradient Methods with Relative Inexactness
@@ -94,7 +96,7 @@
 **Описание проблемы:** При оптимизации различных моделей в Машинном Обучении, часто возникают ситуации, когда стандартные методы типа градиентного спуска, работают не так эффективно. Поэтому приходится придумывать модификации, что сделать процедуру более стабильной и быстрой. В этом проекте предлагается поисследовать sign оператор в следующих постановках: (L0,L1) гладкость минимизируемой функции, борьба с тяжёлым шумом,  сходимость с высокой вероятностью, обобщение на выпуклые функции. Проект во многом теоретический, придется доказывать вещи из оптимизации. И не факт, что все получится, это нормально. Но и небольшие эксперименты будут. Релевантные статьи: https://arxiv.org/abs/1802.04434 https://arxiv.org/abs/2502.07923 https://arxiv.org/pdf/2409.14989
 **Авторы:** Корнилов Никита, Марк Иконников 
 
-## Задача 117 (Вадим Викторович хотел скорректировать, убрать отсюда прогноз фМРТ по звуку)
+## Задача 117 (Вадим Викторович хотел скорректировать, убрать отсюда прогноз фМРТ по звуку) (скорректировать Дорин)
 * **Название:** Поиск зависимостей биомеханических системах и (Метод Convergence Cross-Mpping, теорема Такенса)
 * **Задача**:  При прогнозировании сложноорганизованных временных рядов, зависящих от экзогенных факторов и имеющих множественную периодичность, требуется решить задачу выявления связанных пар рядов. Предполагается, что добавление этих рядов в модель повышает качество прогноза. В данной работе для обнаружения связей между временными рядами предлагается использовать метод сходящегося перекрестного отображения. При таком подходе два временных ряда связаны, если существуют их траекторные подпространства, проекции на которые связаны. В свою очередь, проекции рядов на траекторные подпространства связаны, если окрестность фазовой траектории одного ряда отображается в окрестность фазовой траектории другого ряда. Ставится задача отыскания траекторных подпространств, обнаруживающих связь рядов. Анализ зависимости между показаниями датчиков и восприятиям внешнего мира человеком. Требуется проверить гипотезу зависимости между данными, а также предложить метод апроксимации показаний FMRI по прослушиваемому звуковому ряду.
 * **Литература**
@@ -183,11 +185,13 @@
 * **Новизна:** Использование библиотек тематического моделирование BigARTM и TopicNet. Разработка нового способа вычисления когерентности тем. Предложение и реализация методики измерения интерпретируемости тем (чтобы проверить "адекватность" новой когерентности: в самом ли деле для заведомо хороших тем она показывает качество выше, чем для плохих тем).
 * **Авторы:** Василий Алексеев, Константин Воронцов
 
+<!--
 ## Задача 147 (Была) (???) (При наличии времени и желания Александра Владимировича)
 * **Название:** Нижние оценки для min max задач с разной размерностью блоков переменных (Проект 1.)
 * **Описание проблемы:** Для задач малоразмерной выпуклой оптимизации нижние оценки получаются с помощью сопротивляющегося оракула https://www2.isye.gatech.edu/~nemirovs/Lect_EMCO.pdf (3 Methods with linear convergence, II, но начать лучше прямо с самого первого раздела Lecture 1 - на одномерном случае все попонятнее). В то время как для задач большой размерности -  c помощью “худшей в мире функции” - см., например, указания к упражнения 1.3 и 2.1 пособия МЦНМО https://opt.mipt.ru/posobie.pdf В работе https://arxiv.org/pdf/2010.02280.pdf, исследуются задачи min max, в которых одна из групп min переменных имеет небольшую размерность, а другая группа, напротив, большую. Получены верхние оценки. Интересно было бы попробовать получить нижние оценки, путем комбинации двух конструкций. Кажется, что в математическом плане пример построения нижней оценки будет содержать новые интересные идеи.
 В развитие этого проекта интересно было бы подумать и о нижних оценках для min min задач, в которых по одной из групп переменных (негладких) имеется малая размерность. Верхние оценки имеются в работах https://arxiv.org/pdf/2102.00584.pdf и  https://arxiv.org/pdf/2103.00434.pdf
 * **Авторы:** Александр Владимирович Гасников
+-->
 
 <!-- ## Задача 146 (???)
 * **Название:** Слайдинг с редукцией дисперсии (Проект 2.)
@@ -197,7 +201,7 @@
 P.S. Были надежды на редукцию дисперсии с importance sampling с правильным выбором вероятностей, но пока они не оправдались…
 * **Авторы:** Александр Владимирович Гасников -->
 
-## Задача 145  (была) (индустриальная)
+## Задача 145  (была) (индустриальная) (Написать Андрею: Дорин)
   * **Название**: Создание персонализированных генераций изображений
   * **Описание проблемы**: Генеративные модели добились высокого качества генераций в общем домене. Однако, когда возникает запрос на генерацию специфичного объекта, в нашем случае человека, то модель не может сгенерировать человека с необходимой точностью и передать его идентичность. В этой задаче вам предлагается предложить решение, которое будет способно генерировать изображения заданного человека в различных варияциях в высоком разрешении.
   * **Данные**: CelebA (датасет изображений знаменитостей в высоком разрешении)
@@ -260,7 +264,7 @@ P.S. Были надежды на редукцию дисперсии с importa
   
 # Проекты пятикурсников и назначенные проекты
 
-## Задача 160 (была) (Фанис Хафизов)
+## Задача 160 (была) (Фанис Хафизов) (Дорин спросить)
 * __Название__: Ускоренные методы нулевого порядка с одноточечным фидбэком
 * __Задача__: Обычно для целевых функций в задачах оптимизации мы можем считать градиенты и даже информацию более высоких порядков. Но также существуют приложения, в которых подсчет градиента или затруднен или вообще невозможен. В таких приложениях на помощь приходят безградиентные методы. Довольно натуральной идеей в данном случае является аппроксимация градиента через конечные разности (https://arxiv.org/pdf/2211.13566.pdf): $\nabla f_\gamma(x, e) = \frac{f(x + \gamma e) - f(x - \gamma e)}{2 \gamma} e.$ Более того, в более близких для практики приложениях мы имеем доступ к зашумленной версии функции. Это порождает дополнительные проблемы. В более простом с точки зрения теоретического анализа, но менее приближенным к реальности случае можно рассматривать так называемый two-point feedback: $\nabla f_\gamma(x, \xi, e) = \frac{f(x + \gamma e, \xi) - f(x - \gamma e, \xi)}{2 \gamma} e.$ Ключевая особенность – одна и та же случайность в обеих точках. Более сложный и неприятный случай – one-point feedback: $\nabla f_\gamma(x, \xi^+, \xi^-, e) = \frac{f(x + \gamma e, \xi^+) - f(x - \gamma e, \xi^-)}{2 \gamma} e,$ который и будет рассматриваться в работе.
 * __Данные__:  1) Датасет mushroom 2) Квадратичная задача
@@ -269,7 +273,7 @@ P.S. Были надежды на редукцию дисперсии с importa
 * __Решение__: В данной работе предлагается разработать и проанализировать сходимость ускоренный безградиентные методы для выпуклой гладкой стохастической задачи минимизации. В частности предлагается адаптировать (или оттолкнуться в качестве стартовой точки) для этого уже существующие результаты в случае two-point feedback (https://arxiv.org/pdf/1802.09022.pdf).
 * __Авторы__: Консультант - Александр Богданов, эксперт - Александр Безносиков
 
-## Задача 161 (была) (Алексей Ребриков)
+## Задача 161 (была) (Алексей Ребриков) (Дорин спросить)
 * __Название__: Методы малоранговых разложений в распределенном и федеративном обучении
 * __Задача__: Подходы распределенного и федеративного обучения становятся все более популярными в обучении современных SOTA моделей машинного обучения. При этом на первый план выходит вопрос организации эффективных коммуникаций, так как процесс передачи информации занимает слишком много времени даже в случае кластерных вычислений. Из-за этого может теряться смысл в распределении/распараллеливании процесса обучения. Одной из ключевой техник  борьбы с коммуникационными затратами является использование сжатий передаваемой информации. На данный момент в литературе предлагаются различные техники сжатия (https://arxiv.org/abs/2002.12410, https://arxiv.org/abs/1610.02132, https://arxiv.org/abs/1905.10988), но потенциал в этом вопросе явно не исчерпан. В частности, довольно большой потенциал кроется в малоранговых разложениях (https://gregorygundersen.com/blog/2019/01/17/randomized-svd/). В рамках проекта предлагается сконструировать операторы сжатия на основе данных разложений и встроить в методы распределенной оптимизации (https://arxiv.org/abs/2106.05203).
 * __Данные__: LibSVM https://www.csie.ntu.edu.tw/~cjlin/libsvm/ CIFAR 10
@@ -340,33 +344,7 @@ data to augment training resources. This approach offers a new way to potentiall
 * __Решение__:  The idea of the proposed solution and methods for conducting the research. Ways of visualizing data and error analysisю Extracting individual musical characteristics (chord-progression, tonality, bpm, instrument), and using synthetic datasets for data augmentation.
 Authors: Матвеев, Протасов
 
-<!-- ## Задача 166 
-* __Название__: Machine learning methods for functional brain mapping
-* __Задача__: Segmentation of functional areas of fMRI brain scans ([article with problem statement](https://www.sciencedirect.com/science/article/pii/S1053811922005353)) 
-* __Данные__: [Dataset](https://www.humanconnectome.org/): Human Connectome Project: ≈ 1200 healthy subjects with both resting-state and task fMRI data; 4D (3D time-dependent data) $1.5 \times 10^6$ -dimensional MRI-measurements received per a few seconds
-* __Литература__:
-	1. [Accurate predictions of individual differences in task-evoked brain activity from resting-state fMRI using a sparse ensemble learner](https://www.sciencedirect.com/science/article/pii/S1053811922005353)
-        2. [Predicting individual task contrasts from resting ‐state functional connectivity](https://www.sciencedirect.com/science/article/pii/S1053811921011204)
-        3. [Task-free MRI Predicts Individual Differences in Brain Activity During Task Performance](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6309730/)
-        4. [Semiblind Spatial ICA of fMRI Using Spatial Constraints](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2891131/)
-* __Базовой алгоритм__: [Method 1](https://github.com/yingqiuz/predict-task-individual-variability), [Method 2](https://github.com/sabunculab/brainsurfcnn) 
-* __Решение__: The proposed solution is a machine learning algorithm developed based on existing techniques.
-
-## Задача 167
-* __Название__: Прогнозирования временных рядов социальных трендов и общественных интересов с высокой волатильностью
-* __Описание проблемы__: Анализ и прогноз трендов в медиапространстве является важной задачей для различных сфер, таких как маркетинг, медиапроизводство, связи с общественностью, инновационные исследования и разработки. Эта задача является сложной из-за волатильности и неустойчивости социальных тенденций и общественных интересов. Цель предлагаемого исследования - изучить подходы к решению задачи и разработать базовый алгоритм, способный предсказать, о чем будут говорить люди, в конкретный исторический период в будущем на горизонте нескольких месяцев. Проблема заключается не только в высокой размерности и неустойчивости тематического пространства, но и в необходимости выделения тематик релевантных для конкретных сообществ на высоком уровне обобщения: спорт, политика, бизнес, технологии и др. так и на низком уровне: профессиональные сообщества вокруг конкретной технологии или целевая аудитория определенного сегмента рынка.
-* __Данные__: Будут изучены общедоступные сообщения на платформах социальных сетей, таких как Twitter, за несколько лет. Затем набор данных преобразуется во временные ряды тематических кластеров с помощью тематического моделирования. Кластеры формируются с учетом значимости событий, рассчитанной по позиции новостной темы в топе. Наборы данных для справки: [Twitter trending tweets](https://www.kaggle.com/datasets/rsrishav/twitter-trending-tweets/), [Youtube trending video dataset](https://www.kaggle.com/datasets/rsrishav/youtube-trending-video-dataset).
-* __Литература__:
-	1. [Taylor, S. J., & Letham, B. (2018). Forecasting at scale. The American Statistician, 72(1), 37–45.](https://peerj.com/preprints/3190/)
-        2. [Reimers, N., & Gurevych, I. (2019). Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks. arXiv preprint arXiv:1908.10084.](https://arxiv.org/abs/1908.10084)
-        3. [Motrenko, A., & Strijov, V. (2014). Extracting fundamental periods to segment biomedical signals.](https://m1p.org/papers/MotrenkoStrijov2014RV2.pdf)
-* __Базовой алгоритм__: ARIMA и Exponential Smoothing 
-* __Решение__: Для решения данной задачи предлагается снизить волатильность домена путем построения пространства кластеров интересов. Прогноз осуществляется в этом пространстве, чтобы определить сезонность и жизненные циклы тем и предсказать их динамику в будущих периодах. В данной статье сравниваются методы кластеризации социальных трендов, а также алгоритмы их предсказания. Помимо этого, приводится оценка качества прогноза.
-* __Новизна__: Новизна работы заключается в уникальном сочетании методов прогнозирования временных рядов и кластеризации трендов. Это позволяет применить научный подход к задаче, которая в силу высокой размерности ранее в зависела от человеческой интуиции и традиционного выявления тенденций. Этот подход может дать как прикладное ( внести вклад в область прогнозирования интересов аудитории ), так и научное значение ( перенеся алгоритм на домен трендов научных статей )
-* __Авторы__: Задворнов Егор Кто эксперт???
--->
-
-## Задача 168
+## Задача 168 (Вадим Викторович)
 * __Название__: Средневзвешенная когерентность как мера интерпретируемости тематических моделей
 * __Задача__: Тематическое моделирование широко используется в социо-гуманитарных исследованиях для понимания тематической структуры больших текстовых коллекций. Типичный сценарий предполагает, что пользователь сам разделяет найденные моделью темы на "хорошие" (интерпретируемые) и "плохие". Для упрощения этой работы можно использовать ряд автоматически вычисляемых критериев качества, один из которых — когерентность (мера "согласованности" слов темы). Однако проблема когерентности в том, что при её вычислении игнорируется бОльшая часть текста, что делает оценку качества темы по когерентности ненадёжной. Задача в том, чтобы проверить новый способ вычисления когерентности, обобщающий классический подход, но при этом учитывающий распределение темы во всём тексте.
 * __Данные__: В качестве данных подойдёт любая коллекция текстов на естественном языке, про которую известна тематическая структура (сколько примерно тем, сколько документов по разным темам). Например, можно взять коллекцию статей с ПостНауки, новостей Lenta, дамп Википедии, посты с Хабрахабра, 20 Newsgroups, Reuters. Тематика коллекции должна быть интересна самому исследователю, чтобы была мотивация оценивать темы вручную.
@@ -378,7 +356,7 @@ Authors: Матвеев, Протасов
 * __Решение__: Использование библиотек тематического моделирование BigARTM и TopicNet. Разработка нового способа вычисления когерентности тем. Предложение и реализация методики измерения интерпретируемости тем (чтобы проверить "адекватность" новой когерентности: в самом ли деле для заведомо хороших тем она показывает качество выше, чем для плохих тем).
 * __Авторы__: Старожилец Всеволод Михайлович
 
-## Задача 169
+## Задача 169 (ВВ)
 * __Название__: Интерпретируемая иерархическая кластеризация объектов.
 * __Задача__: Требуется на обучающей выборке физических лиц (ФЛ) с меткой принадлежности классу построить такую иерархическую кластеризацию данных, что для каждого кластера можно наиболее полно интерпретировать причину его попадания в конкретный кластер.
 * __Данные__: Для исследования предлагается использовать данные из соревнования [Kaggle](https://www.kaggle.com/datasets/khusheekapoor/vehicle-insurance-fraud-detection?resource=download) по классификации мошенников в автостраховании на основе их признакового описания.
@@ -388,62 +366,6 @@ https://wires.onlinelibrary.wiley.com/doi/full/10.1002/widm.53)
 * __Базовой алгоритм__: Описание baseline решения предоставлено на сайте соревнования: https://exporl.github.io/auditory-eeg-challenge-2024/task2/description/
 * __Решение__: Базовый алгоритм решения задачи состоит в применении методов из пакетов sklearn, umap языка Python. Например, классическим интерпретируемым алгоритмом классификации является дерево решений (sklearn.tree.DecisionTree).
 * __Авторы__: Василий Алексеев, Константин Воронцов
-
-## Задача 170
-* __Title__: Detecting Manual Alterations in Biological Image Data Using Contrastive Learning and Pairwise Image Comparison
-* __Problem__: This project aims to develop a model for pairwise comparison of biological and medical images, demonstrating high pairwise comparison metrics to detect manual modifications such as cropping, rotation, duplication, color distortion, or more subtle alterations. These alterations can compromise dataset validity and lead to erroneous conclusions, posing unique detection challenges due to the thematic and structural similarities in medical images. Additionally, the reproducibility of scientific findings is often undermined by the copying of images used as evidence or achievements, highlighting the need for robust detection methods to maintain data integrity in scientific research.
-* __Data__:
-	- [BioImage Archive](https://www.ebi.ac.uk/bioimage-archive/): A repository of biological images, including microscopy and experimental images.
-	- [Cell Image Library](https://www.cellimagelibrary.org/home): High-resolution cell microscopy images from various biological experiments.
-	- [Haxby Dataset](http://data.pymvpa.org/datasets/haxby2001/): The fMRI images dataset, the data are third-order tensors, so it is suggested to take slices.
-	- [Visible Human Project](https://www.nlm.nih.gov/research/visible/visible_human.html): Detailed anatomical datasets of the human body, including CT and MRI scans.
-* __Reference__:
-	- [1] Melekhov I., Kannala J., Rahtu E. Siamese network features for image matching. ICPR, 2016.
-	- [2] Chen T. et al. A simple framework for contrastive learning of visual representations. PMLR, 2020.
-	- [3] Radford, A. et al. Learning Transferable Visual Models from Natural Language Supervision (CLIP). ICML, 2021.
-	- [4] Zbontar, J. et al. Barlow Twins: Self-Supervised Learning via Redundancy Reduction. ICML, 2021.
-* __Baseline__: Use the [Barlow Twins](https://github.com/facebookresearch/barlowtwins) for self-supervised learning of image features. Next, train the head for matching, or train the entire pipeline. It is intended to use parallel augmentations, which you can read more about in the work [SimCLR](https://arxiv.org/abs/2002.05709). To simulate manual modifications, [augment](https://explore.albumentations.ai/) datasets with: Cropping, resizing, flipping. Brightness/contrast adjustments. Cloning or duplicating parts of an image. Adding artificial noise or subtle distortions. 
-* __Proposed solution__: To refine the basic solution, it is possible to retrain the full pipeline for biological data.
-* __Novelty__: At present, the problem of matching biological and medical images has not yet been solved.
-* __Authors__:
-  	- Expert: Andrey Grabovoy
-	- Consultant: Daniil Dorin (tg: [@danulkin](https://t.me/danulkin))
-
-## Задача 171
-* __Title__: Robust Detection of AI-Generated Images
-* __Problem__: The rapid evolution of generative models, such as Gans, VAEs, and diffusion-based models, has enabled the creation of highly realistic synthetic images, driving innovation in entertainment, art, and content creation. However, this has also introduced significant challenges in digital trust and authenticity, making the detection of machine-generated images crucial for combating misinformation and ensuring visual data integrity. This paper addresses the problem of identifying whether an image is machine-generated or real, aiming to develop a lightweight, efficient, and interpretable detection framework. The goal is to optimize detection accuracy while minimizing computational complexity, formulated as a binary classification problem. Key challenges include the diversity of generative models and the evolving quality of synthetic images, which increasingly mimic real-world characteristics. 
-* __Data__:
-	- Real Images:  
-   		- [COCO](https://cocodataset.org/#home): A large-scale dataset with natural images of various objects and scenes.  
-   		- [Flickr-Faces-HQ (FFHQ)](https://github.com/NVlabs/ffhq-dataset): A high-quality dataset of human faces for training and evaluation.
-		- [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/): Standardised image datasets for object class recognition.
-	- Hybrid Datasets:
-		- [CIFAKE](https://www.kaggle.com/datasets/birdy654/cifake-real-and-ai-generated-synthetic-images): CIFAKE is a dataset that contains 60,000 synthetically-generated images and 60,000 real images.
-		- [ArtiFact](https://paperswithcode.com/dataset/artifact): large-scale image dataset that aims to include a diverse collection of real and synthetic images from multiple categories.
-* __Reference__:
-	- [1] [Zero-Shot Detection of AI-Generated Images](https://arxiv.org/abs/2409.15875)
-	- [2] [AI vs. AI: Can AI Detect AI-Generated Images?](https://www.mdpi.com/2313-433X/9/10/199)
-	- [3] [GenImage: A Million-Scale Benchmark for Detecting AI-Generated Image](https://proceedings.neurips.cc/paper_files/paper/2023/file/f4d4a021f9051a6c18183b059117e8b5-Paper-Datasets_and_Benchmarks.pdf)
-* __Baseline__: Use a robust encoder, such as [CLIP ViT](https://arxiv.org/abs/2103.00020) or [Barlow Twins](https://github.com/facebookresearch/barlowtwins), as a frozen model and train only the last classification layer.
-* __Authors__:
-  	- Expert: Andrey Grabovoy
-	- Consultant: Daniil Dorin (tg: [@danulkin](https://t.me/danulkin))
-
-## Задача 172
-* __Название__: Восстановление показаний датчиков фМРТ по прослушиваемому звуковому ряду
-* __Задача__: Рассматривается задача восстановления зависимости между показаниями датчиков функциональной магнитно-резонансной томографии (фМРТ) и восприятием внешнего мира человеком. Основная цель заключается в анализе зависимости между последовательностью снимков фМРТ и звуковым рядом, а также в разработке метода прогнозирования показаний фМРТ на основе прослушиваемого звукового ряда. Кроме того, хочется проверить гипотезу о влиянии параметра задержки BOLD (Blood-oxygen-level-dependent) на качество аппроксимации.
-* __Литература__:
-	- Вся литература из работы [Forecasting fMRI images from video sequences: linear model analysis](https://link.springer.com/epdf/10.1007/s13755-024-00315-5?sharing_token=lmbWsrIhGUoHaL75ub7etfe4RwlQNchNByi7wbcMAY438_8ojgqthAfg8Q2YiNthCEtJoSCkYUusKUpq6L-34kwAeXd5dq2ckTk8iYugJ0VtvTwPUiCF7XX9yGXw-8rdq5DB9u-Y4sNf-in0p3Zc5IbybvEDqh7v-BeAmfkPkuI%3D). [Код данного исследования](https://github.com/DorinDaniil/Forecasting-fMRI-Images).
-	- [Open multimodal iEEG-fMRI dataset from naturalistic stimulation with a short audiovisual film](https://www.nature.com/articles/s41597-022-01173-0)
-* __Данные__: 
-   	- Berezutskaya J., et al Open multimodal iEEG-fMRI dataset from naturalistic stimulation with a short audiovisual film // Sci Data 9, 91, 2022. Открытый мультимодальный набор данных, включающий записи внутричерепной электроэнцефалографии (iEEG) и функциональной магнитно-резонансной томографии (фМРТ), полученные во время просмотра короткометражного аудиовизуального фильма. Исследование проводилось на группе участников в возрасте от 7 до 47 лет. Данные собраны с использованием богатого аудиовизуального стимула, что позволяет анализировать реакции мозга на естественные условия. 
-* __Решение__
-  	* Предлагается использовать простейшую линейную модель для прогнозирования независимо значений в каждом вокселе по данным звукового ряда.
-	* [Код предшественников](https://github.com/intsystems/2024-Project-117).
-* __Новизна__: Анализ зависимости между показаниями датчиков и восприятиям внешнего мира человеком. Требуется проверить гипотезу зависимости между данными.
-* __Авторы__:
-	* Консультант: Даниил Дорин (tg: [@danulkin](https://t.me/danulkin))
-	* Эксперт: Стрижов, Андрей Грабовой
 
 ## Задача 173
 * __Название__: Дообучение LLM с помощью оптимизации нулевого порядка 
@@ -652,40 +574,6 @@ There is a rumour, that the result in [4] is not reproduced in practice. It is n
     - Консультант: Никита Киселев (tg: [@kisnikser](https://t.me/kisnikser))
     - Эксперт: Андрей Грабовой
 
-## Problem 184
-* __Title__: Metric analysis of deep network space parameters
-* __Problem__: The structure of a neural work is exhaustive. The dimensionality of the parameter space should be reduced. The autoencoder in the subject of the investigation. Due to the continuous-time nature of the data, we analyze several types of autoencoders. We reconstruct spatial-time data, minimizing the error. 
-* __Data__: 
-  * Synthetic data sine for 2D visualizaion of the parameter distributions
-  * Accelerometer quasiperiodic data
-  * Limb movement quasiperiodic data (if any)
-  * Video periodic data (cartoon, walking persona)
-  * Video, fMRI, ECoG from the s41597-022-01173-0 
-* __References__: 
-  * [SSA and Hankel matrix construction](http://strijov.com/papers/Grabovoy2019QuasiPeriodicTimeSeries.pdf) or in [wiki](https://en.wikipedia.org/wiki/Singular_spectrum_analysis)
-  * [Open multimodal iEEG-fMRI dataset from naturalistic stimulation](https://www.nature.com/articles/s41597-022-01173-0)
-  * [Variational autoencoders to estimate parameters](https://arxiv.org/pdf/1606.05908.pdf)
-  * RNN in the [5G book](https://arxiv.org/abs/2104.13478)
-  * [Neural CDE](https://bit.ly/NeuroCDE)
-* __Baseline__: RNN-like variational autoencoder in the criteria: error vs. complexity (number of parameters)
-* __Roadmap__:
-  * Prepare data so that the reconstruction work on a basic model (like SSA)
-  * Estimate expectation and covariance of parameters (using VAE or else, to be discussed)
-  * Reduce dimensionality, plot the error/complexity, plot the covariance
-  * Run RNN-like model, plot
-  * Assign the expectation and covariation matrix to each neuron of the model
-  * Plot the parameter space regarding covariance as its metric tensor (end of minimum part)
-  * Suggest a dimensionality reduction algorithm (naive part)
-  * Run Neuro ODE/CDE model and plot the parameter space
-  * Analyse the data distribution as the normalized flow 
-  * Suggest the parameter space modification in terms of  the normalized flow (paradoxical part, diffusion model is needed)
-  * Compare all models according to the criterion error/complexity (max part)
-  * Construct the decoder model for any pair of data like fMRI-ECoG tensor and neuro CDE (supermax part)
-* __Proposed solution__: description of the idea to implement in the project
-* __Novelty__: Continous-time models are supposed to be simple due to their periodic nature. Since they approximate the vector fields, these models are universal. The model selection for the continuous time is not considered now, but at the time, it is acute for wearable multimedia devices for metaverse and augmented reality. 
-* __Supergoal__ To join two encoders in a signal decoding model to reveal the connection between video and fMRI, between fMRI and ECoG.
-* __Authors__: Expert Стрижов, consultant Ernest Nasyrov
-
 ## Problem 185
 * **Title** 
 Operator learning in PINN
@@ -745,7 +633,7 @@ There are no soluton to learning the operators used in physics.
 * __Proposed solution__: The research develops a hybrid memory system integrating different approaches for structured memory management. A modular architecture combines short-term (context-aware) and long-term (knowledge-based) memory with an intelligent selection mechanism optimizing retrieval efficiency. Knowledge graph triplets and subgraphs are transformed into structured memory representations.
 Experimental validation on a banking risk assessment AI assistant evaluates personalization, retrieval efficiency, and response quality. Performance metrics include retrieval time, contextual accuracy using semantic similarity metrics, and storage efficiency versus response accuracy trade-offs.
 * __Authors__:
-	- Consultant: Ivan Novikov - Ph.D stident at MIPT
+	- Consultant: Ivan Novikov - Ph.D student at MIPT
 		Seminarist on Quantitative Finance, research Scientist at Skolkovo.
 		Consultant at InteRData and Scientific Programming Centre. 
 		Participated in 7 industrial projects for banks and steel industry. 
@@ -789,29 +677,6 @@ This project aims to develop a multi-agent simulation framework to model social 
 	Consultant at InteRData and Scientific Programming Centre. 
 	Participated in 7 industrial projects for banks and steel industry. 
 
- ## Задача 189
- * __Title__: Learning to Rank problems
-* __Problem__: In the field of Learning-to-Rank (LTR), two key challenges persist: determining an appropriate surrogate loss function for training and designing an effective architecture for ranking problems. In this work, we address both aspects comprehensively. 	Leveraging the attention mechanism in transformers, we explicitly model the inter-document relationships directly within the neural network architecture, rather than relying solely on the loss function. Despite the conventional view that pointwise methods 	resign to pair- and listwise, we demonstrate that incorporating them into our transformer-based architecture yields promising results. Furthermore, we enhance the training process by introducing a ListNet-inspired term to the loss function, leading to our best 	performance, which significantly surpasses many state-of-the-art results.
-* __Data__:
-	The links to the most popular datasets being used in l2r community are presented below:
-	- https://www.tensorflow.org/datasets/catalog/istella?hl=ru
-	- https://www.tensorflow.org/datasets/catalog/mslr_web?hl=ru
-* __Reference__:
-	- [Links to the literature](https://arxiv.org/abs/2012.06731
-	- https://arxiv.org/abs/2005.10084
-	- https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/MSR-TR-2010-82.pdf (A must-have for understanding the basics))
-* __Baseline__: We are unable to provide our code at this time as our paper is currently under review. However, we can outline the key components verbally. A related implementation that utilizes a transformer for ranking can be found here: https://github.com/allegro/allRank
-* __Proposed solution__: The idea of the proposed solution and methods for conducting the research. Ways of visualizing data and error analysis
-	Exploring Different Architectures with Attention Mechanisms.
-	In our study, we examined only a basic transformer architecture. However, GNNs or another neural networks may offer superior performance.
-
-	Developing Novel Loss Functions.
-	Our results demonstrated that even a pointwise approach can be effective when combined with attention mechanisms, sometimes outperforming other techniques. Extending this line of research by designing new loss functions tailored to these architectures could 	open new avenues for improvement and innovation.
-
-	Incorporating Riemannian Optimization for Working with Unimodal Matrices.
-	The PiRank paper employs permutation matrices as a core component of its approach. A promising idea is to integrate Riemannian optimization techniques into this framework to handle unimodal matrices more effectively. However, the feasibility and benefits of 	this approach require further investigation.
-* __Authors__: Sapronov Yuri, Aletov Vladimir
-
 <!--
  ## Задача 190 (неизвестный автор)
  * __Title__: Foundation Models for Human Digital Twins: Integrating Heterogeneous Banking and Consumer Data for Personalized Insights
@@ -824,17 +689,7 @@ This project aims to develop a multi-agent simulation framework to model social 
 * __Proposed solution__: Architecture: Temporal Graph Transformer – combines graph attention with temporal convolutions to model dynamic interactions
 * __Authors__: ??? -->
 
-## Задача 191
- * __Title__: Synthetic generation of transactions data
-* __Problem__: Recently bank seriously improved modeling integrating SOTA models. However, some research still require experiments and/or datasets are sparse. Thus synthetic data generation is expected to be helpful for the task.
-* __Data__: No dataset available. We are on the way to access, but there is no certainty on that point. 
-In case of any delay search of the dataset is a challenge
-* __Reference__: [Links to the literature](https://www.vldb.org/pvldb/vol17/p305-huang.pdf)  Paper is dedicated to the timeseries data. The idea is apply the same (or similar) methods to transactions data. However, additional research required. This approach could be already tested)
-* __Baseline__: Cited paper has a link to the repo
-* __Proposed solution__: GAN or VAE for synthetic transactions generation
-* __Authors__: Taniushkina Daria
-
-<!--## Задача 192
+## Задача 192 (Спросить Матвея)
 * __Название__: Создание позиционных эбмедингов для медицинских картинок (КТ)
 * __Описание проблемы__: В medical imaging есть следующая проблема. При обучении нейронных сетей для, например, задачи сегментации у нас ограниченный размер разметки, и бывает такое, что разметка представлена только специфичной областью тела. Но при дальнейшем использовании модели, она будет использоваться не только на этой области, но на и на других, хочется чтобы она была робастной и адекватно воспринимала такие картинки. Например, если модель обучалась только на области грудной клетки, то она будет галюцинировать, когда будут приходить картинки с головой, брюхом и ногами. Хочется сделать способ подачи позиционного эбмединга (относительного/абсолютного) при обучении напрямую в нейронную сеть.
 * __Данные__: С соревнования MICCAI (или Internal) 
