@@ -195,7 +195,7 @@ There is a rumour, that the result in [4] is not reproduced in practice. It is n
   	* Эксперт: Бахтеев Олег
   	* Консультант: Бабкин Пётр
 
-## Problem 185 (Вадим Викторович)
+## Problem 185 (Вадим Викторович: A.T. - оставляем в этом виде)
 * **Title** 
 Operator learning in PINN
 * **Problem**
