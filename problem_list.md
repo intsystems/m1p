@@ -108,6 +108,19 @@ This project aims to develop a multi-agent simulation framework to model social 
 	Consultant at InteRData and Scientific Programming Centre. 
 	Participated in 7 industrial projects for banks and steel industry. 
 
+
+## Задача 199
+* __Название__: Анализ причинно-следственных связей между биомедицинскими сигналами (ЭЭГ-ЭКГ, ЭЭГ-МЭГ) через скрытые представления автоэнкодеров
+* __Задача__: Исследование кросс-модальных причинно-следственных связей в нейрофизиологических данных. Основная гипотеза: связь между сердцем и мозгом (ЭЭГ ↔ ЭКГ) или между разными методами регистрации мозговой активности (ЭЭГ $\longleftrightarrow$ МЭГ) может быть выявлена через анализ динамики в скрытом пространстве. Предлагается архитектура из двух параллельных автоэнкодеров (по одному на модальность), после чего в латентном пространстве применяются методы оценки каузальности: Convergent Cross Mapping (CCM), transfer entropy или дифференциальные уравнения (Neural ODE/CDE). Цель — количественно оценить направленность влияния (мозг $\longrightarrow$ сердце vs сердце $\longrightarrow$ мозг).
+* __Предыдщуие_результаты__:
+	* Построен [метод апроксимации показаний fMRI по прослушиваемому звуковому ряду](https://github.com/intsystems/2024-Project-117/tree/master).
+	* Построен [метод апроксимации показаний fMRI по видео ряду](https://github.com/DorinDaniil/Forecasting-fMRI-Images).
+* __Данные__:
+  * Мультимодальные записи во время прослушивания музыки: ЭЭГ, ЭМГ, ЭКГ — [OpenNeuro ds004840](https://openneuro.org/datasets/ds004840/versions/1.0.1)
+  * Мультимодальные записи [Nature Scientific Data 2025](https://www.nature.com/articles/s41597-025-05580-x), [Pattern Recognition Letters 2017](https://www.sciencedirect.com/science/article/abs/pii/S0167865517304634), [Nature Scientific Data 2021](https://www.nature.com/articles/s41597-021-01046-y), [Human Brain Mapping 2023](https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.26480)
+* __Авторы__:
+  * Даниил Дорин (tg: [@danulkin](https://t.me/danulkin))
+
 # Проекты от пятикурсников
 Сюда добавить задачи студентам Андрея Грабового
 
