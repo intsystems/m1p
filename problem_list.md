@@ -14,10 +14,6 @@
 * **Авторы:** Святослав Панченко, Стрижов
 -->
 
-## Задача (Узнать актуальность)
-* **Описание проблемы:** При оптимизации различных моделей в Машинном Обучении, часто возникают ситуации, когда стандартные методы типа градиентного спуска, работают не так эффективно. Поэтому приходится придумывать модификации, что сделать процедуру более стабильной и быстрой. В этом проекте предлагается поисследовать sign оператор в следующих постановках: (L0,L1) гладкость минимизируемой функции, борьба с тяжёлым шумом,  сходимость с высокой вероятностью, обобщение на выпуклые функции. Проект во многом теоретический, придется доказывать вещи из оптимизации. И не факт, что все получится, это нормально. Но и небольшие эксперименты будут. Релевантные статьи: https://arxiv.org/abs/1802.04434 https://arxiv.org/abs/2502.07923 https://arxiv.org/pdf/2409.14989
-* **Авторы:** Корнилов Никита, Марк Иконников 
-
 ## Задача 177 (Нужно узнать актуальность)
 * __Название__: Кодирование дискриминативных и генеративных моделей
 * __Задача__: В работе исследуются различные методы энкодинга нейронных сетей, применяемые в дискриминативных и генеративных моделях. Основная цель проекта — имплементация и сравнительный анализ существующих методов энкодинга, представленных в научных статьях. Результатом проведенного исследования ожидается разработанная библиотека, объединяющая различные методы энкодинга, что позволит упростить их применение в практических задачах. В рамках проекта также предлагается изучить возможность комбинирования нескольких методов энкодинга и теоретически обосновать их совместную применимость. Например, рассмотреть ортогональности методов в функциональном пространстве, что может способствовать улучшению качества и эффективности кодирования нейронных сетей.
@@ -30,27 +26,6 @@
 * __Авторы__:
 	- Консультант: Никитина Мария
 	- Эксперт: Бишук Антон
-
-## Задача 179 (Нужно узнать актуальность)
-* **Title:** Бандиты для Query selection
-* **Problem:** 
-In today's world, tools are needed for efficient data processing. Databases underlie all such systems, but as their complexity increases, the task of **Query Optimization** arises. In this paper, you will have to figure out this problem, implement a solution based on the Multi-Armed Bandits method proposed in [4], and also suggest a way to improve the proposed algorithm.
-* **Data:**
-Will be determined after the algorithm is developed.
-* **Reference:**
-	- [1] Hazan E. et al. Introduction to online convex optimization //Foundations and Trends® in Optimization. – 2016. – Vol. 2. – No. 3-4. – Pp. 157-325.
-	- [2] Cesa-Bianchi N., Lugosi G. Prediction, learning, and games. – Cambridge University Press, 2006.
-	- [3] Bandits M. A. Introduction to Multi-Armed Bandits.
-	- [4] Marcus R. et al. Bao: Making learned query optimization practical //Proceedings of the 2021 International Conference on Management of Data. – 2021. – С. 1275-1288.
-* **Baseline:**
-Implement [4] and check it in work.
-* **Proposed solution:** 
-To implement contextual bandit algorithm in [4]. Improve the quality using contextual bandits.
-* **Novelty:**
-There is a rumour, that the result in [4] is not reproduced in practice. It is necessary to check this and suggest an improvement.
-* **Authors:**
-	- Expert Yuriy Dorn
-	- Consultant: Ilgam Latypov
 
 ## Problem 185
 * **Title** 
@@ -76,7 +51,7 @@ There are no soluton to learning the operators used in physics.
     - Expert: Стрижов
     - Consultant: Alexander Terentyev
 
- ## Задача 187 (Вадим Викторович)
+ ## Задача 187 (Нужно узнать актуальность: Вадим Викторович)
  * __Title__: Hybrid Memory System for Personalized AI Agent Responses Using Knowledge Graphs
 * __Problem__: Modern AI assistants, particularly in banking risk assessment, require personalized and context-aware interactions. However, they often lack effective memory mechanisms for recalling and utilizing past interactions, leading to impersonalized responses. This research develops a hybrid memory system that integrates short-term and long-term memory to improve personalization while maintaining computational efficiency. The proposed system combines short-term memory for preserving recent interactions and long-term memory for accumulating knowledge. Knowledge graphs (AriGraph) structure semantic and episodic memory, while an intelligent memory selection mechanism dynamically adjusts storage strategies based on interaction complexity and computational constraints. Additionally, triplets and subgraphs from the knowledge graph are transformed into structured memory storage for efficient retrieval and response generation.
 * __Data__: The study uses open-source datasets. Potential sources include banking risk assessment interaction logs, knowledge graph datasets such as Wikidata and DBpedia, and conversation datasets.
@@ -94,7 +69,7 @@ Experimental validation on a banking risk assessment AI assistant evaluates pers
 		Consultant at InteRData and Scientific Programming Centre. 
 		Participated in 7 industrial projects for banks and steel industry. 
 
- ## Задача 188 (Вадим Викторович)
+ ## Задача 188 (Нужно узнать актуальность: Вадим Викторович)
  * __Title__: Multi-Agent Simulation for Economic and Social Behavior Modeling: From Individual Agents to Synthetic Populations and Integrated Environments
 * __Problem__:
 This project aims to develop a multi-agent simulation framework to model social and economic behavior in financial contexts, progressively advancing from individual agent decision-making to population-scale interactions and a fully integrated simulation environment. The research is structured into three phases:
