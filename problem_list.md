@@ -122,7 +122,23 @@ This project aims to develop a multi-agent simulation framework to model social 
   * Даниил Дорин (tg: [@danulkin](https://t.me/danulkin))
 
 # Проекты от пятикурсников
-Сюда добавить задачи студентам Андрея Грабового
+## Problem 201
+* **Title** 
+WAN and PINN versus Kolmogorov-Fokker-Plank
+* **Problem**
+Идея решения дифференциальных уравнений в частных производных с помощью операторных методов не нова. В 2020 году был предложен способ решения таких уравнений путем нахождения не точного, а слабого решения. Требуется связать этот подход с PINN и сравнить на простых задачах вроде стационарного случая процесса Фоккера-Колмогорова-Планка.
+* **Data**
+    - [1]   [бенчмарк для решения PDE](https://github.com/pdebench/PDEBench)
+    - [2] синтетика
+* **Reference**
+    - [1] Weak Adversarial Networks for High-dimensional Partial Differential Equations [ссылочка](https://arxiv.org/pdf/1907.08272)
+    - [2] opPINN: Physics-Informed Neural Network with operator learning to approximate solutions to the Fokker-Planck-Landau equation. [ссылочка](https://arxiv.org/pdf/2207.01765)
+    - [3] Kovachki, Nikola B., Samuel Lanthaler, and Andrew M. Stuart. "Operator learning: Algorithms and analysis." arXiv preprint arXiv:2402.15715 (2024). [https://doi.org/10.48550/arXiv.2402.15715](https://doi.org/10.48550/arXiv.2402.15715)
+* **Novelity**
+Пока что такого никто не делал.
+* **Authors** 
+    - Expert: Стрижов
+    - Consultant: Папай Иван
 
 # Индустриальные проекты от Антиплагиата
 
