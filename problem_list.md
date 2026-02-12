@@ -219,6 +219,50 @@ WAN and PINN versus Kolmogorov-Fokker-Plank
   * Consultant: Alexey Kravatskiy (tg: [@alexlegeartis](https://t.me/alexlegeartis))
   * Expert: Vadim Strijov
 
+## Problem 203
+* **Title**
+  SignMuon: fast as Muon, communication-effective as SignSGD
+
+* **Problem**
+  signSGD is a popular algorithm due to its strong performance in both centralized and decentralized settings: first, signSGD performs almost as well as Adam (because it *is* essentially Adam without exponential moving averages), and second, it is communication-efficient because it transmits up to 32x fewer bits than standard optimizers.
+
+  We propose applying the sign compressor to Muon, an algorithm that recently outperformed Adam in training both computer vision networks and transformers. In preliminary experiments, the resulting algorithm, SignMuon, was empirically almost on par with Muon in the centralized setting and outperformed signSGD in both centralized and federated settings. The current goal is to establish convergence guarantees for the algorithm and potentially modify it to improve convergence. It would also be interesting to examine the broader family of SignA algorithms, where A is an LMO (linear minimization oracle)-based algorithm. SignSignSGD and SignNormalizedSGD are simply SignSGD, but there are other viable LMO-based algorithms besides Muon, such as F-Muon and S-Muon, which use composite norm balls for the LMO set.
+
+  Regardless of theoretical advances, which are difficult to predict, we plan to benchmark SignMuon and its possible modifications on a wide range of problems: synthetic problems, CIFAR-airbench, federated training for MNIST/CIFAR-10 classification, and, finally, pretraining or fine-tuning NanoGPT.
+
+
+* **Data**
+  * Image datasets MNIST and CIFAR-10 for CNN training: https://docs.pytorch.org/vision/main/generated/torchvision.datasets.MNIST.html and https://docs.pytorch.org/vision/main/generated/torchvision.datasets.CIFAR10.html.
+  * Text dataset FineWeb for NanoGPT training: https://huggingface.co/datasets/HuggingFaceFW/fineweb.
+
+* **References**
+  **SignSGD:**
+  * Bernstein, J., et al. (2018). signSGD: Compressed Optimisation for Non-Convex Problems. ICML.
+  * Bernstein, J., et al. (2019). signSGD with Majority Vote is Communication Efficient And Fault Tolerant. ICML.
+
+  **Muon and LMO-based algorithms:**
+  * Bernstein, J., Newhouse L. (2024). Old Optimizer, New Norm: An Anthology. arXiv
+  * Jordan, K., et al. (2024). Muon: An Optimizer for Hidden Layers in Neural Networks. Blog post.
+  * Kovalev, D. (2025). Understanding Gradient Orthogonalization for Deep Learning via Non-Euclidean Trust-Region Optimization. arXiv.
+  * Kravatskiy, A., et al. (2025). The Ky Fan Norms and Beyond: Dual Norms and Combinations for Matrix Optimization. ICOMP.
+
+* **Baseline**
+  * Muon: https://github.com/KellerJordan/muon
+  * CIFAR-10 airbench: https://github.com/KellerJordan/cifar10-airbench
+  * Modded-NanoGPT: https://github.com/KellerJordan/modded-nanogpt
+  * Preliminary SignMuon experiments on CIFAR-10 and a synthetic smooth problem, as well as F-Muon and S-Muon implementations: https://github.com/alexlegeartis/Neon/blob/main/code/optimizers.py (the settings are taken from https://arxiv.org/pdf/2512.09678)
+  * Federated learning backbone: https://github.com/AnonSubmitter135/FedEOV (we also have a private fork of this repo with signSGD and SignMuon implementation)
+
+* **Proposed solution**
+  We substitute the gradient G in SignSGD's update with Muon's UV^T, where G = U Sigma V^T is the singular value decomposition of the gradient.
+
+* **Novelty**
+  Although other works have proposed the quantization of Muon and error feedback with bidirectional compression for it, no one appears to have explored its signed version.
+
+* **Authors**
+  * Consultant: Alexey Kravatskiy (tg: [@alexlegeartis](https://t.me/alexlegeartis))
+  * Expert: Dmitry Kovalev
+
 # Индустриальные проекты от Антиплагиата
 
 ## Задача 190
