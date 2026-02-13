@@ -268,6 +268,59 @@ WAN and PINN versus Kolmogorov-Fokker-Plank
   * Consultant: Alexey Kravatskiy (tg: [@alexlegeartis](https://t.me/alexlegeartis))
   * Expert: Dmitry Kovalev
 
+## Problem 204
+* **Title**
+  Optimizing Sphere Packings and Kissing Numbers via AlphaEvolve and ImprovEvolve
+* **Problem**
+  The LLM-powered evolutionary coding agent AlphaEvolve has recently gained attention for achieving improved bounds and algorithms across a wide range of mathematical problems. Notable examples include an improvement over Strassen's matrix multiplication algorithm and a new state-of-the-art construction of 593 spheres for the kissing number problem in 11 dimensions (the problem of arranging as many non-overlapping unit spheres as possible so they touch a common unit sphere). Although AlphaEvolve's advances are diverse, they are clearly not definitive, as concurrent articles regularly demonstrate by reproducing or claiming to improve upon the AlphaEvolve framework (ShinkaEvolve, ThetaEvolve, TTT-Discover, etc.). These improvements often occur for less significant mathematical problems, such as circle packing and autocorrelation inequalities, so it is natural to ask how far the bounds can be pushed for more substantial mathematical challenges.
+
+  Since we are not the DeepMind AlphaEvolve team, we propose to focus on a specific yet mathematically significant problem. AlphaEvolve managed to improve the lower bound for the kissing number problem only in 11 dimensions, and only by one sphere (from 592 to 593). The significant gap between the known lower and upper bounds suggests that much more progress is possible in this area.
+
+  The kissing number is related to optimal spherical codes and sphere packing. Indeed, a spherical code that separates its points on a sphere by at least 60 degrees represents a valid center configuration for kissing spheres, and sphere packing can be viewed as a relaxation of the kissing number problem: the goal is to maximize the density of spheres in an unbounded space. These problems share much more than formulation similarity: their state-of-the-art solutions heavily rely on lattice structures and more intricate algebraic objects (see Ganzhinov's article, for example). For this reason, we suggest approaching the problems in parallel.
+
+  In our recent ImprovEvolve article, we showed that it is better to solve a mathematical problem by iteratively optimizing the current solution rather than constructing a perfect one from scratch. With this approach, the solution is transferable between dimensions and can be derived from an earlier state-of-the-art result.
+
+  Our plan is twofold. First, we delve into the mathematics underlying sphere packings, aiming to understand the available approaches for constructing them. Second, we transfer this knowledge into Python to work with GigaEvo, our open-source implementation of AlphaEvolve, in general, and ImprovEvolve in particular.
+
+  We envision two ways to discover new packings. The first is to train ImprovEvolve to improve configurations, then start the evolved program from human state-of-the-art configurations. However, due to the tightness of lattices, this approach may yield only marginal increments, like AlphaEvolve did. Nonetheless, we expect some progress even with this method, especially for sphere packing, where we will start from the recently discovered packing based on the antipode construction.
+
+  The second approach is to adapt the ImprovEvolve framework to our problems. We will need to optimize discrete lattices rather than points in Euclidean space, so it makes sense to add some group theory modules. If we succeed, the constructions will be easily interpretable, which was not the case for AlphaEvolve and its large integer center coordinates.
+
+  The prerequisites for this project are a desire to learn and a confident mastery of university-level mathematics, rather than prior knowledge of the research topic. Modern LLMs excel in mathematics as well, so it is likely they will do most of the work, but a high-level understanding of the problem and a willingness to debug the LLM output are required.
+
+
+* **Data**
+  * Lower and upper bounds for the kissing number problem with references: https://cohn.mit.edu/kissing-numbers/
+  * Spherical codes: http://neilsloane.com/packings/
+
+* **References**
+  **Evolutionary coding agents:**
+  * Trailblazer article: Novikov, A., et al. (2025). AlphaEvolve: A Coding Agent for Scientific and Algorithmic Discovery. arXiv preprint.
+  * Follow-up: Georgiev, B., et al. (2025). Mathematical exploration and discovery at scale. arXiv preprint.
+  * Open-source implementation: Khrulkov, V., et al. (2025). GigaEvo: An Open Source Optimization Framework Powered by LLMs and Evolution Algorithms. arXiv preprint.
+  * Technique of improving the solution: Kravatskiy, A., et al. (2026). ImprovEvolve: Ask AlphaEvolve to Improve the Input Solution and Then Improvise. arXiv preprint.
+
+
+  **Mathematics:**
+  * Recent article on the packing, which we will use as a primer for ImprovEvolve: Chen, R., et al. (2025). New Sphere Packings from the Antipode Construction. arXiv preprint.
+  * Kissing number article: Ganzhinov, M. (2025). Highly Symmetric Lines. Linear Algebra and Its Applications.
+  * Alternative to evolution: Ma, C., et al. (2025). Finding Kissing Numbers with Game-Theoretic Reinforcement Learning. arXiv preprint.
+
+* **Baseline**
+  * GigaEvo: https://github.com/FusionBrainLab/gigaevo-core
+  * ImprovEvolve: we have a private a private fork of the repo with ImprovEvolve implementation
+
+* **Proposed solution**
+  1) We implement the proposed configurations and use them as initial configurations for the improver program that we obtain by ImprovEvolve evolution.
+  2) We devise a way to optimize lattices rather than sphere centers in isolation.
+
+* **Novelty**
+  Beyond the obvious mathematical novelty of the discovered constructions, we are likely to propose a sophisticated structure for the program that searches for configurations. To the best of our knowledge, even the search using the generate_config–improve–perturb trinity of ImprovEvolve is quite novel.
+* **Authors**
+  * Consultant: Alexey Kravatskiy (tg: [@alexlegeartis](https://t.me/alexlegeartis))
+  * Experts: Valentin Khrulkov and Ivan Oseledets
+
+
 # Индустриальные проекты от Антиплагиата
 
 ## Задача 190
