@@ -61,7 +61,7 @@ Many machine learning tasks require working with operators over multidimensional
     - [3] Gruber, Anthony, and Irina Tezaur. "Canonical and noncanonical Hamiltonian operator inference." Computer Methods in Applied Mechanics and Engineering 416 (2023): 116334. [https://doi.org/10.1016/j.cma.2023.116334](https://doi.org/10.1016/j.cma.2023.116334)
     - [4] Olivieri, M., Karakonstantis, X., Pezzoli, M. et al. Physics-informed neural network for volumetric sound field reconstruction of speech signals. J AUDIO SPEECH MUSIC PROC. 2024, 42 (2024). [https://doi.org/10.1186/s13636-024-00366-2](https://doi.org/10.1186/s13636-024-00366-2)
 * **Baseline**
-Apply The Fourier operator or other similar operator and use this transformation to predict the time series.
+Apply The Fourier operator or other similar ohttps://t.me/@leg_bahperator and use this transformation to predict the time series.
 * **Proposed solution**
 Using an operator learning framework, propose a solution for different types of operators used in physics, image analysis, etc. Propose an idea to implement ICA to reduce the dimensionality of an operator to compute it in an efficient way.
 * **Novelity**
@@ -168,8 +168,8 @@ This project aims to develop a multi-agent simulation framework to model social 
 * __Новизна__: Данное исследование является естественным продолжением исследования возможностей суррогатных функций при переносе на другой датасет, начатый авторами первой статьи в пункте "Литература". Сам метод обучения ансамблей на основе суррогатных моделей находится на рецензировании, очень ранняя черновая версия работы находится [здесь](https://github.com/intsystems/predicator-function-for-neural-networks/blob/master/paper/Udeneev2025Surrogate.pdf)
 
 * __Авторы__:
-  * Александр Уденеев (tg: [@demoren361](https://t.me/@demoren361))
-  * Олег Бахтеев (tf: [@leg_bah](https://t.me/@leg_bah))
+  * Александр Уденеев (tg: [@demoren361](https://t.me/demoren361))
+  * Олег Бахтеев (tg: [@leg_bah](https://t.me/leg_bah))
 
 # Проекты от пятикурсников
 ## Problem 201
