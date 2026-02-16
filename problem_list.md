@@ -358,6 +358,28 @@ WAN and PINN versus Kolmogorov-Fokker-Plank
 * **Authors**
   * Consultant: Alexey Kravatskiy (tg: [@alexlegeartis](https://t.me/alexlegeartis))
   * Experts: Valentin Khrulkov and Ivan Oseledets
+ 
+## Задача 199
+* __Название__: Sample Complexity of Feature Selection in Deep Tabular Models
+
+* __Задача__: In learning theory, sample complexity determines how much data is required for generalization. For linear models, classical results establish relationships between sample size, total dimensionality, and number of relevant features. However, for neural networks, the interplay between feature selection, data requirements, and model complexity remains poorly understood. Key open questions include: How does the required sample size scale with the number of irrelevant features when training neural networks? How do different feature selection methods affect this scaling? How do feature correlations impact the data efficiency of selection algorithms? This work aims to empirically investigate the sample complexity of modern feature selection methods for deep tabular models through controlled experiments.
+
+* __Литература__:
+- Yamada, Y., Lindenbaum, O., Negahban, S., & Kluger, Y. (2020). Feature selection using Stochastic Gates. ICML.
+Lee, C., Imrie, F., & van der Schaar, M. (2021). Self-Supervision Enhanced Feature Selection with Correlated Gates. NeurIPS.
+- Yasuda, T., et al. (2023). Sequential Attention for Feature Selection. ICLR.
+Das, A., & Kempe, D. (2011). Submodular meets spectral: Greedy algorithms for subset selection. ICML.
+Elenberg, E. R., et al. (2018). Restricted strong convexity implies weak submodularity. The Annals of Statistics.
+
+* __Methods under investigation__:
+- Stochastic Gates (STG) — Gaussian-based continuous relaxation
+- Sequential Attention — adaptive greedy-style selection with attention
+- SEFS — correlated gating with self-supervision
+- LASSO — linear baseline with known theoretical guarantees
+  
+* __Авторы__:
+	- Консультант: Мешков Владислав, Эйнуллаев Алтай
+	- Эксперт: Грабовой Андрей
 
 
 # Индустриальные проекты от Антиплагиата
@@ -415,28 +437,6 @@ WAN and PINN versus Kolmogorov-Fokker-Plank
 * __Задача__: Показать, что нейросетевая модель способна внутренне выучить алгебраическую структуру диэдральной группы $D_4$ (симметрии квадрата), а не просто запоминать шаблоны. Вход — пара изображений, связанных элементом $g \in D_4$ или несвязанных ($\varnothing$); выход — элемент группы или $\varnothing$. Требуется доказать, что модель: (1) инвариантна к выбору последовательности операций, реализующих один элемент группы (например, `horizontal_flip` → `vertical_flip` ≡ `rotate_180`); (2) согласована с композицией: если $\mathbf{I}^2 = g_1(\mathbf{I}^1)$ и $\mathbf{I}^3 = g_2(\mathbf{I}^2)$, то предсказание для $(\mathbf{I}^1, \mathbf{I}^3)$ совпадает с $g_2 \cdot g_1$; (3) выдает каноническое представление элемента группы; (4) корректно обнаруживает несвязанные пары. Анализ внутренних представлений (attention maps, эмбеддинги) должен продемонстрировать кодирование таблицы умножения $D_4$. База — авторегрессивная архитектура (Siamese encoder + Transformer decoder) из работы [Image-Transform-Predict](https://github.com/DorinDaniil/Image-Transform-Predict). Контекст: современные генеративные модели (Kandinsky 5.0) и VLM (Qwen3-VL-4B-Instruct) плохо понимают геометрические зависимости между изображениями.
 * __Авторы__:
   * Даниил Дорин (tg: [@danulkin](https://t.me/danulkin))
-
-## Задача 199
-* __Название__: Sample Complexity of Feature Selection in Deep Tabular Models
-
-* __Задача__: In learning theory, sample complexity determines how much data is required for generalization. For linear models, classical results establish relationships between sample size, total dimensionality, and number of relevant features. However, for neural networks, the interplay between feature selection, data requirements, and model complexity remains poorly understood. Key open questions include: How does the required sample size scale with the number of irrelevant features when training neural networks? How do different feature selection methods affect this scaling? How do feature correlations impact the data efficiency of selection algorithms? This work aims to empirically investigate the sample complexity of modern feature selection methods for deep tabular models through controlled experiments.
-
-* __Литература__:
-- Yamada, Y., Lindenbaum, O., Negahban, S., & Kluger, Y. (2020). Feature selection using Stochastic Gates. ICML.
-Lee, C., Imrie, F., & van der Schaar, M. (2021). Self-Supervision Enhanced Feature Selection with Correlated Gates. NeurIPS.
-- Yasuda, T., et al. (2023). Sequential Attention for Feature Selection. ICLR.
-Das, A., & Kempe, D. (2011). Submodular meets spectral: Greedy algorithms for subset selection. ICML.
-Elenberg, E. R., et al. (2018). Restricted strong convexity implies weak submodularity. The Annals of Statistics.
-
-* __Methods under investigation__:
-- Stochastic Gates (STG) — Gaussian-based continuous relaxation
-- Sequential Attention — adaptive greedy-style selection with attention
-- SEFS — correlated gating with self-supervision
-- LASSO — linear baseline with known theoretical guarantees
-  
-* __Авторы__:
-	- Консультант: Мешков Владислав, Эйнуллаев Алтай
-	- Эксперт: Грабовой Андрей
 
 
 <!---
