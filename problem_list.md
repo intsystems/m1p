@@ -435,7 +435,7 @@ Elenberg, E. R., et al. (2018). Restricted strong convexity implies weak submodu
 - LASSO — linear baseline with known theoretical guarantees
   
 * __Авторы__:
-	- Консультант: Мешков Владисла
+	- Консультант: Мешков Владислав, Эйнуллаев Алтай
 	- Эксперт: Грабовой Андрей
 
 
