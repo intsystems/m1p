@@ -412,6 +412,26 @@ Elenberg, E. R., et al. (2018). Restricted strong convexity implies weak submodu
 	- Консультант: Соболевский Федор (tg: @theofficialfjord)
 	- Эксперт: д. ф.-м. н. Воронцов Константин Вячеславович
 
+## Задача 210
+* __Title__: Cross-model knowledge distillation for vision encoders
+* __Problem__: Most of existing vision-semantic embedding methods require pre-trained visual features from models trained with supervised classification on ImageNet. This raises a fundamental question: **Is the supervised pre-training stage necessary, or can language models and word embeddings alone provide sufficient supervision to train vision encoders from random initialization?** This tests whether distributional semantics contain enough structural information to guide visual representation learning without any intermediate softmax classification stage.
+* __Data__:
+    - ImageNet-1K
+    - __Word2Vec__: Pre-trained word embeddings (such as Word2Vec and FastText) and language models (such as BERT and its improvements)
+* __Reference__:
+    - Kim et al., "COSMOS: Cross-Modality Self-Distillation for Vision Language Pre-training", CVF 2025
+	- Frome et al., "DeViSE: A Deep Visual-Semantic Embedding Model," NeurIPS 2013
+	- Norouzi et al., "Zero-Shot Learning by Convex Combination of Semantic Embeddings," ICLR 2014
+	- Kodirov et al., "Semantic Autoencoder for Zero-Shot Learning," CVPR 2017
+	- Akata et al., "Label-Embedding for Image Classification," TPAMI 2016
+	- Mikolov et al., "Efficient Estimation of Word Representations," ICLR 2013
+* __Baseline__: shared encoders trained in a supervised/semi-supervised manner
+* __Proposed solution__: we consider the problem under the knowledge distillation framework: the student (vision model) tries to restore as much knowledge as possible from the language model. We will consider the distillation in a multi-task regime considering generalizability between multiple pairs of language models and vision datasets. 
+* __Novelty__: We propose an approach to train multi-modal encoder with shared semantic knowledge based on the knowledge distillation framework. Most of the prior works rely on pre-extracted visual features from ImageNet-trained models, making it impossible to isolate whether semantic embeddings alone suffice for visual representation learning.
+* __Authors__:
+	- Consultant: Muhammadsharif Nabiev (tg: @AJommmy)
+ 	- Expert: Oleg Bakhteev (tg: @@leg_bah)
+
 # Прикладные проекты
 
 ## Задача 190
