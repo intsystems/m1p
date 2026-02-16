@@ -183,7 +183,7 @@ This project aims to develop a multi-agent simulation framework to model social 
 * __Proposed solution__: An extension of the baseline approach: instead of generating labels for a fixed dataset, we train a generative model (e.g., a decoder from a variational autoencoder) to produce entire synthetic datasets on which the target model achieves strong generalization performance.
 * __Novelty__: The project investigates fundamental properties of machine learning models and proposes a generative meta-learning framework for studying and characterizing inductive bias.
 * __Authors__: Oleg Bakhteev (tg: [@leg_bah](https://t.me/leg_bah))
-* 
+
 # Проекты от пятикурсников
 ## Problem 201
 * **Title** 
