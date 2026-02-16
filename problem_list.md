@@ -439,7 +439,7 @@ Elenberg, E. R., et al. (2018). Restricted strong convexity implies weak submodu
 * __Литература__: [Recurrent Self-Attention Dynamics:
 An Energy-Agnostic Perspective from Jacobians](https://arxiv.org/pdf/2505.19458)
 * __Авторы__:
-  * Консультанты: Дмитрий Василенко (tg: [@dimundeI](https://t.me/dimundeI)), Илья Степанов (tg: [@Iliatut94](https://t.me/Iliatut94))
+  * Консультанты: Дмитрий Василенко (tg: [@dimundeI](https://t.me/dimundeI)), Илья Степанов (tg: [@Iliatut94](https://t.me/Iliatut94)), Вадим Касюк(tg: [@vadimkasiuk](https://t.me/vadimkasiuk))
   * Эксперт: Грабовой Андрей (tg: [@hrabovyi](https://t.me/hrabovyi))
 
 
