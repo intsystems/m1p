@@ -416,6 +416,29 @@ WAN and PINN versus Kolmogorov-Fokker-Plank
 * __Авторы__:
   * Даниил Дорин (tg: [@danulkin](https://t.me/danulkin))
 
+## Задача 199
+* __Название__: Sample Complexity of Feature Selection in Deep Tabular Models
+
+* __Задача__: In learning theory, sample complexity determines how much data is required for generalization. For linear models, classical results establish relationships between sample size, total dimensionality, and number of relevant features. However, for neural networks, the interplay between feature selection, data requirements, and model complexity remains poorly understood. Key open questions include: How does the required sample size scale with the number of irrelevant features when training neural networks? How do different feature selection methods affect this scaling? How do feature correlations impact the data efficiency of selection algorithms? This work aims to empirically investigate the sample complexity of modern feature selection methods for deep tabular models through controlled experiments.
+
+* __Литература__:
+- Yamada, Y., Lindenbaum, O., Negahban, S., & Kluger, Y. (2020). Feature selection using Stochastic Gates. ICML.
+Lee, C., Imrie, F., & van der Schaar, M. (2021). Self-Supervision Enhanced Feature Selection with Correlated Gates. NeurIPS.
+- Yasuda, T., et al. (2023). Sequential Attention for Feature Selection. ICLR.
+Das, A., & Kempe, D. (2011). Submodular meets spectral: Greedy algorithms for subset selection. ICML.
+Elenberg, E. R., et al. (2018). Restricted strong convexity implies weak submodularity. The Annals of Statistics.
+
+* __Methods under investigation__:
+- Stochastic Gates (STG) — Gaussian-based continuous relaxation
+- Sequential Attention — adaptive greedy-style selection with attention
+- SEFS — correlated gating with self-supervision
+- LASSO — linear baseline with known theoretical guarantees
+  
+* __Авторы__:
+	- Консультант: Мешков Владисла
+	- Эксперт: Грабовой Андрей
+
+
 <!---
 ## Problem template (EN)
 ## Problem 101
