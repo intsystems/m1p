@@ -432,6 +432,17 @@ Elenberg, E. R., et al. (2018). Restricted strong convexity implies weak submodu
 	- Consultant: Muhammadsharif Nabiev (tg: @AJommmy)
  	- Expert: Oleg Bakhteev (tg: @@leg_bah)
 
+## Задача 211
+
+* __Название__: Спектральный анализ устойчивости рекуррентного трансформера с Layer Normalization
+* __Задача__: Исследовать влияние центрирования и аффинных преобразований в LayerNorm (LN) на динамическую устойчивость рекуррентного (looped) блока трансформера и сравнить результаты с RMSNorm. В отличие от RMSNorm, LN выполняет вычитание среднего: $\text{LN}(x) = \frac{x - \mu}{\sigma} \cdot \gamma + \beta$. Требуется: (1) Вывести аналитическую верхнюю границу спектральной нормы Якобиана полного блока ($J_F$) с использованием LN, учитывая проектор центрирования $P = I - \frac{1}{D}\mathbf{1}\mathbf{1}^\top$; (2) Доказать или опровергнуть, что LN обеспечивает асимптотическую устойчивость ($O(1)$) при больших шагах обновления $\nu \to \infty$, аналогично RMSNorm; (3) Проанализировать влияние обучаемого смещения $\beta$ (bias) на фиксированные точки динамики (fixed points); (4) Эмпирически сравнить скорость сходимости (contraction rate) и спектральные свойства LN и RMSNorm на синтетических данных и эмбеддингах CIFAR-10.
+* __Литература__: [Recurrent Self-Attention Dynamics:
+An Energy-Agnostic Perspective from Jacobians](https://arxiv.org/pdf/2505.19458)
+* __Авторы__:
+  * Консультанты: Дмитрий Василенко (tg: [@dimundeI](https://t.me/dimundeI)), Илья Степанов (tg: [@Iliatut94](https://t.me/Iliatut94))
+  * Эксперт: Грабовой Андрей (tg: [@hrabovyi](https://t.me/hrabovyi))
+
+
 # Прикладные проекты
 
 ## Задача 190
