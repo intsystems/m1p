@@ -138,6 +138,7 @@ This project aims to develop a multi-agent simulation framework to model social 
   * Мультимодальные записи [Nature Scientific Data 2025](https://www.nature.com/articles/s41597-025-05580-x), [Pattern Recognition Letters 2017](https://www.sciencedirect.com/science/article/abs/pii/S0167865517304634), [Nature Scientific Data 2021](https://www.nature.com/articles/s41597-021-01046-y), [Human Brain Mapping 2023](https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.26480)
 * __Авторы__:
   * Даниил Дорин (tg: [@danulkin](https://t.me/danulkin))
+  * Грабовой Андрей
 
 ## Задача 200
 * __Название__: Transfer learning for surrogate-based neural ensemble search
@@ -390,8 +391,7 @@ Elenberg, E. R., et al. (2018). Restricted strong convexity implies weak submodu
 	- Консультант: Мешков Владислав, Эйнуллаев Алтай
 	- Эксперт: Грабовой Андрей
 
-
-# Индустриальные проекты
+# Прикладные проекты
 
 ## Задача 190
 * __Название__: Детекция строк в фотографиях страниц рукописных текстов
@@ -446,6 +446,7 @@ Elenberg, E. R., et al. (2018). Restricted strong convexity implies weak submodu
 * __Задача__: Показать, что нейросетевая модель способна внутренне выучить алгебраическую структуру диэдральной группы $D_4$ (симметрии квадрата), а не просто запоминать шаблоны. Вход — пара изображений, связанных элементом $g \in D_4$ или несвязанных ($\varnothing$); выход — элемент группы или $\varnothing$. Требуется доказать, что модель: (1) инвариантна к выбору последовательности операций, реализующих один элемент группы (например, `horizontal_flip` → `vertical_flip` ≡ `rotate_180`); (2) согласована с композицией: если $\mathbf{I}^2 = g_1(\mathbf{I}^1)$ и $\mathbf{I}^3 = g_2(\mathbf{I}^2)$, то предсказание для $(\mathbf{I}^1, \mathbf{I}^3)$ совпадает с $g_2 \cdot g_1$; (3) выдает каноническое представление элемента группы; (4) корректно обнаруживает несвязанные пары. Анализ внутренних представлений (attention maps, эмбеддинги) должен продемонстрировать кодирование таблицы умножения $D_4$. База — авторегрессивная архитектура (Siamese encoder + Transformer decoder) из работы [Image-Transform-Predict](https://github.com/DorinDaniil/Image-Transform-Predict). Контекст: современные генеративные модели (Kandinsky 5.0) и VLM (Qwen3-VL-4B-Instruct) плохо понимают геометрические зависимости между изображениями.
 * __Авторы__:
   * Даниил Дорин (tg: [@danulkin](https://t.me/danulkin))
+  * Грабовой Андрей
 
 
 <!---
