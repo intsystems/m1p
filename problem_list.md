@@ -191,6 +191,17 @@ There are no soluton to learning the operators used in physics.
   - Консультант: Данила Черноусов (tg: @Danilacher)
   - Эксперт: Андрей Грабовой
  
+## Problem 213
+* Title: Shape Optimization with Differentiable Mesher
+* Problem: This study considers the problem of fluid flow past an obstacle. The obstacle generates a drag force, and our objective is to minimize this force by finding the optimal shape of the obstacle.
+* Data: No large datasets, unsupervised learning.
+* Reference: 
+[1] S. Shumilin at al, A Method for Auto-Differentiation of the Voronoi Tessellation, 2024.
+[2] A. Ryabov et al, Learnable stability-aware computational grid coarsening for accelerating physics simulations, 2026.
+* Baseline: Comparison versus published optimal geometric shapes.
+* Proposed solution: Check/debug differentiability of our in-house solver written with PyTorch. Improve its efficiency. Test and compare different loss functions.
+* Novelty: Shape optimization is a super important problem for many applications. In this work, we present a new elegant way to solve this problem.
+* Authors: consultant Nikolay Yavich (tg: @Nikolay_Y25)
 
 # Проекты от пятикурсников
 ## Problem 201
