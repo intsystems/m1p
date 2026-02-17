@@ -18,5 +18,6 @@
 | [Акинжала Родион](https://github.com/rknzhl) | Operator learning in PINN |GitHub, LinkReview, Paper, Slides, Video | Alexander Terentyev | | |
 |[Новокшонова Анна](https://github.com/DecembersMiracle) | Inductive Bias Meta-Learning with Generative Models | GitHub, LinkReview, Paper, Slides, Video | [Бахтеев Олег](https://github.com/bahleg) | |  
 |[Смирнова Мария](https://github.com/maria-smrnv) | SignMuon: fast as Muon, communication-effective as SignSGD | GitHub, LinkReview, Paper, Slides, Video | Dmitry Kovalev | |  
+|[Ибрагимова Ксения](https://github.com/ibragimovakr) | Evaluating the Effectiveness of Generative Drifting for Single-Step Super-Resolution | GitHub, LinkReview, Paper, Slides, Video | [Андрей Филатов](https://scholar.google.com/citations?user=xRNTrdcAAAAJ) | |                   
 |[Кабиров Руслан](https://github.com/) | Вокруг Muon и матричных разложений | GitHub, LinkReview, Paper, Slides, Video | ... | |  
                                                                                                                                                                                                             
