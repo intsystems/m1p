@@ -20,4 +20,5 @@
 |[Смирнова Мария](https://github.com/maria-smrnv) | SignMuon: fast as Muon, communication-effective as SignSGD | GitHub, LinkReview, Paper, Slides, Video | Dmitry Kovalev | |  
 |[Ибрагимова Ксения](https://github.com/ibragimovakr) | Evaluating the Effectiveness of Generative Drifting for Single-Step Super-Resolution | GitHub, LinkReview, Paper, Slides, Video | [Андрей Филатов](https://scholar.google.com/citations?user=xRNTrdcAAAAJ) | |                   
 |[Кабиров Руслан](https://github.com/) | Вокруг Muon и матричных разложений | GitHub, LinkReview, Paper, Slides, Video | ... | |  
+|[Кучина Марина](https://github.com/KuchinaMA)| Инвариантный индекс текста на основе собственной размерности при машинном переводе | GitHub, LinkReview, Paper, Slides, Video | Грабовой Андрей| |  
                                                                                                                                                                                                             
