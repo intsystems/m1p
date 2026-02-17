@@ -178,6 +178,23 @@ There are no soluton to learning the operators used in physics.
 - **Авторы**:
   - Консультант: Никита Киселев (tg: [@kisnikser](https://t.me/kisnikser))
   - Эксперт: Андрей Грабовой
+ 
+## Задача 211
+- **Название**: Data Complexity via Data Geometry Using Generative Models
+- **Задача**: Data complexity is a broad concept used to describe how complicated a dataset is. Many existing approaches to data complexity assume that all data points have the same complexity and that overall complexity grows linearly with dataset size. However, both assumptions are questionable. First, different datasets clearly have different inherent complexity: for example, image from CIFAR is more complex than handwritten digits from MNIST. Second, duplicating the same data points does not meaningfully increase complexity, even though the dataset size increases. We hypothesize that real-world data has an upper bound on intrinsic complexity. Modern generative models, such as diffusion models trained on large image datasets, may already be operating near this limit. If this hypothesis is correct, then data complexity does not scale linearly with dataset size, and current complexity estimation methods are inadequate. The challenge is to develop a method of complexity such that it adequately captures the notion of complexity. In terms of measure-theoretic this measure should be sub-additive.
+- **Литература**:
+  - [https://arxiv.org/abs/2406.03537](https://arxiv.org/abs/2406.03537)
+  - [https://arxiv.org/abs/2212.12611](https://arxiv.org/abs/2212.12611)
+- **Данные**: Предлагается проводить вычислительный эксперимент на задаче классификации изображений, используя наборы данных
+  - [MNIST](https://pytorch.org/vision/0.20/generated/torchvision.datasets.MNIST.html#torchvision.datasets.MNIST)
+  - [FashionMNIST](https://pytorch.org/vision/0.20/generated/torchvision.datasets.FashionMNIST.html#torchvision.datasets.FashionMNIST)
+  - [CIFAR10](https://pytorch.org/vision/0.20/generated/torchvision.datasets.CIFAR10.html#torchvision.datasets.CIFAR10)
+- **Базовый алгоритм**: Generative models such as diffusion models learn to approximate the underlying data distribution. By analyzing the geometry of this distribution, we can assess the complexity of individual data points using notions such as intrinsic dimensionality (the dimension of the manifold on which the data lies) and curvature
+- **Новизна**: Existing methods make no assumptions about the complexity and the scalability factor of datum.
+- **Авторы**:
+  - Консультант: Данила Черноусов (tg: @Danilacher)
+  - Эксперт: Андрей Грабовой
+ 
 
 # Проекты от пятикурсников
 ## Problem 201
