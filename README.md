@@ -30,3 +30,4 @@
 |[Чайкин Владимир](https://github.com/LasJens)| Calibrated Perplexity for Robust AI-Generated Text Detection Across Languages and Genres | [GitHub](https://github.com/intsystems/2026-project-194), LinkReview, Paper, Slides, Video | [Грабовой Андрей](https://github.com/andriygav), Грицай Герман|
 |[Игнатьев Даниил](https://github.com/80e80da)| Улучшение оценки нормы разности Гессианов при увеличении размера выборки | [GitHub](https://github.com/intsystems/2026-project-210), LinkReview, Paper, Slides, Video | [Грабовой Андрей](https://github.com/andriygav), [Никита Киселёв](https://github.com/kisnikser)|
 |[Баронов Михаил](https://github.com/baronovM)| Генеративные адверсальные атаки на временные ряды | GitHub, LinkReview, Paper, Slides, Video | Aleksey Zaytsev |
+|[Нерсесян Лев](https://github.com/aramazzd)| Исследование латентных пространств в ЯМР seq2seq | GitHub, LinkReview, Paper, Slides, Video |  Nikolay Rekut, Aleksandr Beznosikov |
