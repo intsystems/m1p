@@ -120,7 +120,9 @@ There are no soluton to learning the operators used in physics.
 * __Baseline__: The method from [this paper](https://arxiv.org/pdf/2211.13544): generate labels for a fixed dataset so that the target model achieves strong generalization, and analyze the induced model preferences.
 * __Proposed solution__: An extension of the baseline approach: instead of generating labels for a fixed dataset, we train a generative model (e.g., a decoder from a variational autoencoder) to produce entire synthetic datasets on which the target model achieves strong generalization performance.
 * __Novelty__: The project investigates fundamental properties of machine learning models and proposes a generative meta-learning framework for studying and characterizing inductive bias.
-* __Authors__: Oleg Bakhteev (tg: [@leg_bah](https://t.me/leg_bah))
+* __Authors__:
+	* __Expert__: Oleg Bakhteev (tg: [@leg_bah](https://t.me/leg_bah))
+	* __Consultant__: Fedor Sobolevsky (tg: [@theofficialfjord](https://t.me/theofficialfjord))
 
 ## Problem 206
 * __Title__: Оценка сложности инструментов ИИ-агентов
