@@ -358,7 +358,7 @@ WAN and PINN versus Kolmogorov-Fokker-Plank
 
 * **Authors**
   * Consultant: Alexey Kravatskiy (tg: [@alexlegeartis](https://t.me/alexlegeartis))
-  * Expert: Vadim Strijov
+
 
 ## Problem 203
 * **Title**
