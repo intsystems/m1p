@@ -7,7 +7,6 @@
 
 [Telegram chat](https://t.me/+Z7desKWCT0UwOTcy)
 
-
 [Problem list](problem_list.md)
 
 
